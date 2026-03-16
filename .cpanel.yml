@@ -5,6 +5,7 @@ deployment:
     - /bin/cp casea.site/.htaccess $DEPLOYPATH/
     - /bin/cp casea.site/config.php $DEPLOYPATH/
     - /bin/cp casea.site/index.php $DEPLOYPATH/
+    - /bin/cp casea.site/deploy-webhook.php $DEPLOYPATH/
     - /bin/mkdir -p $DEPLOYPATH/includes
     - /bin/cp casea.site/includes/header.php $DEPLOYPATH/includes/
     - /bin/cp casea.site/includes/footer.php $DEPLOYPATH/includes/
