@@ -37,21 +37,21 @@
   /* ==========================================================
      THEME COLORS — Change these per domain
      ========================================================== */
-  --color-bg:         #0a0e1a;
-  --color-surface:    #111729;
-  --color-surface-2:  #161d33;
-  --color-border:     #1e2742;
-  --color-text:       #e8e6e1;
-  --color-text-muted: #8b8d95;
-  --color-text-faint: #4e5163;
+  --color-bg:         #122d47;
+  --color-surface:    #163352;
+  --color-surface-2:  #1a3d5c;
+  --color-border:     #24506e;
+  --color-text:       #e8eaef;
+  --color-text-muted: #94a3b8;
+  --color-text-faint: #4a6a85;
   --color-accent:     #d4af37;
   --color-accent-hover: #e6c44a;
   --color-accent-dark: #b8962e;
   --color-cta:        #d4af37;
   --color-cta-hover:  #e6c44a;
-  --color-cta-text:   #0a0e1a;
-  --color-hero-gradient-start: #0a0e1a;
-  --color-hero-gradient-end:   #111729;
+  --color-cta-text:   #122d47;
+  --color-hero-gradient-start: #0e2238;
+  --color-hero-gradient-end:   #122d47;
 
   /* --- RADIUS --- */
   --radius-sm: 4px;
@@ -1228,7 +1228,7 @@
 .game-tile__gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(10,14,26,0.95) 0%, rgba(10,14,26,0.4) 40%, transparent 70%);
+  background: linear-gradient(0deg, rgba(18,45,71,0.95) 0%, rgba(18,45,71,0.4) 40%, transparent 70%);
 }
 
 .game-tile__info {
