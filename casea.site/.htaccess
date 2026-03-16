@@ -7,10 +7,13 @@ RewriteEngine On
 # ─── Play / CTA Redirect ─────────────────────────────────────────
 RewriteRule ^play/?$ https://playzzz.app/play/best-casinos [R=302,L]
 
+# ─── Webhook endpoint ────────────────────────────────────────────
+RewriteRule ^deploy-webhook\.php$ deploy-webhook.php [L]
+
 # ─── Clean URLs ───────────────────────────────────────────────────
 # Skip real files and directories
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Route clean URLs to index.php router
+# Route clean URLs (including /de/, /de/bonuses, etc.) to index.php router
 RewriteRule ^(.+)$ index.php?page=$1 [QSA,L]

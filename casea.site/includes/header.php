@@ -4,6 +4,9 @@
  * Expects: $page_title, $page_description, $current_page (set before including)
  */
 if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
+
+// Build current page path for hreflang and lang switcher
+$page_slug = ($current_page === 'home') ? '' : $current_page;
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $CURRENT_LANG; ?>">
@@ -15,7 +18,19 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
 <meta property="og:title" content="<?php echo htmlspecialchars($page_title); ?>">
 <meta property="og:description" content="<?php echo htmlspecialchars($page_description); ?>">
 <meta property="og:type" content="<?php echo META_OG_TYPE; ?>">
-<link rel="canonical" href="<?php echo SITE_URL . '/' . ($current_page === 'home' ? '' : $current_page); ?>">
+<link rel="canonical" href="<?php echo SITE_URL . $lang_prefix . '/' . $page_slug; ?>">
+<?php
+// Hreflang tags for active languages
+$active_langs = array_filter($LANGUAGES, function($v) { return $v[2]; });
+if (count($active_langs) > 1):
+    foreach ($active_langs as $code => $lang_info):
+        $href_prefix = ($code === 'en') ? '' : '/' . $code;
+        $href = SITE_URL . $href_prefix . '/' . $page_slug;
+?>
+<link rel="alternate" hreflang="<?php echo $code; ?>" href="<?php echo $href; ?>">
+<?php endforeach; ?>
+<link rel="alternate" hreflang="x-default" href="<?php echo SITE_URL . '/' . $page_slug; ?>">
+<?php endif; ?>
 <link rel="stylesheet" href="/assets/css/base.css">
 <link rel="stylesheet" href="/assets/css/style.css">
 <?php if (!empty($THEME)): ?>
@@ -33,7 +48,7 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
 <!-- HEADER -->
 <header class="site-header">
   <div class="container">
-    <a href="/" class="site-logo"><?php echo SITE_NAME; ?></a>
+    <a href="<?php echo $lang_prefix; ?>/" class="site-logo"><?php echo SITE_NAME; ?></a>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
@@ -42,8 +57,8 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
       <a href="<?php echo $item['url']; ?>"<?php echo ($current_page === $item['page']) ? ' class="active"' : ''; ?>><?php echo $item['label']; ?></a>
 <?php endforeach; ?>
       <div class="mobile-actions">
-        <a href="/login" class="btn btn--outline">Log In</a>
-        <a href="/play" class="btn btn--primary" rel="nofollow"><?php echo CTA_SIGNUP_LABEL; ?></a>
+        <a href="<?php echo $lang_prefix; ?>/login" class="btn btn--outline"><?php echo __('nav_login', 'Log In'); ?></a>
+        <a href="/play" class="btn btn--primary" rel="nofollow"><?php echo __('nav_signup', 'Sign Up'); ?></a>
       </div>
     </nav>
     <div class="nav-actions">
@@ -55,13 +70,18 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px"><path d="M6 9l6 6 6-6"/></svg>
         </button>
         <div class="lang-selector__dropdown">
-<?php foreach ($LANGUAGES as $code => $lang): ?>
-          <a href="?lang=<?php echo $code; ?>"<?php echo ($code === $CURRENT_LANG) ? ' class="active"' : ''; ?>><?php echo $lang[1]; ?></a>
+<?php
+foreach ($LANGUAGES as $code => $lang_info):
+    if (!$lang_info[2]) continue; // skip inactive languages
+    $switch_prefix = ($code === 'en') ? '' : '/' . $code;
+    $switch_url = $switch_prefix . '/' . $page_slug;
+?>
+          <a href="<?php echo $switch_url; ?>"<?php echo ($code === $CURRENT_LANG) ? ' class="active"' : ''; ?>><?php echo $lang_info[1]; ?></a>
 <?php endforeach; ?>
         </div>
       </div>
-      <a href="/login" class="btn btn--outline">Log In</a>
-      <a href="/play" class="btn btn--primary" rel="nofollow"><?php echo CTA_SIGNUP_LABEL; ?></a>
+      <a href="<?php echo $lang_prefix; ?>/login" class="btn btn--outline"><?php echo __('nav_login', 'Log In'); ?></a>
+      <a href="/play" class="btn btn--primary" rel="nofollow"><?php echo __('nav_signup', 'Sign Up'); ?></a>
     </div>
   </div>
 </header>
