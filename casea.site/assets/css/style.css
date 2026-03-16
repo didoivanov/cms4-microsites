@@ -1323,6 +1323,40 @@
   border-color: var(--color-accent);
 }
 
+/* Mobile: horizontal scroll game grid */
+@media (max-width: 768px) {
+  .game-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: var(--space-3);
+    padding-bottom: var(--space-3);
+    scrollbar-width: none;
+  }
+  .game-grid::-webkit-scrollbar { display: none; }
+  .game-grid .game-tile {
+    flex: 0 0 calc(40% - var(--space-2));
+    scroll-snap-align: start;
+    aspect-ratio: 3 / 4;
+  }
+  .game-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: var(--space-2);
+  }
+  .game-tabs::-webkit-scrollbar { display: none; }
+  .game-tab { white-space: nowrap; flex-shrink: 0; }
+}
+
+@media (max-width: 480px) {
+  .game-grid .game-tile {
+    flex: 0 0 calc(45% - var(--space-2));
+  }
+}
+
 /* Sub-page hero CTA */
 .page-hero .hero__ctas {
   margin-top: var(--space-6);
