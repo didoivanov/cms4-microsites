@@ -50,14 +50,16 @@ $THEME = [
 $LANGUAGES = [
     'en' => ['English',    'English',    true],
     'de' => ['Deutsch',    'Deutsch',    true],
+    'el' => ['Greek',      'Ελληνικά',   true],
+    'pl' => ['Polski',     'Polski',     true],
+    'it' => ['Italiano',   'Italiano',   true],
+    'fr' => ['Français',   'Français',   true],
+    'es' => ['Español',    'Español',    true],
+    'hu' => ['Magyar',     'Magyar',     true],
     'fi' => ['Suomi',      'Suomi',      false],
     'no' => ['Norsk',      'Norsk',      false],
-    'hu' => ['Magyar',     'Magyar',     false],
-    'it' => ['Italiano',   'Italiano',   false],
-    'es' => ['Espanol',    'Espanol',    false],
-    'pl' => ['Polski',     'Polski',     false],
-    'cs' => ['Cestina',    'Cestina',    false],
-    'pt' => ['Portugues',  'Portugues',  false],
+    'cs' => ['Čeština',    'Čeština',    false],
+    'pt' => ['Português',  'Português',  false],
 ];
 
 // Detect current language from URL or default

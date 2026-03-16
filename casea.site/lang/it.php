@@ -1,0 +1,34 @@
+<?php
+/**
+ * IT language strings
+ */
+return [
+    'nav_bonuses' => 'Bonus',
+    'nav_withdrawal' => 'Prelievo',
+    'nav_support' => 'Assistenza',
+    'nav_login' => 'Accedi',
+    'nav_signup' => 'Registrati',
+    'hero_badge' => 'Ora aperto - accettiamo giocatori da tutto il mondo',
+    'hero_subtitle' => 'Oltre 10.000 giochi da 90+ fornitori, scommesse sportive complete su 30+ sport, tavoli con dealer dal vivo e premi che valgono davvero.',
+    'welcome_label' => 'Pacchetto di Benvenuto',
+    'cta_play' => 'Gioca Ora',
+    'cta_signup' => 'Registrati Ora',
+    'cta_ready' => 'Pronto per iniziare?',
+    'cta_ready_desc' => 'Crea il tuo account in meno di un minuto e riscatta il tuo bonus di benvenuto.',
+    'footer_disclaimer' => 'Questo sito web è un sito affiliato indipendente e non è gestito da %s Casino. Tutti i giochi da casinò e i servizi di scommesse sportive sono forniti da %s. Potremmo ricevere una commissione per i referral. Il gioco d\'azzardo può creare dipendenza -- gioca responsabilmente. Devi avere almeno 18 anni. Si applicano termini dei bonus, requisiti di scommessa e condizioni di prelievo. Verifica la disponibilità dei servizi nella tua giurisdizione prima di registrarti.',
+    'footer_brand_desc' => 'Oltre 10.000 giochi, 90+ fornitori, scommesse sportive complete e supporto live 24/7. Gioca ai giochi del casinò, scommetti sullo sport e approfitta di generosi bonus.',
+    'footer_sportsbook' => 'Scommesse Sportive',
+    'footer_payments' => 'Pagamenti',
+    'footer_help' => 'Aiuto',
+    'footer_contact_support' => 'Contatta Assistenza',
+    'footer_legal' => 'Legale',
+    'footer_privacy' => 'Informativa sulla Privacy',
+    'footer_terms' => 'Termini e Condizioni',
+    'footer_responsible' => 'Gioco Responsabile',
+    'footer_privacy_short' => 'Privacy',
+    'footer_terms_short' => 'Termini',
+    'games' => 'Giochi',
+    'providers' => 'Fornitori',
+    'welcome_bonus' => 'Bonus di Benvenuto',
+    'live_support' => 'Supporto Live',
+];

@@ -16,6 +16,7 @@ deployment:
     - /bin/cp casea.site/pages/withdrawal.php $DEPLOYPATH/pages/
     - /bin/cp casea.site/pages/support.php $DEPLOYPATH/pages/
     - /bin/cp casea.site/pages/login.php $DEPLOYPATH/pages/
+    - for LANG in de el pl it fr es hu; do /bin/mkdir -p $DEPLOYPATH/pages/$LANG && /bin/cp casea.site/pages/$LANG/*.php $DEPLOYPATH/pages/$LANG/; done
     - /bin/mkdir -p $DEPLOYPATH/assets/css
     - /bin/mkdir -p $DEPLOYPATH/assets/js
     - /bin/mkdir -p $DEPLOYPATH/assets/img
@@ -25,12 +26,5 @@ deployment:
     - /bin/cp casea.site/assets/img/casea-bonuses.png $DEPLOYPATH/assets/img/
     - /bin/cp casea.site/assets/img/casea-games.png $DEPLOYPATH/assets/img/
     - /bin/cp casea.site/assets/img/casea-mobile.png $DEPLOYPATH/assets/img/
-    - /bin/mkdir -p $DEPLOYPATH/pages/de
-    - /bin/cp casea.site/pages/de/home.php $DEPLOYPATH/pages/de/
-    - /bin/cp casea.site/pages/de/bonuses.php $DEPLOYPATH/pages/de/
-    - /bin/cp casea.site/pages/de/withdrawal.php $DEPLOYPATH/pages/de/
-    - /bin/cp casea.site/pages/de/support.php $DEPLOYPATH/pages/de/
-    - /bin/cp casea.site/pages/de/login.php $DEPLOYPATH/pages/de/
     - /bin/mkdir -p $DEPLOYPATH/lang
-    - /bin/cp casea.site/lang/en.php $DEPLOYPATH/lang/
-    - /bin/cp casea.site/lang/de.php $DEPLOYPATH/lang/
+    - for LANG in en de el pl it fr es hu; do /bin/cp casea.site/lang/$LANG.php $DEPLOYPATH/lang/; done

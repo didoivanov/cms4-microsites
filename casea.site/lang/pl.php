@@ -1,0 +1,34 @@
+<?php
+/**
+ * PL language strings
+ */
+return [
+    'nav_bonuses' => 'Bonusy',
+    'nav_withdrawal' => 'Wypłata',
+    'nav_support' => 'Pomoc',
+    'nav_login' => 'Zaloguj się',
+    'nav_signup' => 'Zarejestruj się',
+    'hero_badge' => 'Teraz otwarte - przyjmujemy graczy z całego świata',
+    'hero_subtitle' => 'Ponad 10 000 gier od 90+ dostawców, pełna oferta zakładów sportowych na 30+ dyscyplin, stoły z live dealerem i nagrody, które naprawdę się opłacają.',
+    'welcome_label' => 'Pakiet Powitalny',
+    'cta_play' => 'Graj Teraz',
+    'cta_signup' => 'Zarejestruj się',
+    'cta_ready' => 'Gotowy, żeby zacząć?',
+    'cta_ready_desc' => 'Utwórz konto w mniej niż minutę i odbierz swój bonus powitalny.',
+    'footer_disclaimer' => 'Ta strona jest niezależną stroną partnerską i nie jest prowadzona przez %s Casino. Wszystkie gry kasynowe i usługi zakładów sportowych są świadczone przez %s. Możemy otrzymywać prowizję za polecenia. Hazard może uzależniać -- graj odpowiedzialnie. Musisz mieć ukończone 18 lat. Obowiązują warunki bonusów, wymagania dotyczące obrotu i warunki wypłat. Sprawdź dostępność usług w swoim kraju przed rejestracją.',
+    'footer_brand_desc' => 'Ponad 10 000 gier, 90+ dostawców, pełna oferta zakładów sportowych i wsparcie 24/7. Graj w gry kasynowe, obstawiaj sport i korzystaj z hojnych bonusów.',
+    'footer_sportsbook' => 'Zakłady Sportowe',
+    'footer_payments' => 'Płatności',
+    'footer_help' => 'Pomoc',
+    'footer_contact_support' => 'Kontakt z Pomocą',
+    'footer_legal' => 'Informacje Prawne',
+    'footer_privacy' => 'Polityka Prywatności',
+    'footer_terms' => 'Regulamin',
+    'footer_responsible' => 'Odpowiedzialny Hazard',
+    'footer_privacy_short' => 'Prywatność',
+    'footer_terms_short' => 'Regulamin',
+    'games' => 'Gry',
+    'providers' => 'Dostawcy',
+    'welcome_bonus' => 'Bonus Powitalny',
+    'live_support' => 'Pomoc na Żywo',
+];

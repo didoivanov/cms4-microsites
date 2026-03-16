@@ -1,0 +1,34 @@
+<?php
+/**
+ * FR language strings
+ */
+return [
+    'nav_bonuses' => 'Bonus',
+    'nav_withdrawal' => 'Retrait',
+    'nav_support' => 'Assistance',
+    'nav_login' => 'Connexion',
+    'nav_signup' => 'Inscription',
+    'hero_badge' => 'Maintenant ouvert - joueurs du monde entier acceptés',
+    'hero_subtitle' => 'Plus de 10 000 jeux de 90+ fournisseurs, des paris sportifs complets sur 30+ sports, des tables avec croupiers en direct et des récompenses qui en valent la peine.',
+    'welcome_label' => 'Pack de Bienvenue',
+    'cta_play' => 'Jouer Maintenant',
+    'cta_signup' => 'S\'inscrire',
+    'cta_ready' => 'Prêt à commencer ?',
+    'cta_ready_desc' => 'Créez votre compte en moins d\'une minute et réclamez votre bonus de bienvenue.',
+    'footer_disclaimer' => 'Ce site web est un site affilié indépendant et n\'est pas exploité par %s Casino. Tous les jeux de casino et services de paris sportifs sont fournis par %s. Nous pouvons recevoir une commission pour les recommandations. Les jeux d\'argent peuvent créer une dépendance -- jouez de manière responsable. Vous devez avoir au moins 18 ans. Les conditions des bonus, les exigences de mise et les conditions de retrait s\'appliquent. Veuillez vérifier la disponibilité des services dans votre juridiction avant de vous inscrire.',
+    'footer_brand_desc' => 'Plus de 10 000 jeux, 90+ fournisseurs, paris sportifs complets et support live 24/7. Jouez aux jeux de casino, pariez sur le sport et profitez de bonus généreux.',
+    'footer_sportsbook' => 'Paris Sportifs',
+    'footer_payments' => 'Paiements',
+    'footer_help' => 'Aide',
+    'footer_contact_support' => 'Contacter le Support',
+    'footer_legal' => 'Mentions Légales',
+    'footer_privacy' => 'Politique de Confidentialité',
+    'footer_terms' => 'Conditions Générales',
+    'footer_responsible' => 'Jeu Responsable',
+    'footer_privacy_short' => 'Confidentialité',
+    'footer_terms_short' => 'CGU',
+    'games' => 'Jeux',
+    'providers' => 'Fournisseurs',
+    'welcome_bonus' => 'Bonus de Bienvenue',
+    'live_support' => 'Support Live',
+];

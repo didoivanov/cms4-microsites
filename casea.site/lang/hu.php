@@ -1,0 +1,34 @@
+<?php
+/**
+ * HU language strings
+ */
+return [
+    'nav_bonuses' => 'Bónuszok',
+    'nav_withdrawal' => 'Kifizetés',
+    'nav_support' => 'Ügyfélszolgálat',
+    'nav_login' => 'Bejelentkezés',
+    'nav_signup' => 'Regisztráció',
+    'hero_badge' => 'Most nyitva - világszerte fogadunk játékosokat',
+    'hero_subtitle' => 'Több mint 10 000 játék 90+ szolgáltatótól, teljes sportfogadás 30+ sportágban, élő osztós asztalok és jutalmak, amelyek valóban megérik.',
+    'welcome_label' => 'Üdvözlő Csomag',
+    'cta_play' => 'Játssz Most',
+    'cta_signup' => 'Regisztrálj Most',
+    'cta_ready' => 'Készen állsz a kezdésre?',
+    'cta_ready_desc' => 'Hozd létre a fiókodat kevesebb mint egy perc alatt, és vedd igénybe az üdvözlő bónuszodat.',
+    'footer_disclaimer' => 'Ez a weboldal egy független affiliate oldal, és nem a %s Casino üzemelteti. Minden kaszinójátékot és sportfogadási szolgáltatást a %s biztosít. Jutalékot kaphatunk az ajánlásokért. A szerencsejáték függőséget okozhat -- játssz felelősségteljesen. Legalább 18 évesnek kell lenned. A bónusz feltételek, fogadási követelmények és kifizetési feltételek érvényesek. Kérjük, ellenőrizd a szolgáltatások elérhetőségét a te régiódban a regisztráció előtt.',
+    'footer_brand_desc' => 'Több mint 10 000 játék, 90+ szolgáltató, teljes sportfogadás és 24/7 élő támogatás. Játssz kaszinójátékokkal, fogadj sportokra és élvezd a nagylelkű bónuszokat.',
+    'footer_sportsbook' => 'Sportfogadás',
+    'footer_payments' => 'Fizetés',
+    'footer_help' => 'Segítség',
+    'footer_contact_support' => 'Kapcsolatfelvétel',
+    'footer_legal' => 'Jogi Információk',
+    'footer_privacy' => 'Adatvédelmi Irányelvek',
+    'footer_terms' => 'Általános Szerződési Feltételek',
+    'footer_responsible' => 'Felelős Játék',
+    'footer_privacy_short' => 'Adatvédelem',
+    'footer_terms_short' => 'ÁSZF',
+    'games' => 'Játékok',
+    'providers' => 'Szolgáltatók',
+    'welcome_bonus' => 'Üdvözlő Bónusz',
+    'live_support' => 'Élő Támogatás',
+];
