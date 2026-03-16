@@ -131,7 +131,7 @@ require_once __DIR__ . '/../includes/header.php';
       </div>
 
       <div class="screenshot-showcase" style="margin:var(--space-8) 0;text-align:center">
-        <img src="/assets/img/casea-games.jpg" alt="<?php echo SITE_NAME; ?> Casino game lobby with top slots and providers" style="max-width:380px;width:100%;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.4)">
+        <img src="/assets/img/casea-games.png" alt="<?php echo SITE_NAME; ?> Casino game lobby with top slots and providers" style="max-width:380px;width:100%;">
       </div>
 
       <h3>Top Game Providers</h3>
@@ -209,7 +209,7 @@ require_once __DIR__ . '/../includes/header.php';
           <p><?php echo SITE_NAME; ?> does not have a dedicated mobile app, but the website is fully compatible with all smartphones and tablets. The browser-based platform delivers the same features, games, and account management tools you would find on the desktop version. No downloads required -- just open your mobile browser, log in, and play.</p>
         </div>
         <div style="text-align:center">
-          <img src="/assets/img/casea-mobile.jpg" alt="<?php echo SITE_NAME; ?> Casino on mobile" style="max-width:320px;width:100%;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.4)">
+          <img src="/assets/img/casea-mobile.png" alt="<?php echo SITE_NAME; ?> Casino on mobile" style="max-width:320px;width:100%;">
         </div>
       </div>
       <ul class="check-list">

@@ -22,8 +22,8 @@ deployment:
     - /bin/cp casea.site/assets/css/base.css $DEPLOYPATH/assets/css/
     - /bin/cp casea.site/assets/css/style.css $DEPLOYPATH/assets/css/
     - /bin/cp casea.site/assets/js/app.js $DEPLOYPATH/assets/js/
-    - /bin/cp casea.site/assets/img/casea-bonuses.jpg $DEPLOYPATH/assets/img/
-    - /bin/cp casea.site/assets/img/casea-games.jpg $DEPLOYPATH/assets/img/
-    - /bin/cp casea.site/assets/img/casea-mobile.jpg $DEPLOYPATH/assets/img/
+    - /bin/cp casea.site/assets/img/casea-bonuses.png $DEPLOYPATH/assets/img/
+    - /bin/cp casea.site/assets/img/casea-games.png $DEPLOYPATH/assets/img/
+    - /bin/cp casea.site/assets/img/casea-mobile.png $DEPLOYPATH/assets/img/
     - /bin/mkdir -p $DEPLOYPATH/lang
     - /bin/cp casea.site/lang/en.php $DEPLOYPATH/lang/
