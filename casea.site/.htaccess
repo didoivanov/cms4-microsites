@@ -5,7 +5,7 @@ RewriteEngine On
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # ─── Play / CTA Redirect ─────────────────────────────────────────
-RewriteRule ^play/?$ https://playzzz.app/play/best-eu-casino [R=302,L]
+RewriteRule ^play/?$ https://playzzz.app/play/best-casinos [R=302,L]
 
 # ─── Clean URLs ───────────────────────────────────────────────────
 # Skip real files and directories
