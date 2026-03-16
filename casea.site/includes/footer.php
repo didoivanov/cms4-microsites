@@ -11,7 +11,7 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
   <div class="container">
     <h2>Ready to Get Started?</h2>
     <p>Create your account in under a minute and claim your welcome bonus today.</p>
-    <a href="<?php echo CTA_SIGNUP_URL; ?>" class="btn btn--primary btn--lg" target="_blank" rel="noopener"><?php echo CTA_SIGNUP_LABEL; ?></a>
+    <a href="/play" class="btn btn--primary btn--lg" rel="nofollow"><?php echo CTA_SIGNUP_LABEL; ?></a>
   </div>
 </section>
 
@@ -40,7 +40,7 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
       <div class="footer-col">
         <h5>Help</h5>
         <ul>
-          <li><a href="/login">Login</a></li>
+          <li><a href="/play" rel="nofollow">Login</a></li>
           <li><a href="/support">Contact Support</a></li>
           <li><a href="/withdrawal">Withdrawal</a></li>
         </ul>
@@ -74,7 +74,7 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
       <span><?php echo SITE_NAME; ?> Casino</span>
       <span class="sticky-cta__bonus"><?php echo WELCOME_BONUS; ?></span>
     </div>
-    <a href="<?php echo CTA_URL; ?>" class="btn btn--primary" target="_blank" rel="noopener"><?php echo CTA_LABEL; ?></a>
+    <a href="/play" class="btn btn--primary" rel="nofollow"><?php echo CTA_LABEL; ?></a>
   </div>
 </div>
 

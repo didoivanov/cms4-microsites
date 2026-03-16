@@ -12,9 +12,9 @@ define('SITE_TAGLINE',    'Online Casino, Sports Betting & 10,000+ Games');
 define('SITE_YEAR',       '2026');
 
 // ─── CTA / Affiliate ────────────────────────────────────────────
-define('CTA_URL',         'https://playzzz.app/play/casea');
+define('CTA_URL',         '/play');
 define('CTA_LABEL',       'Play Now');
-define('CTA_SIGNUP_URL',  'https://playzzz.app/play/casea?action=register');
+define('CTA_SIGNUP_URL',  '/play');
 define('CTA_SIGNUP_LABEL','Sign Up');
 
 // ─── Tracking / Play Redirect ────────────────────────────────────

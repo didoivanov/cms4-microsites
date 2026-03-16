@@ -42,8 +42,8 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
       <a href="<?php echo $item['url']; ?>"<?php echo ($current_page === $item['page']) ? ' class="active"' : ''; ?>><?php echo $item['label']; ?></a>
 <?php endforeach; ?>
       <div class="mobile-actions">
-        <a href="/login" class="btn btn--outline">Log In</a>
-        <a href="<?php echo CTA_SIGNUP_URL; ?>" class="btn btn--primary" target="_blank" rel="noopener"><?php echo CTA_SIGNUP_LABEL; ?></a>
+        <a href="/play" class="btn btn--outline" rel="nofollow">Log In</a>
+        <a href="/play" class="btn btn--primary" rel="nofollow"><?php echo CTA_SIGNUP_LABEL; ?></a>
       </div>
     </nav>
     <div class="nav-actions">
@@ -60,8 +60,8 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
 <?php endforeach; ?>
         </div>
       </div>
-      <a href="/login" class="btn btn--outline">Log In</a>
-      <a href="<?php echo CTA_SIGNUP_URL; ?>" class="btn btn--primary" target="_blank" rel="noopener"><?php echo CTA_SIGNUP_LABEL; ?></a>
+      <a href="/play" class="btn btn--outline" rel="nofollow">Log In</a>
+      <a href="/play" class="btn btn--primary" rel="nofollow"><?php echo CTA_SIGNUP_LABEL; ?></a>
     </div>
   </div>
 </header>
