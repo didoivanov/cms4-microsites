@@ -1,0 +1,20 @@
+RewriteEngine On
+
+# ─── Force HTTPS ──────────────────────────────────────────────────
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ─── Play / CTA Redirects ────────────────────────────────────────
+# /play → main tracking URL
+RewriteRule ^play/?$ https://playzzz.app/play?ref=casea [R=301,L]
+
+# /play/anything → tracking URL with game/campaign slug
+RewriteRule ^play/(.+)$ https://playzzz.app/play/$1?ref=casea [R=301,L]
+
+# ─── Clean URLs ───────────────────────────────────────────────────
+# Skip real files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route clean URLs to index.php router
+RewriteRule ^(.+)$ index.php?page=$1 [QSA,L]
