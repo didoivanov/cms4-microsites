@@ -130,6 +130,10 @@ require_once __DIR__ . '/../includes/header.php';
         <!-- Games populated by JS -->
       </div>
 
+      <div class="screenshot-showcase" style="margin:var(--space-8) 0;text-align:center">
+        <img src="/assets/img/casea-games.jpg" alt="<?php echo SITE_NAME; ?> Casino game lobby with top slots and providers" style="max-width:380px;width:100%;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.4)">
+      </div>
+
       <h3>Top Game Providers</h3>
       <p>The catalog is powered by a wide mix of studios, from industry leaders to promising independent developers:</p>
       <div class="provider-logos">
@@ -200,7 +204,14 @@ require_once __DIR__ . '/../includes/header.php';
   <section class="content-section" id="mobile">
     <div class="container">
       <h2>Mobile Casino</h2>
-      <p><?php echo SITE_NAME; ?> does not have a dedicated mobile app, but the website is fully compatible with all smartphones and tablets. The browser-based platform delivers the same features, games, and account management tools you would find on the desktop version. No downloads required -- just open your mobile browser, log in, and play.</p>
+      <div class="two-col" style="align-items:center">
+        <div>
+          <p><?php echo SITE_NAME; ?> does not have a dedicated mobile app, but the website is fully compatible with all smartphones and tablets. The browser-based platform delivers the same features, games, and account management tools you would find on the desktop version. No downloads required -- just open your mobile browser, log in, and play.</p>
+        </div>
+        <div style="text-align:center">
+          <img src="/assets/img/casea-mobile.jpg" alt="<?php echo SITE_NAME; ?> Casino on mobile" style="max-width:320px;width:100%;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.4)">
+        </div>
+      </div>
       <ul class="check-list">
         <li>Full game library accessible on mobile browsers</li>
         <li>Sports betting with live in-play markets</li>
