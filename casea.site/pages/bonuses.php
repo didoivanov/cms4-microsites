@@ -19,10 +19,13 @@ require_once __DIR__ . '/../includes/page-hero.php';
   <section class="content-section" id="welcome">
     <div class="container">
       <h2>Welcome Bonuses for New Players</h2>
-      <p>First-time depositors at <?php echo SITE_NAME; ?> can pick from multiple welcome deals depending on whether they prefer casino games or sports betting. Each option is available on your very first deposit and cannot be combined with other promotions.</p>
-
-      <div style="text-align:center;margin:var(--space-6) 0">
-        <img src="/assets/img/casea-bonuses.png" alt="<?php echo SITE_NAME; ?> Casino promotions and welcome bonus offers" style="max-width:380px;width:100%;">
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin:var(--space-6) 0">
+        <div>
+          <p style="margin-top:0">First-time depositors at <?php echo SITE_NAME; ?> can pick from multiple welcome deals depending on whether they prefer casino games or sports betting. Each option is available on your very first deposit and cannot be combined with other promotions.</p>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/casea-bonuses.png" alt="<?php echo SITE_NAME; ?> Casino promotions and welcome bonus offers" style="max-width:300px;width:100%;">
+        </div>
       </div>
 
       <!-- Casino Welcome -->

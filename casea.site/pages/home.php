@@ -130,17 +130,20 @@ require_once __DIR__ . '/../includes/header.php';
         <!-- Games populated by JS -->
       </div>
 
-      <div class="screenshot-showcase" style="margin:var(--space-8) 0;text-align:center">
-        <img src="/assets/img/casea-games.png" alt="<?php echo SITE_NAME; ?> Casino game lobby with top slots and providers" style="max-width:380px;width:100%;">
-      </div>
-
-      <h3>Top Game Providers</h3>
-      <p>The catalog is powered by a wide mix of studios, from industry leaders to promising independent developers:</p>
-      <div class="provider-logos">
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin:var(--space-8) 0">
+        <div>
+          <h3 style="margin-top:0">Top Game Providers</h3>
+          <p>The catalog is powered by a wide mix of studios, from industry leaders to promising independent developers:</p>
+          <div class="provider-logos">
 <?php foreach ($PROVIDERS as $provider): ?>
-        <span class="provider-tag"><?php echo $provider; ?></span>
+            <span class="provider-tag"><?php echo $provider; ?></span>
 <?php endforeach; ?>
-        <span class="provider-tag">90+ more</span>
+            <span class="provider-tag">90+ more</span>
+          </div>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/casea-games.png" alt="<?php echo SITE_NAME; ?> Casino game lobby with top slots and providers" style="max-width:300px;width:100%;">
+        </div>
       </div>
     </div>
   </section>
