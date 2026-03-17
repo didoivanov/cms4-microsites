@@ -6,7 +6,7 @@
 
 // ─── Brand ───────────────────────────────────────────────────────
 define('SITE_NAME',       'VipLuck');
-define('SITE_DOMAIN',     'vipluck-casino.com');
+define('SITE_DOMAIN',     'vipluck.onl');
 define('SITE_URL',        'https://' . SITE_DOMAIN);
 define('SITE_TAGLINE',    'Online Casino, Sports Betting & 8,000+ Games');
 define('SITE_YEAR',       '2025');

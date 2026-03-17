@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/cms4netp/vipluck-casino.com
+    - export DEPLOYPATH=/home/cms4netp/vipluck.onl
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/mkdir -p $DEPLOYPATH/assets/css
     - /bin/mkdir -p $DEPLOYPATH/assets/js
