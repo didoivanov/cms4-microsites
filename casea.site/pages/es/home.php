@@ -24,7 +24,7 @@ require_once __DIR__ . '/../../includes/header.php';
       <div class="hero__bonus-extra">Bono Deportivo: 100% hasta &euro;100 &middot; Depósito mín. &euro;20</div>
     </div>
     <div class="hero__ctas">
-      <a href="/play" class="btn btn--primary btn--lg" rel="nofollow"><?php echo CTA_LABEL; ?></a>
+      <a href="/play" class="btn btn--primary btn--lg" rel="nofollow"><?php echo __('cta_play', 'Play Now'); ?></a>
       <a href="/bonuses" class="btn btn--outline btn--lg">Ver Bonos</a>
     </div>
   </div>

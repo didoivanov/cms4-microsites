@@ -4,10 +4,20 @@ document.addEventListener('DOMContentLoaded', function() {
   var navMain = document.querySelector('.nav-main');
 
   if (toggle && navMain) {
-    toggle.addEventListener('click', function() {
-      toggle.classList.toggle('active');
-      navMain.classList.toggle('open');
-      document.body.style.overflow = navMain.classList.contains('open') ? 'hidden' : '';
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var isOpen = navMain.classList.contains('open');
+      if (isOpen) {
+        toggle.classList.remove('active');
+        navMain.classList.remove('open');
+        document.body.style.overflow = '';
+      } else {
+        // Close lang selector if open
+        document.querySelectorAll('.lang-selector').forEach(function(el) { el.classList.remove('open'); });
+        toggle.classList.add('active');
+        navMain.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
     });
     navMain.querySelectorAll('a').forEach(function(link) {
       link.addEventListener('click', function() {

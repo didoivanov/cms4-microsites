@@ -46,20 +46,20 @@ $THEME = [
 ];
 
 // ─── Languages ───────────────────────────────────────────────────
-// code => [label, native_name, active]
+// code => [label, native_name, active, flag_emoji]
 $LANGUAGES = [
-    'en' => ['English',    'English',    true],
-    'de' => ['Deutsch',    'Deutsch',    true],
-    'el' => ['Greek',      'Ελληνικά',   true],
-    'pl' => ['Polski',     'Polski',     true],
-    'it' => ['Italiano',   'Italiano',   true],
-    'fr' => ['Français',   'Français',   true],
-    'es' => ['Español',    'Español',    true],
-    'hu' => ['Magyar',     'Magyar',     true],
-    'fi' => ['Suomi',      'Suomi',      false],
-    'no' => ['Norsk',      'Norsk',      false],
-    'cs' => ['Čeština',    'Čeština',    false],
-    'pt' => ['Português',  'Português',  false],
+    'en' => ['English',    'English',    true,  "\xF0\x9F\x87\xAC\xF0\x9F\x87\xA7"],
+    'de' => ['Deutsch',    'Deutsch',    true,  "\xF0\x9F\x87\xA9\xF0\x9F\x87\xAA"],
+    'el' => ['Greek',      'Ελληνικά',   true,  "\xF0\x9F\x87\xAC\xF0\x9F\x87\xB7"],
+    'pl' => ['Polski',     'Polski',     true,  "\xF0\x9F\x87\xB5\xF0\x9F\x87\xB1"],
+    'it' => ['Italiano',   'Italiano',   true,  "\xF0\x9F\x87\xAE\xF0\x9F\x87\xB9"],
+    'fr' => ['Français',   'Français',   true,  "\xF0\x9F\x87\xAB\xF0\x9F\x87\xB7"],
+    'es' => ['Español',    'Español',    true,  "\xF0\x9F\x87\xAA\xF0\x9F\x87\xB8"],
+    'hu' => ['Magyar',     'Magyar',     true,  "\xF0\x9F\x87\xAD\xF0\x9F\x87\xBA"],
+    'fi' => ['Suomi',      'Suomi',      false, "\xF0\x9F\x87\xAB\xF0\x9F\x87\xAE"],
+    'no' => ['Norsk',      'Norsk',      false, "\xF0\x9F\x87\xB3\xF0\x9F\x87\xB4"],
+    'cs' => ['Čeština',    'Čeština',    false, "\xF0\x9F\x87\xA8\xF0\x9F\x87\xBF"],
+    'pt' => ['Português',  'Português',  false, "\xF0\x9F\x87\xB5\xF0\x9F\x87\xB9"],
 ];
 
 // Detect current language from URL or default

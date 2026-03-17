@@ -65,7 +65,7 @@ if (count($active_langs) > 1):
       <!-- Language selector -->
       <div class="lang-selector">
         <button class="lang-selector__toggle" aria-label="Select language">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span class="lang-flag"><?php echo isset($LANGUAGES[$CURRENT_LANG][3]) ? $LANGUAGES[$CURRENT_LANG][3] : ''; ?></span>
           <?php echo strtoupper($CURRENT_LANG); ?>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px"><path d="M6 9l6 6 6-6"/></svg>
         </button>
@@ -75,8 +75,9 @@ foreach ($LANGUAGES as $code => $lang_info):
     if (!$lang_info[2]) continue; // skip inactive languages
     $switch_prefix = ($code === 'en') ? '' : '/' . $code;
     $switch_url = $switch_prefix . '/' . $page_slug;
+    $flag = isset($lang_info[3]) ? $lang_info[3] : '';
 ?>
-          <a href="<?php echo $switch_url; ?>"<?php echo ($code === $CURRENT_LANG) ? ' class="active"' : ''; ?>><?php echo $lang_info[1]; ?></a>
+          <a href="<?php echo $switch_url; ?>"<?php echo ($code === $CURRENT_LANG) ? ' class="active"' : ''; ?>><span class="lang-flag"><?php echo $flag; ?></span> <?php echo $lang_info[1]; ?></a>
 <?php endforeach; ?>
         </div>
       </div>
