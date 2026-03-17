@@ -144,7 +144,7 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
         </div>
         <div style="text-align:center;flex-shrink:0">
-          <img src="/assets/img/vipluck-games.png" alt="<?php echo SITE_NAME; ?> Casino game lobby with top slots and providers" style="max-width:300px;width:100%;">
+          <img src="/assets/img/vipluck-games-screen.png" alt="<?php echo SITE_NAME; ?> Casino game lobby showing top slots from providers like Novomatic, Play'n GO and Hacksaw Gaming" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(26,35,64,.15)">
         </div>
       </div>
     </div>
@@ -154,7 +154,7 @@ require_once __DIR__ . '/../includes/header.php';
   <section class="content-section" id="sports">
     <div class="container">
       <h2>Sportsbook</h2>
-      <div class="two-col">
+      <div class="two-col" style="align-items:flex-start;gap:var(--space-8)">
         <div>
           <p>The sportsbook at <?php echo SITE_NAME; ?> covers pre-match and live betting on events from both major and smaller competitions. Football fans can wager on everything from the UEFA Champions League down to lower-division leagues, while basketball, tennis, ice hockey, and a dozen other sports fill out the schedule.</p>
           <p>Virtual sports like football, basketball, and greyhound races run around the clock. Esports betting covers Dota 2, Counter-Strike 2, League of Legends, Call of Duty, and other competitive titles.</p>
@@ -170,6 +170,9 @@ require_once __DIR__ . '/../includes/header.php';
           </ul>
         </div>
         <div>
+          <div style="text-align:center;margin-bottom:var(--space-6)">
+            <img src="/assets/img/vipluck-sports.png" alt="<?php echo SITE_NAME; ?> sportsbook showing live Champions League odds and sports betting interface" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(26,35,64,.15)">
+          </div>
           <div class="highlight-box">
             <h4>Sports Welcome Bonus</h4>
             <p>New players can claim up to EUR 500 in sports bonuses across their first three deposits: 100% up to EUR 200 on the first, 100% up to EUR 150 on the second, and 100% up to EUR 150 on the third. Minimum deposit is EUR 20. Wagering requirement is 6x at minimum odds of 1.60.</p>
@@ -215,7 +218,7 @@ require_once __DIR__ . '/../includes/header.php';
           <p><?php echo SITE_NAME; ?> does not have a dedicated mobile app, but the website is fully compatible with all smartphones and tablets. The browser-based platform delivers the same features, games, and account management tools you would find on the desktop version. No downloads required -- just open your mobile browser, log in, and play.</p>
         </div>
         <div style="text-align:center">
-          <img src="/assets/img/vipluck-mobile.png" alt="<?php echo SITE_NAME; ?> Casino on mobile" style="max-width:320px;width:100%;">
+          <img src="/assets/img/vipluck-lobby.png" alt="<?php echo SITE_NAME; ?> Casino mobile lobby with welcome bonus and game navigation" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(26,35,64,.15)">
         </div>
       </div>
       <ul class="check-list">

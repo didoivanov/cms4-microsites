@@ -46,7 +46,14 @@ require_once __DIR__ . '/../includes/page-hero.php';
   <section class="content-section content-section--alt" id="methods">
     <div class="container">
       <h2>Payout Methods</h2>
-      <p>The methods available for withdrawal depend on your country and how you deposited. In general, <?php echo SITE_NAME; ?> processes payouts to the original deposit method when possible.</p>
+      <div class="two-col" style="align-items:flex-start;gap:var(--space-8);margin-bottom:var(--space-6)">
+        <div>
+          <p style="margin-top:0">The methods available for withdrawal depend on your country and how you deposited. In general, <?php echo SITE_NAME; ?> processes payouts to the original deposit method when possible.</p>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/vipluck-payments.png" alt="<?php echo SITE_NAME; ?> Casino payment methods including Jeton, MiFinity, eZeeWallet, Bitcoin, Ethereum, Tether, Ripple and more" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(26,35,64,.15)">
+        </div>
+      </div>
 
       <table class="data-table">
         <thead>

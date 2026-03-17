@@ -19,7 +19,14 @@ require_once __DIR__ . '/../includes/page-hero.php';
   <section class="content-section content-section--alt" id="login-help">
     <div class="container container--narrow">
       <h2>How to Log In to <?php echo SITE_NAME; ?> Casino</h2>
-      <p>Signing in to your <?php echo SITE_NAME; ?> account takes just a few seconds. Here is what to do on desktop and mobile:</p>
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin:var(--space-6) 0">
+        <div>
+          <p style="margin-top:0">Signing in to your <?php echo SITE_NAME; ?> account takes just a few seconds. Here is what to do on desktop and mobile:</p>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/vipluck-login.png" alt="<?php echo SITE_NAME; ?> Casino login screen with username and password fields" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(26,35,64,.15)">
+        </div>
+      </div>
 
       <h3>Desktop Login</h3>
       <p>Visit the <?php echo SITE_NAME; ?> website and click the "Log In" button located in the top right corner of the page, next to the "Sign Up" button. Enter your username or email address and password, then click "Log In" to access your account. The "Forgot your password?" and "Forgot your username?" links are right below the form if you need to recover your credentials.</p>

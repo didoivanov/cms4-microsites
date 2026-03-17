@@ -24,7 +24,7 @@ require_once __DIR__ . '/../includes/page-hero.php';
           <p style="margin-top:0">New players at <?php echo SITE_NAME; ?> can choose between a casino welcome package or a sports welcome package. The casino offer spreads across your first three deposits with a combined value of up to &euro;2,000 + 300 free spins. The sports package delivers up to &euro;500 across three deposits. Each option is available on your first qualifying deposit and cannot be combined with other promotions.</p>
         </div>
         <div style="text-align:center;flex-shrink:0">
-          <img src="/assets/img/vipluck-bonuses.png" alt="<?php echo SITE_NAME; ?> Casino promotions and welcome bonus offers" style="max-width:300px;width:100%;">
+          <img src="/assets/img/vipluck-promotions.png" alt="<?php echo SITE_NAME; ?> Casino promotions page showing welcome package and VIP cashback offers" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(26,35,64,.15)">
         </div>
       </div>
 
@@ -186,9 +186,16 @@ require_once __DIR__ . '/../includes/page-hero.php';
         </div>
       </div>
 
-      <div class="highlight-box">
-        <h4><?php echo SITE_NAME; ?> Promo Code</h4>
-        <p>If you have a promo code, you can enter it during the registration process. The code field appears on the sign-up form, right after selecting your preferred welcome bonus. Promo codes can unlock special offers or modified bonus terms, so it is worth checking before you deposit.</p>
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin:var(--space-6) 0">
+        <div>
+          <div class="highlight-box" style="margin:0">
+            <h4><?php echo SITE_NAME; ?> Promo Code</h4>
+            <p>If you have a promo code, you can enter it during the registration process. The code field appears on the sign-up form, right after selecting your preferred welcome bonus. Promo codes can unlock special offers or modified bonus terms, so it is worth checking before you deposit.</p>
+          </div>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/vipluck-account.png" alt="<?php echo SITE_NAME; ?> Casino bonus selection screen showing casino and sports welcome options" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(26,35,64,.15)">
+        </div>
       </div>
 
       <div class="highlight-box" style="margin-top: var(--space-4);">
