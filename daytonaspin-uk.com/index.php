@@ -46,6 +46,10 @@ $pages = [
     'withdrawal' => 'pages/withdrawal.php',
     'support'    => 'pages/support.php',
     'login'      => 'pages/login.php',
+    'privacy'    => 'pages/privacy.php',
+    'terms'      => 'pages/terms.php',
+    'responsible-gambling' => 'pages/responsible-gambling.php',
+    'cookies'    => 'pages/cookies.php',
 ];
 
 // 404 for unknown pages

@@ -6,6 +6,8 @@
 
 // ─── Brand ───────────────────────────────────────────────────────
 define('SITE_NAME',       'DaytonaSpin');
+define('SITE_NAME_SHORT', 'DaytonaSpin');
+define('DOMAIN',          'daytonaspin-uk.com');
 define('SITE_DOMAIN',     'daytonaspin-uk.com');
 define('SITE_URL',        'https://' . SITE_DOMAIN);
 define('SITE_TAGLINE',    'Online Casino &amp; 8,000+ Games');

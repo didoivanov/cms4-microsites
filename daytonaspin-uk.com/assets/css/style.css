@@ -1419,3 +1419,15 @@
   color: var(--color-text-muted);
   text-align: center;
 }
+
+/* ─── Legal Pages ─────────────────────────────────────── */
+.legal-page { padding-top: 3rem; }
+.legal-page h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+.legal-page h2 { font-size: 1.25rem; margin-top: 2rem; margin-bottom: 0.75rem; color: #fff; }
+.legal-page h3 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: rgba(255,255,255,0.9); }
+.legal-page p, .legal-page li { color: rgba(255,255,255,0.75); line-height: 1.7; }
+.legal-page ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+.legal-page li { margin-bottom: 0.4rem; }
+.legal-page a { color: var(--primary); text-decoration: underline; }
+.legal-page a:hover { opacity: 0.85; }
+.legal-updated { color: rgba(255,255,255,0.5); font-size: 0.9rem; margin-bottom: 2rem; }

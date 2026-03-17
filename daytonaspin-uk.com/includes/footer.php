@@ -47,9 +47,9 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
       <div class="footer-col">
         <h5><?php echo __('footer_legal', 'Legal'); ?></h5>
         <ul>
-          <li><a href="#"><?php echo __('footer_privacy', 'Privacy Policy'); ?></a></li>
-          <li><a href="#"><?php echo __('footer_terms', 'Terms & Conditions'); ?></a></li>
-          <li><a href="#"><?php echo __('footer_responsible', 'Responsible Gambling'); ?></a></li>
+          <li><a href="/privacy"><?php echo __('footer_privacy', 'Privacy Policy'); ?></a></li>
+          <li><a href="/terms"><?php echo __('footer_terms', 'Terms & Conditions'); ?></a></li>
+          <li><a href="/responsible-gambling"><?php echo __('footer_responsible', 'Responsible Gambling'); ?></a></li>
         </ul>
       </div>
     </div>
@@ -57,9 +57,9 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
       <div class="footer-bottom__inner">
         <p class="footer-disclaimer"><?php echo sprintf(__('footer_disclaimer', 'This website is an independent affiliate site and is not operated by %s Casino. All casino games are provided by %s. We may receive a commission for referrals. Gambling can be addictive -- play responsibly. You must be 18 years or older to participate. Bonus terms, wagering requirements, and withdrawal conditions apply. Please verify the availability of services in your jurisdiction before registering.'), SITE_NAME, SITE_NAME); ?></p>
         <div class="footer-legal-links">
-          <a href="#"><?php echo __('footer_privacy_short', 'Privacy'); ?></a>
-          <a href="#"><?php echo __('footer_terms_short', 'Terms'); ?></a>
-          <a href="#">Cookies</a>
+          <a href="/privacy"><?php echo __('footer_privacy_short', 'Privacy'); ?></a>
+          <a href="/terms"><?php echo __('footer_terms_short', 'Terms'); ?></a>
+          <a href="/cookies">Cookies</a>
         </div>
       </div>
     </div>
