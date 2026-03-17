@@ -1,55 +1,39 @@
 ---
 deployment:
   tasks:
-    # ─── Casea.site ───────────────────────────────────────────────
+    # ─── Unified deploy webhook (root level) ─────────────────────
+    - /bin/cp deploy-webhook.php /home/cms4netp/simplemicrosites/deploy-webhook.php
+    - /bin/cp deploy-webhook.php /home/cms4netp/vipluck.onl/deploy-webhook.php
+    # ─── Casea.site ──────────────────────────────────────────────
     - export DEPLOYPATH=/home/cms4netp/simplemicrosites
     - /bin/cp casea.site/.htaccess $DEPLOYPATH/
     - /bin/cp casea.site/config.php $DEPLOYPATH/
     - /bin/cp casea.site/index.php $DEPLOYPATH/
-    - /bin/cp casea.site/deploy-webhook.php $DEPLOYPATH/
     - /bin/cp casea.site/google9bd8dc12ea09b94c.html $DEPLOYPATH/
+    - /bin/cp casea.site/favicon.ico $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/cp casea.site/site.webmanifest $DEPLOYPATH/ 2>/dev/null || true
     - /bin/mkdir -p $DEPLOYPATH/includes
-    - /bin/cp casea.site/includes/header.php $DEPLOYPATH/includes/
-    - /bin/cp casea.site/includes/footer.php $DEPLOYPATH/includes/
-    - /bin/cp casea.site/includes/page-hero.php $DEPLOYPATH/includes/
+    - /bin/cp casea.site/includes/*.php $DEPLOYPATH/includes/
     - /bin/mkdir -p $DEPLOYPATH/pages
-    - /bin/cp casea.site/pages/home.php $DEPLOYPATH/pages/
-    - /bin/cp casea.site/pages/bonuses.php $DEPLOYPATH/pages/
-    - /bin/cp casea.site/pages/withdrawal.php $DEPLOYPATH/pages/
-    - /bin/cp casea.site/pages/support.php $DEPLOYPATH/pages/
-    - /bin/cp casea.site/pages/login.php $DEPLOYPATH/pages/
-    - for LANG in de el pl it fr es hu sl; do /bin/mkdir -p $DEPLOYPATH/pages/$LANG && /bin/cp casea.site/pages/$LANG/*.php $DEPLOYPATH/pages/$LANG/; done
-    - /bin/mkdir -p $DEPLOYPATH/assets/css
-    - /bin/mkdir -p $DEPLOYPATH/assets/js
-    - /bin/mkdir -p $DEPLOYPATH/assets/img
-    - /bin/cp casea.site/assets/css/base.css $DEPLOYPATH/assets/css/
-    - /bin/cp casea.site/assets/css/style.css $DEPLOYPATH/assets/css/
-    - /bin/cp casea.site/assets/js/app.js $DEPLOYPATH/assets/js/
-    - /bin/cp -r casea.site/assets/img/. $DEPLOYPATH/assets/img/
-    - /bin/mkdir -p $DEPLOYPATH/lang
-    - for LANG in en de el pl it fr es hu sl; do /bin/cp casea.site/lang/$LANG.php $DEPLOYPATH/lang/; done
-    # ─── VipLuck.onl ──────────────────────────────────────────────
+    - /bin/cp casea.site/pages/*.php $DEPLOYPATH/pages/
+    - for LANG in de el pl it fr es hu sl; do /bin/mkdir -p $DEPLOYPATH/pages/$LANG && /bin/cp casea.site/pages/$LANG/*.php $DEPLOYPATH/pages/$LANG/ 2>/dev/null || true; done
+    - /bin/mkdir -p $DEPLOYPATH/assets/css && /bin/cp casea.site/assets/css/*.css $DEPLOYPATH/assets/css/
+    - /bin/mkdir -p $DEPLOYPATH/assets/js && /bin/cp casea.site/assets/js/*.js $DEPLOYPATH/assets/js/
+    - /bin/mkdir -p $DEPLOYPATH/assets/img && /bin/cp -r casea.site/assets/img/. $DEPLOYPATH/assets/img/ 2>/dev/null || true
+    - /bin/mkdir -p $DEPLOYPATH/lang && /bin/cp casea.site/lang/*.php $DEPLOYPATH/lang/
+    # ─── VipLuck.onl ─────────────────────────────────────────────
     - export DEPLOYPATH=/home/cms4netp/vipluck.onl
     - /bin/mkdir -p $DEPLOYPATH
-    - /bin/mkdir -p $DEPLOYPATH/assets/css
-    - /bin/mkdir -p $DEPLOYPATH/assets/js
-    - /bin/mkdir -p $DEPLOYPATH/assets/img
-    - /bin/mkdir -p $DEPLOYPATH/includes
-    - /bin/mkdir -p $DEPLOYPATH/lang
-    - /bin/mkdir -p $DEPLOYPATH/pages
-    - /bin/cp vipluck-casino.com/index.php $DEPLOYPATH/index.php
-    - /bin/cp vipluck-casino.com/config.php $DEPLOYPATH/config.php
-    - /bin/cp vipluck-casino.com/.htaccess $DEPLOYPATH/.htaccess
-    - /bin/cp vipluck-casino.com/favicon.ico $DEPLOYPATH/favicon.ico
-    - /bin/cp vipluck-casino.com/site.webmanifest $DEPLOYPATH/site.webmanifest
-    - /bin/cp vipluck-casino.com/deploy-webhook.php $DEPLOYPATH/deploy-webhook.php
-    - /bin/cp vipluck-casino.com/google9bd8dc12ea09b94c.html $DEPLOYPATH/google9bd8dc12ea09b94c.html
-    - /bin/cp vipluck-casino.com/assets/css/base.css $DEPLOYPATH/assets/css/base.css
-    - /bin/cp vipluck-casino.com/assets/css/style.css $DEPLOYPATH/assets/css/style.css
-    - /bin/cp vipluck-casino.com/assets/js/app.js $DEPLOYPATH/assets/js/app.js
-    - /bin/cp -r vipluck-casino.com/assets/img/. $DEPLOYPATH/assets/img/
-    - /bin/cp vipluck-casino.com/includes/header.php $DEPLOYPATH/includes/header.php
-    - /bin/cp vipluck-casino.com/includes/footer.php $DEPLOYPATH/includes/footer.php
-    - /bin/cp vipluck-casino.com/includes/page-hero.php $DEPLOYPATH/includes/page-hero.php
-    - /bin/cp -r vipluck-casino.com/lang/. $DEPLOYPATH/lang/
-    - /bin/cp -r vipluck-casino.com/pages/. $DEPLOYPATH/pages/
+    - /bin/cp vipluck-casino.com/.htaccess $DEPLOYPATH/
+    - /bin/cp vipluck-casino.com/config.php $DEPLOYPATH/
+    - /bin/cp vipluck-casino.com/index.php $DEPLOYPATH/
+    - /bin/cp vipluck-casino.com/google9bd8dc12ea09b94c.html $DEPLOYPATH/
+    - /bin/cp vipluck-casino.com/favicon.ico $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/cp vipluck-casino.com/site.webmanifest $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/mkdir -p $DEPLOYPATH/includes && /bin/cp vipluck-casino.com/includes/*.php $DEPLOYPATH/includes/
+    - /bin/mkdir -p $DEPLOYPATH/pages && /bin/cp vipluck-casino.com/pages/*.php $DEPLOYPATH/pages/
+    - for LANG in fr; do /bin/mkdir -p $DEPLOYPATH/pages/$LANG && /bin/cp vipluck-casino.com/pages/$LANG/*.php $DEPLOYPATH/pages/$LANG/ 2>/dev/null || true; done
+    - /bin/mkdir -p $DEPLOYPATH/assets/css && /bin/cp vipluck-casino.com/assets/css/*.css $DEPLOYPATH/assets/css/
+    - /bin/mkdir -p $DEPLOYPATH/assets/js && /bin/cp vipluck-casino.com/assets/js/*.js $DEPLOYPATH/assets/js/
+    - /bin/mkdir -p $DEPLOYPATH/assets/img && /bin/cp -r vipluck-casino.com/assets/img/. $DEPLOYPATH/assets/img/ 2>/dev/null || true
+    - /bin/mkdir -p $DEPLOYPATH/lang && /bin/cp vipluck-casino.com/lang/*.php $DEPLOYPATH/lang/
