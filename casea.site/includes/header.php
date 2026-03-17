@@ -31,8 +31,8 @@ if (count($active_langs) > 1):
 <?php endforeach; ?>
 <link rel="alternate" hreflang="x-default" href="<?php echo SITE_URL . '/' . $page_slug; ?>">
 <?php endif; ?>
-<link rel="stylesheet" href="/assets/css/base.css">
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/base.css?v=20260317">
+<link rel="stylesheet" href="/assets/css/style.css?v=20260317">
 <?php if (!empty($THEME)): ?>
 <style>
 :root {
