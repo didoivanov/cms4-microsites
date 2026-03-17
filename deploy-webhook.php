@@ -118,3 +118,5 @@ echo json_encode([
     'files_copied' => $file_count,
     'timestamp' => $timestamp,
 ]);
+
+// Deploy trigger: 1773755088
