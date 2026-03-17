@@ -7,13 +7,19 @@
 // Serve static root files directly (Google verification, robots, sitemap)
 $_requested = isset($_GET['page']) ? trim($_GET['page'], '/') : '';
 if (preg_match('/^[\w.-]+\.(html|txt|xml)$/', $_requested)) {
-    $_static = __DIR__ . '/' . $_requested;
-    if (file_exists($_static)) {
-        $ext = pathinfo($_static, PATHINFO_EXTENSION);
-        $types = ['html' => 'text/html', 'txt' => 'text/plain', 'xml' => 'application/xml'];
-        header('Content-Type: ' . ($types[$ext] ?? 'text/plain'));
-        readfile($_static);
-        exit;
+    // Check web root first, then repo subdirectory
+    $candidates = [
+        __DIR__ . '/' . $_requested,
+        __DIR__ . '/casea.site/' . $_requested,
+    ];
+    foreach ($candidates as $_static) {
+        if (file_exists($_static)) {
+            $ext = pathinfo($_static, PATHINFO_EXTENSION);
+            $types = ['html' => 'text/html', 'txt' => 'text/plain', 'xml' => 'application/xml'];
+            header('Content-Type: ' . ($types[$ext] ?? 'text/plain'));
+            readfile($_static);
+            exit;
+        }
     }
 }
 
