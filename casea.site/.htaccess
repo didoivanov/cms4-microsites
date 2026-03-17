@@ -10,20 +10,10 @@ RewriteRule ^play/?$ https://playzzz.app/play/best-casinos [R=302,L]
 # ─── Webhook endpoint ────────────────────────────────────────────
 RewriteRule ^deploy-webhook\.php$ deploy-webhook.php [L]
 
-# ─── Static files (verification, robots, etc.) ───────────────────
-RewriteRule ^google[a-f0-9]+\.html$ - [L]
-RewriteRule ^robots\.txt$ - [L]
-RewriteRule ^sitemap[\w-]*\.xml$ - [L]
+# ─── Skip real files and directories ─────────────────────────────
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-# ─── Serve files from repo subdirectory if not in web root ────────
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{DOCUMENT_ROOT}/casea.site/%{REQUEST_URI} -f
-RewriteRule ^(.+)$ casea.site/$1 [L]
-
-# ─── Clean URLs ───────────────────────────────────────────────────
-# Skip real files and directories
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Route clean URLs (including /de/, /de/bonuses, etc.) to index.php router
+# ─── Route everything else through index.php ─────────────────────
 RewriteRule ^(.+)$ index.php?page=$1 [QSA,L]
