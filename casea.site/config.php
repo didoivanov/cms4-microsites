@@ -56,6 +56,7 @@ $LANGUAGES = [
     'fr' => ['Français',   'Français',   true,  "\xF0\x9F\x87\xAB\xF0\x9F\x87\xB7"],
     'es' => ['Español',    'Español',    true,  "\xF0\x9F\x87\xAA\xF0\x9F\x87\xB8"],
     'hu' => ['Magyar',     'Magyar',     true,  "\xF0\x9F\x87\xAD\xF0\x9F\x87\xBA"],
+    'sl' => ['Slovenščina','Slovenščina', true,  "\xF0\x9F\x87\xB8\xF0\x9F\x87\xAE"],
     'fi' => ['Suomi',      'Suomi',      false, "\xF0\x9F\x87\xAB\xF0\x9F\x87\xAE"],
     'no' => ['Norsk',      'Norsk',      false, "\xF0\x9F\x87\xB3\xF0\x9F\x87\xB4"],
     'cs' => ['Čeština',    'Čeština',    false, "\xF0\x9F\x87\xA8\xF0\x9F\x87\xBF"],

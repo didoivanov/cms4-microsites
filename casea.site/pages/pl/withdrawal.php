@@ -26,17 +26,17 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <div class="info-card">
           <div class="info-card__icon">&#128176;</div>
           <h4>Minimalna Wypłata</h4>
-          <p>EUR 10 dla wszystkich metod płatności. Kwoty poniżej tego limitu nie mogą zostać zrealizowane.</p>
+          <p>40 PLN dla wszystkich metod płatności. Kwoty poniżej tego limitu nie mogą zostać zrealizowane.</p>
         </div>
         <div class="info-card">
           <div class="info-card__icon">&#128200;</div>
           <h4>Limit Dzienny</h4>
-          <p>EUR 500 dla standardowych kont. Członkowie VIP mogą wypłacić do EUR 1 500 dziennie.</p>
+          <p>2 000 PLN dla standardowych kont. Członkowie VIP mogą wypłacić do 6 000 PLN dziennie.</p>
         </div>
         <div class="info-card">
           <div class="info-card__icon">&#128197;</div>
           <h4>Limit Miesięczny</h4>
-          <p>EUR 7 000 dla nowych graczy. Członkowie VIP korzystają z limitu do EUR 20 000 miesięcznie.</p>
+          <p>30 000 PLN dla nowych graczy. Członkowie VIP korzystają z limitu do 80 000 PLN miesięcznie.</p>
         </div>
       </div>
     </div>
@@ -60,43 +60,43 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <tbody>
           <tr>
             <td>Visa / Mastercard</td>
-            <td>&euro;10</td>
+            <td>40 PLN</td>
             <td>1-3 dni robocze</td>
             <td>Zwrot na kartę użytą do wpłaty</td>
           </tr>
           <tr>
             <td>Skrill</td>
-            <td>&euro;10</td>
+            <td>40 PLN</td>
             <td>Do 24 godzin</td>
             <td>Szybka realizacja, szeroka dostępność</td>
           </tr>
           <tr>
             <td>Neteller</td>
-            <td>&euro;10</td>
+            <td>40 PLN</td>
             <td>Do 24 godzin</td>
             <td>Dostępne w większości regionów</td>
           </tr>
           <tr>
             <td>Przelew Bankowy</td>
-            <td>&euro;20</td>
+            <td>80 PLN</td>
             <td>2-5 dni roboczych</td>
             <td>Używany jako alternatywa, gdy oryginalna metoda jest niedostępna</td>
           </tr>
           <tr>
             <td>Bitcoin</td>
-            <td>&euro;10</td>
+            <td>40 PLN</td>
             <td>Do 24 godzin</td>
             <td>Wymaga potwierdzeń blockchain po realizacji przez kasyno</td>
           </tr>
           <tr>
             <td>Ethereum</td>
-            <td>&euro;10</td>
+            <td>40 PLN</td>
             <td>Do 24 godzin</td>
             <td>Płatności w krypto są zazwyczaj jednymi z najszybszych</td>
           </tr>
           <tr>
             <td>Litecoin / Tether / Ripple</td>
-            <td>&euro;10</td>
+            <td>40 PLN</td>
             <td>Do 24 godzin</td>
             <td>Sprawdź dostępność dla swojego regionu</td>
           </tr>
@@ -183,7 +183,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       <p>Jeśli masz aktywny bonus, upewnij się, że wszystkie wymagania obrotu zostały w pełni spełnione. Złożenie wniosku o wypłatę, gdy bonus jest jeszcze aktywny, spowoduje anulowanie bonusu i wszelkich powiązanych wygranych. Jeśli grałeś tylko za wpłacone środki, pamiętaj, że 1-krotny obrót musi zostać spełniony, aby uniknąć dodatkowej opłaty.</p>
 
       <h3>4. Trzymaj się w limitach</h3>
-      <p>Wnioski o wypłatę przekraczające dzienny lub miesięczny limit zostaną odrzucone. Planuj swoje wypłaty odpowiednio: EUR 500 dziennie dla standardowych kont, EUR 1 500 dziennie dla członków VIP.</p>
+      <p>Wnioski o wypłatę przekraczające dzienny lub miesięczny limit zostaną odrzucone. Planuj swoje wypłaty odpowiednio: 2 000 PLN dziennie dla standardowych kont, 6 000 PLN dziennie dla członków VIP.</p>
 
       <h3>5. Używaj oryginalnej metody wpłaty</h3>
       <p><?php echo SITE_NAME; ?> preferuje zwracanie środków tą samą metodą, której użyłeś do wpłaty. Użycie innej metody może uruchomić dodatkowe kontrole i spowolnić proces.</p>
@@ -205,14 +205,14 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       <details class="faq-item">
         <summary>Jaka jest minimalna kwota wypłaty w <?php echo SITE_NAME; ?>?</summary>
         <div class="faq-answer">
-          <p>Minimalna kwota wypłaty wynosi EUR 10 dla wszystkich metod płatności. Kwoty poniżej tego progu nie mogą zostać zrealizowane.</p>
+          <p>Minimalna kwota wypłaty wynosi 40 PLN dla wszystkich metod płatności. Kwoty poniżej tego progu nie mogą zostać zrealizowane.</p>
         </div>
       </details>
 
       <details class="faq-item">
         <summary>Jaki jest maksymalny limit wypłaty miesięcznie?</summary>
         <div class="faq-answer">
-          <p>Standardowi gracze mogą wypłacić do EUR 7 000 miesięcznie. Członkowie VIP mają dostęp do zwiększonego limitu EUR 20 000 miesięcznie. Obowiązują również limity dzienne: EUR 500 dla standardowych kont, EUR 1 500 dla VIP.</p>
+          <p>Standardowi gracze mogą wypłacić do 30 000 PLN miesięcznie. Członkowie VIP mają dostęp do zwiększonego limitu 80 000 PLN miesięcznie. Obowiązują również limity dzienne: 2 000 PLN dla standardowych kont, 6 000 PLN dla VIP.</p>
         </div>
       </details>
 

@@ -3,7 +3,7 @@
  * Bonuses Page – Hungarian
  */
 $page_title = SITE_NAME . ' Bónuszok - Üdvözlő Bónusz, Ingyenes Pörgetés, Promókódok & Befizetés Nélküli Ajánlatok';
-$page_description = 'Az összes ' . SITE_NAME . ' Casino bónusz egy helyen. Üdvözlő bónusz akár EUR 500 + 200 ingyenes pörgetés, befizetés nélküli promókódok, heti újratöltési ajánlatok, cashback és VIP jutalmak.';
+$page_description = 'Az összes ' . SITE_NAME . ' Casino bónusz egy helyen. Üdvözlő bónusz akár 200 000 Ft + 200 ingyenes pörgetés, befizetés nélküli promókódok, heti újratöltési ajánlatok, cashback és VIP jutalmak.';
 $current_page = 'bonuses';
 
 require_once __DIR__ . '/../../includes/header.php';
@@ -31,14 +31,14 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       <!-- Casino Welcome -->
       <div class="bonus-card">
         <div class="bonus-card__header">
-          <div class="bonus-card__title">100% akár &euro;500 + 200 Ingyenes Pörgetés</div>
+          <div class="bonus-card__title">100% akár 200 000 Ft + 200 Ingyenes Pörgetés</div>
           <span class="bonus-card__tag">Casino</span>
         </div>
-        <p>Fizess be minimum EUR 20-t, hogy teljes 100%-os egyezést kapj az első befizetésedre, maximum EUR 500 értékben. Ezen felül 200 ingyenes pörgetést kapsz napi 20-as kötegekben, 10 egymást követő napon. Az első köteg rögtön a befizetésed után elérhető. Minden sorozatot 24 órán belül igényelned kell, különben lejár. Legalább EUR 10-es befizetés 1 Bonus Crab kreditet is ad, amivel próbálkozhatsz a Karom Gépen, ahol a nyeremények érmék, ingyenes pörgetések, bónuszok vagy készpénz jutalmak lehetnek.</p>
+        <p>Fizess be minimum 8 000 Ft-t, hogy teljes 100%-os egyezést kapj az első befizetésedre, maximum 200 000 Ft értékben. Ezen felül 200 ingyenes pörgetést kapsz napi 20-as kötegekben, 10 egymást követő napon. Az első köteg rögtön a befizetésed után elérhető. Minden sorozatot 24 órán belül igényelned kell, különben lejár. Legalább 4 000 Ft-os befizetés 1 Bonus Crab kreditet is ad, amivel próbálkozhatsz a Karom Gépen, ahol a nyeremények érmék, ingyenes pörgetések, bónuszok vagy készpénz jutalmak lehetnek.</p>
         <div class="bonus-card__details">
           <div>
             <div class="bonus-detail__label">Min. Befizetés</div>
-            <div class="bonus-detail__value">&euro;20</div>
+            <div class="bonus-detail__value">8 000 Ft</div>
           </div>
           <div>
             <div class="bonus-detail__label">Fogadási Követelmény</div>
@@ -54,7 +54,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
           </div>
           <div>
             <div class="bonus-detail__label">Max. Tét</div>
-            <div class="bonus-detail__value">&euro;5</div>
+            <div class="bonus-detail__value">2 000 Ft</div>
           </div>
         </div>
       </div>
@@ -62,14 +62,14 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       <!-- Multi-Deposit Welcome -->
       <div class="bonus-card">
         <div class="bonus-card__header">
-          <div class="bonus-card__title">250% akár &euro;3 000 + 350 Ingyenes Pörgetés</div>
+          <div class="bonus-card__title">250% akár 1 200 000 Ft + 350 Ingyenes Pörgetés</div>
           <span class="bonus-card__tag">4 Befizetéses Csomag</span>
         </div>
-        <p>Egy többlépcsős üdvözlő csomag, amely az első négy befizetésedre oszlik el. Az első befizetés 100%-ot ad akár EUR 1 000-ig, plusz 200 ingyenes pörgetést. A második 75%-os egyezést hoz akár EUR 500-ig. A harmadik 50%-ot ad akár EUR 500-ig, plusz 50 ingyenes pörgetést, a negyedik pedig 25%-kal zárja akár EUR 1 000-ig, plusz 100 ingyenes pörgetés.</p>
+        <p>Egy többlépcsős üdvözlő csomag, amely az első négy befizetésedre oszlik el. Az első befizetés 100%-ot ad akár 400 000 Ft-ig, plusz 200 ingyenes pörgetést. A második 75%-os egyezést hoz akár 200 000 Ft-ig. A harmadik 50%-ot ad akár 200 000 Ft-ig, plusz 50 ingyenes pörgetést, a negyedik pedig 25%-kal zárja akár 400 000 Ft-ig, plusz 100 ingyenes pörgetés.</p>
         <div class="bonus-card__details">
           <div>
             <div class="bonus-detail__label">Min. Befizetés</div>
-            <div class="bonus-detail__value">&euro;20 befizetésenként</div>
+            <div class="bonus-detail__value">8 000 Ft befizetésenként</div>
           </div>
           <div>
             <div class="bonus-detail__label">Fogadási Követelmény</div>
@@ -89,14 +89,14 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       <!-- Sports Welcome -->
       <div class="bonus-card">
         <div class="bonus-card__header">
-          <div class="bonus-card__title">100% Sport Bónusz akár &euro;100</div>
+          <div class="bonus-card__title">100% Sport Bónusz akár 40 000 Ft</div>
           <span class="bonus-card__tag">Sport</span>
         </div>
-        <p>A sportfogadók 100%-os egyezést kaphatnak első befizetésükre. A maximális bónusz régiónként változik: a finn, német, norvég, svájci és osztrák játékosok akár EUR 200-t kaphatnak. Az olasz játékosok akár EUR 150-t. A kazah, üzbég, kirgiz, tádzsik, grúz és azeri játékosok akár EUR 50-t kaphatnak. A bónusz aktiválásához a teljes befizetési összeget sportfogadásokra kell megtenni, legalább 1,50-es szorzóval.</p>
+        <p>A sportfogadók 100%-os egyezést kaphatnak első befizetésükre. A maximális bónusz régiónként változik: a finn, német, norvég, svájci és osztrák játékosok akár 80 000 Ft-t kaphatnak. Az olasz játékosok akár 60 000 Ft-t. A kazah, üzbég, kirgiz, tádzsik, grúz és azeri játékosok akár 20 000 Ft-t kaphatnak. A bónusz aktiválásához a teljes befizetési összeget sportfogadásokra kell megtenni, legalább 1,50-es szorzóval.</p>
         <div class="bonus-card__details">
           <div>
             <div class="bonus-detail__label">Min. Befizetés</div>
-            <div class="bonus-detail__value">&euro;20</div>
+            <div class="bonus-detail__value">8 000 Ft</div>
           </div>
           <div>
             <div class="bonus-detail__label">Fogadási Követelmény</div>
@@ -131,23 +131,23 @@ require_once __DIR__ . '/../../includes/page-hero.php';
           <div class="bonus-card__title">Heti 66 Ingyenes Pörgetés</div>
           <span class="bonus-card__tag">Hétfő - Csütörtök</span>
         </div>
-        <p>Fizess be EUR 20-t vagy többet hétfő és csütörtök között, és 66 ingyenes pörgetést kapsz egy kiemelt nyerőgépen. Minden héten be kell jelentkezned a befizetés előtt. A pörgetéseket 7 napon belül fel kell használni, a nyereményekre 40x fogadási követelmény vonatkozik, 10 napos teljesítési határidővel. Maximum tét a bónusz aktív állapotában: EUR 5.</p>
+        <p>Fizess be 8 000 Ft-t vagy többet hétfő és csütörtök között, és 66 ingyenes pörgetést kapsz egy kiemelt nyerőgépen. Minden héten be kell jelentkezned a befizetés előtt. A pörgetéseket 7 napon belül fel kell használni, a nyereményekre 40x fogadási követelmény vonatkozik, 10 napos teljesítési határidővel. Maximum tét a bónusz aktív állapotában: 2 000 Ft.</p>
       </div>
 
       <div class="bonus-card">
         <div class="bonus-card__header">
-          <div class="bonus-card__title">Hétvégi Újratöltés: 50% akár &euro;777 + 77 Ingyenes Pörgetés</div>
+          <div class="bonus-card__title">Hétvégi Újratöltés: 50% akár 300 000 Ft + 77 Ingyenes Pörgetés</div>
           <span class="bonus-card__tag">Péntek - Vasárnap</span>
         </div>
-        <p>Fizess be legalább EUR 20-t hétvégén, és 50%-os egyezést kapsz akár EUR 777-ig. Ha a befizetésed EUR 50 vagy több, 77 ingyenes pörgetést is kapsz egy kiválasztott nyerőgépen. Befizetés előtt be kell jelentkezned. A fogadási követelmény 35x a befizetésre és bónuszra, valamint 40x az ingyenes pörgetésekből származó nyereményekre. 10 napod van a követelmények teljesítésére.</p>
+        <p>Fizess be legalább 8 000 Ft-t hétvégén, és 50%-os egyezést kapsz akár 300 000 Ft-ig. Ha a befizetésed 20 000 Ft vagy több, 77 ingyenes pörgetést is kapsz egy kiválasztott nyerőgépen. Befizetés előtt be kell jelentkezned. A fogadási követelmény 35x a befizetésre és bónuszra, valamint 40x az ingyenes pörgetésekből származó nyereményekre. 10 napod van a követelmények teljesítésére.</p>
       </div>
 
       <div class="bonus-card">
         <div class="bonus-card__header">
-          <div class="bonus-card__title">Heti Sport Újratöltés: 55% akár &euro;750</div>
+          <div class="bonus-card__title">Heti Sport Újratöltés: 55% akár 300 000 Ft</div>
           <span class="bonus-card__tag">Sport</span>
         </div>
-        <p>Hetente egyszer a legnagyobb befizetésed 55%-os sportbónuszra jogosít akár EUR 750 értékben. A befizetést egyszer meg kell fogadni sportfogadásokra legalább 1,50-es szorzóval, mielőtt a bónusz jóváírásra kerül. Ezután élő chaten vagy emailben igényelheted. A fogadási követelményeket 30 napon belül kell teljesíteni, és a maximális kifizetés ebből a bónuszból 10x az értéke.</p>
+        <p>Hetente egyszer a legnagyobb befizetésed 55%-os sportbónuszra jogosít akár 300 000 Ft értékben. A befizetést egyszer meg kell fogadni sportfogadásokra legalább 1,50-es szorzóval, mielőtt a bónusz jóváírásra kerül. Ezután élő chaten vagy emailben igényelheted. A fogadási követelményeket 30 napon belül kell teljesíteni, és a maximális kifizetés ebből a bónuszból 10x az értéke.</p>
       </div>
     </div>
   </section>
@@ -161,15 +161,15 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       <div class="info-grid">
         <div class="info-card">
           <h4>Napi Casino Cashback</h4>
-          <p>VIP 2. szint és afölött érhető el. A VIP 2 napi 3%-ot kap akár EUR 100-ig. A VIP 3 5%-ot akár EUR 200-ig. A VIP 4 10%-ot akár EUR 300-ig. A VIP 5 15%-ot akár EUR 400-ig. A cashback automatikusan jóváírásra kerül 04:00 UTC-kor, és 1x fogadási követelmény vonatkozik rá. 4 hetente újra be kell jelentkezned.</p>
+          <p>VIP 2. szint és afölött érhető el. A VIP 2 napi 3%-ot kap akár 40 000 Ft-ig. A VIP 3 5%-ot akár 80 000 Ft-ig. A VIP 4 10%-ot akár 120 000 Ft-ig. A VIP 5 15%-ot akár 150 000 Ft-ig. A cashback automatikusan jóváírásra kerül 04:00 UTC-kor, és 1x fogadási követelmény vonatkozik rá. 4 hetente újra be kell jelentkezned.</p>
         </div>
         <div class="info-card">
-          <h4>Élő Casino Cashback: 25% akár &euro;350</h4>
-          <p>Heti cashback az élő kaszinójátékok nettó veszteségére. A minimum qualifying veszteség EUR 5. Hétfőn 06:00 UTC után (23:59 UTC előtt) vedd fel a kapcsolatot az ügyfélszolgálattal az igényléshez. Jóváírás után a cashback 1x fogadási követelménnyel rendelkezik a kifizetés előtt.</p>
+          <h4>Élő Casino Cashback: 25% akár 140 000 Ft</h4>
+          <p>Heti cashback az élő kaszinójátékok nettó veszteségére. A minimum qualifying veszteség 2 000 Ft. Hétfőn 06:00 UTC után (23:59 UTC előtt) vedd fel a kapcsolatot az ügyfélszolgálattal az igényléshez. Jóváírás után a cashback 1x fogadási követelménnyel rendelkezik a kifizetés előtt.</p>
         </div>
         <div class="info-card">
-          <h4>Sport Cashback: 10% akár &euro;500</h4>
-          <p>A sportfogadások hétfőtől vasárnapig tartó nettó veszteségét fedezi. Minimum EUR 20-as veszteség szükséges a jogosultsághoz. Hétfőn vedd fel a kapcsolatot az ügyfélszolgálattal az igényléshez. A cashback 3x fogadási követelménnyel jár, és csak a Sport szekcióban használható.</p>
+          <h4>Sport Cashback: 10% akár 200 000 Ft</h4>
+          <p>A sportfogadások hétfőtől vasárnapig tartó nettó veszteségét fedezi. Minimum 8 000 Ft-os veszteség szükséges a jogosultsághoz. Hétfőn vedd fel a kapcsolatot az ügyfélszolgálattal az igényléshez. A cashback 3x fogadási követelménnyel jár, és csak a Sport szekcióban használható.</p>
         </div>
       </div>
     </div>
@@ -197,9 +197,9 @@ require_once __DIR__ . '/../../includes/page-hero.php';
 
       <div class="bonus-card">
         <div class="bonus-card__header">
-          <div class="bonus-card__title">Bet Builder: 50% Kockázatmentes akár &euro;50</div>
+          <div class="bonus-card__title">Bet Builder: 50% Kockázatmentes akár 20 000 Ft</div>
         </div>
-        <p>Tégy meg egy Bet Builder fogadást legalább 1,70-es szorzóval, minimum EUR 20 valódi pénzzel. Ha veszítesz, a téted 50%-ának megfelelő ingyenes fogadást kapsz (akár EUR 50). Hetente egyszer érhető el. Az ingyenes fogadást 3 napon belül fel kell használni, és 3x fogadási követelmény vonatkozik rá, legalább 1,50-es szorzóval.</p>
+        <p>Tégy meg egy Bet Builder fogadást legalább 1,70-es szorzóval, minimum 8 000 Ft valódi pénzzel. Ha veszítesz, a téted 50%-ának megfelelő ingyenes fogadást kapsz (akár 20 000 Ft). Hetente egyszer érhető el. Az ingyenes fogadást 3 napon belül fel kell használni, és 3x fogadási követelmény vonatkozik rá, legalább 1,50-es szorzóval.</p>
       </div>
 
       <div class="bonus-card">
@@ -221,14 +221,14 @@ require_once __DIR__ . '/../../includes/page-hero.php';
           <p>A <?php echo SITE_NAME; ?> többszintű hűségprogramot működtet, amelyen a fogadási aktivitásod alapján haladhatsz előre. Ahogy feljebb lépsz, olyan előnyöket nyitsz meg, mint a személyes fiókkezelő, megemelt kifizetési limitek, exkluzív bónusz ajánlatok és magasabb cashback százalékok. A legmagasabb VIP szintek hozzáférést biztosítanak a legjobb heti cashback ajánlatokhoz és gyorsabb kifizetés-feldolgozáshoz.</p>
 
           <h3>Bonus Crab</h3>
-          <p>Minden EUR 20-as vagy annál nagyobb befizetés 1 Bonus Crab kreditet ad. Használd, hogy "elkapj" egy véletlenszerű nyereményt a Karom Gépből -- a lehetséges jutalmak bónuszpénzt, ingyenes pörgetéseket vagy érméket tartalmaznak. Egy kis napi extra, ami változatosságot ad a játékélményedhez.</p>
+          <p>Minden 8 000 Ft-os vagy annál nagyobb befizetés 1 Bonus Crab kreditet ad. Használd, hogy "elkapj" egy véletlenszerű nyereményt a Karom Gépből -- a lehetséges jutalmak bónuszpénzt, ingyenes pörgetéseket vagy érméket tartalmaznak. Egy kis napi extra, ami változatosságot ad a játékélményedhez.</p>
         </div>
         <div>
           <h3>Exkluzív Bolt</h3>
-          <p>A játékon, kihívásokon és promóciókon keresztül szerzett érmék a boltban költhetők el. A jutalmak az ingyenes pörgetésektől kiválasztott nyerőgépeken (pl. 5 pörgetés a Sweet Bonanza-n 30 érmékért) a bónuszpénzig terjednek (EUR 5 50 érmékért, akár EUR 250 1 200 érmékért). Remek módja annak, hogy a hűségedet kézzelfogható jutalmakká alakítsd a saját tempódban.</p>
+          <p>A játékon, kihívásokon és promóciókon keresztül szerzett érmék a boltban költhetők el. A jutalmak az ingyenes pörgetésektől kiválasztott nyerőgépeken (pl. 5 pörgetés a Sweet Bonanza-n 30 érmékért) a bónuszpénzig terjednek (2 000 Ft 50 érmékért, akár 100 000 Ft 1 200 érmékért). Remek módja annak, hogy a hűségedet kézzelfogható jutalmakká alakítsd a saját tempódban.</p>
 
           <h3>Kihívások</h3>
-          <p>A heti kihívások egyszerű célok teljesítéséért jutalmaznak. A kaszinós kihívások megkérhetnek, hogy EUR 0,30-as téteket tegyél adott nyerőgépeken, míg a sport kihívások EUR 15-ös fogadásokat kérhetnek minimum 2,0-s szorzójú mérkőzésekre. Minden teljesített kihívás érméket ad, és heti 20 teljesítése 50 érme bónuszt hoz.</p>
+          <p>A heti kihívások egyszerű célok teljesítéséért jutalmaznak. A kaszinós kihívások megkérhetnek, hogy 120 Ft-os téteket tegyél adott nyerőgépeken, míg a sport kihívások 6 000 Ft-os fogadásokat kérhetnek minimum 2,0-s szorzójú mérkőzésekre. Minden teljesített kihívás érméket ad, és heti 20 teljesítése 50 érme bónuszt hoz.</p>
         </div>
       </div>
     </div>
@@ -238,7 +238,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
   <section class="content-section content-section--alt" id="no-deposit">
     <div class="container container--narrow">
       <h2><?php echo SITE_NAME; ?> Befizetés Nélküli Bónusz</h2>
-      <p>Jelenleg a <?php echo SITE_NAME; ?> nem kínál klasszikus befizetés nélküli bónuszt. A Bonus Crab funkció azonban minden EUR 10-es vagy annál nagyobb befizetést jutalmaz egy ingyenes próbával a Karom Gépen, ahol pörgetéseket, bónuszpénzt, érméket vagy készpénz jutalmakat nyerhetsz, anélkül, hogy az eredeti nyereményre további fogadási követelmény vonatkozna. Ez a jelenleg elérhető legközelebbi dolog a befizetés nélküli juttatáshoz a platformon.</p>
+      <p>Jelenleg a <?php echo SITE_NAME; ?> nem kínál klasszikus befizetés nélküli bónuszt. A Bonus Crab funkció azonban minden 4 000 Ft-os vagy annál nagyobb befizetést jutalmaz egy ingyenes próbával a Karom Gépen, ahol pörgetéseket, bónuszpénzt, érméket vagy készpénz jutalmakat nyerhetsz, anélkül, hogy az eredeti nyereményre további fogadási követelmény vonatkozna. Ez a jelenleg elérhető legközelebbi dolog a befizetés nélküli juttatáshoz a platformon.</p>
       <p>Figyeld a Promóciók szekciót és nézz vissza rendszeresen, mivel a kaszinó gyakran rotálja ajánlatait, és a jövőben befizetés nélküli ajánlatokat vagy ingyenes bónuszkódokat is bevezethet.</p>
     </div>
   </section>

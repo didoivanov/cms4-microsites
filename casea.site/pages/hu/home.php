@@ -3,7 +3,7 @@
  * Homepage – Hungarian
  */
 $page_title = SITE_NAME . ' Casino - ' . SITE_TAGLINE;
-$page_description = SITE_NAME . ' Casino több mint 10 000 kaszinójátékot, élő osztós asztalokat, sportfogadást 30+ sportágban és akár EUR 500 + 200 ingyenes pörgetés üdvözlő bónuszt kínál. Csatlakozz most és játssz.';
+$page_description = SITE_NAME . ' Casino több mint 10 000 kaszinójátékot, élő osztós asztalokat, sportfogadást 30+ sportágban és akár 200 000 Ft + 200 ingyenes pörgetés üdvözlő bónuszt kínál. Csatlakozz most és játssz.';
 $current_page = 'home';
 
 require_once __DIR__ . '/../../includes/header.php';
@@ -20,8 +20,8 @@ require_once __DIR__ . '/../../includes/header.php';
     <p class="hero__subtitle">Több mint 10 000 játék 90+ szolgáltatótól, teljes sportfogadási kínálat 30+ sportággal, élő osztós asztalok és jutalmak, amelyek tényleg megérik.</p>
     <div class="hero__bonus-card">
       <div class="hero__bonus-label">Üdvözlő Csomag</div>
-      <div class="hero__bonus-value"><?php echo WELCOME_BONUS; ?></div>
-      <div class="hero__bonus-extra">Sport Bónusz: 100% akár &euro;100 &middot; Min. befizetés &euro;20</div>
+      <div class="hero__bonus-value">100% 200 000 Ft-ig + 200 ingyenes pörgetés</div>
+      <div class="hero__bonus-extra">Sport Bónusz: 100% akár 40 000 Ft &middot; Min. befizetés 8 000 Ft</div>
     </div>
     <div class="hero__ctas">
       <a href="/play" class="btn btn--primary btn--lg" rel="nofollow"><?php echo __('cta_play', 'Play Now'); ?></a>
@@ -58,8 +58,8 @@ require_once __DIR__ . '/../../includes/header.php';
         <tr><th>Játékok</th><td>10 000+ (nyerőgépek, asztali játékok, élő kaszinó, azonnali játékok)</td></tr>
         <tr><th>Szolgáltatók</th><td>90+ (Pragmatic Play, Evolution, Microgaming, NetEnt, Playtech és mások)</td></tr>
         <tr><th>Sportágak</th><td>30+ sportág, e-sportok, virtuális sportok</td></tr>
-        <tr><th>Üdvözlő Bónusz</th><td><?php echo WELCOME_BONUS_TEXT; ?></td></tr>
-        <tr><th>Min. Befizetés</th><td>EUR 10 (EUR 20 a legtöbb bónuszhoz)</td></tr>
+        <tr><th>Üdvözlő Bónusz</th><td>100% 200 000 Ft-ig + 200 ingyenes pörgetés</td></tr>
+        <tr><th>Min. Befizetés</th><td>4 000 Ft (8 000 Ft a legtöbb bónuszhoz)</td></tr>
         <tr><th>Valuták</th><td>EUR, USD, CAD, AUD, CHF, HUF, NOK, PLN, NZD, CZK, BRL, CLP, PEN</td></tr>
         <tr><th>Támogatás</th><td>0-24 élő chat és email</td></tr>
         <tr><th>Mobil</th><td>Teljesen reszponzív, nem szükséges alkalmazás</td></tr>
@@ -170,13 +170,13 @@ require_once __DIR__ . '/../../includes/header.php';
         <div>
           <div class="highlight-box">
             <h4>Sport Üdvözlő Bónusz</h4>
-            <p>Az új játékosok 100%-os egyezést igényelhetnek első sport befizetésükre, akár EUR 100 értékben. A finn, német, norvég, svájci és osztrák játékosok akár EUR 200-ra is jogosultak. A bónuszhoz minimum EUR 20-as befizetés és 5x vagy 6x fogadási követelmény szükséges, országtól függően.</p>
+            <p>Az új játékosok 100%-os egyezést igényelhetnek első sport befizetésükre, akár 40 000 Ft értékben. A finn, német, norvég, svájci és osztrák játékosok akár 80 000 Ft-ra is jogosultak. A bónuszhoz minimum 8 000 Ft-os befizetés és 5x vagy 6x fogadási követelmény szükséges, országtól függően.</p>
           </div>
           <table class="quick-table" style="margin-top: var(--space-6);">
             <tr><th>Fogadás Típusok</th><td>Pre-match, élő, outright, kombinált</td></tr>
             <tr><th>Sportágak</th><td>30+ beleértve az e-sportokat és virtuálisokat</td></tr>
             <tr><th>Funkciók</th><td>Kombó boost, korai kifizetés, emelt szorzók</td></tr>
-            <tr><th>Cashback</th><td>Heti 10% akár EUR 500</td></tr>
+            <tr><th>Cashback</th><td>Heti 10% akár 200 000 Ft</td></tr>
           </table>
         </div>
       </div>
@@ -187,14 +187,14 @@ require_once __DIR__ . '/../../includes/header.php';
   <section class="content-section content-section--alt" id="payments">
     <div class="container">
       <h2>Fizetési Módok</h2>
-      <p>A <?php echo SITE_NAME; ?> számos népszerű fizetési lehetőséget támogat. Az elérhetőség országodtól függ, és a befizetések már EUR 10-tól indulnak.</p>
+      <p>A <?php echo SITE_NAME; ?> számos népszerű fizetési lehetőséget támogat. Az elérhetőség országodtól függ, és a befizetések már 4 000 Ft-tól indulnak.</p>
 
       <table class="quick-table">
         <tr><th>Befizetési Módok</th><td><?php echo implode(', ', $PAYMENT_METHODS); ?></td></tr>
-        <tr><th>Min. Befizetés</th><td>EUR 10 (EUR 20 a legtöbb bónuszhoz)</td></tr>
-        <tr><th>Min. Kifizetés</th><td>EUR 10</td></tr>
-        <tr><th>Max. Kifizetés (Napi)</th><td>EUR 500 (VIP: EUR 1 500)</td></tr>
-        <tr><th>Max. Kifizetés (Havi)</th><td>EUR 7 000 (VIP: EUR 20 000)</td></tr>
+        <tr><th>Min. Befizetés</th><td>4 000 Ft (8 000 Ft a legtöbb bónuszhoz)</td></tr>
+        <tr><th>Min. Kifizetés</th><td>4 000 Ft</td></tr>
+        <tr><th>Max. Kifizetés (Napi)</th><td>200 000 Ft (VIP: 600 000 Ft)</td></tr>
+        <tr><th>Max. Kifizetés (Havi)</th><td>2 800 000 Ft (VIP: 8 000 000 Ft)</td></tr>
         <tr><th>Feldolgozási Idő</th><td>Akár 72 óra (e-pénztárcák és kriptovaluták a leggyorsabbak)</td></tr>
         <tr><th>Valuták</th><td>EUR, USD, CAD, AUD, CHF, HUF, NOK, PLN, NZD, CZK, BRL, CLP, PEN</td></tr>
       </table>
@@ -240,14 +240,14 @@ require_once __DIR__ . '/../../includes/header.php';
       <details class="faq-item">
         <summary>Mi az üdvözlő bónusz a <?php echo SITE_NAME; ?> Casinóban?</summary>
         <div class="faq-answer">
-          <p>Az új kaszinójátékosok 100%-os üdvözlő bónuszt igényelhetnek akár EUR 500 értékben, plusz 200 ingyenes pörgetést az első befizetésükre. A sportfogadók 100%-os egyezésre jogosultak akár EUR 100-ig (vagy EUR 200-ig országtól függően). A minimális befizetés EUR 20.</p>
+          <p>Az új kaszinójátékosok 100%-os üdvözlő bónuszt igényelhetnek akár 200 000 Ft értékben, plusz 200 ingyenes pörgetést az első befizetésükre. A sportfogadók 100%-os egyezésre jogosultak akár 40 000 Ft-ig (vagy 80 000 Ft-ig országtól függően). A minimális befizetés 8 000 Ft.</p>
         </div>
       </details>
 
       <details class="faq-item">
         <summary>Mekkora a maximális kifizetés a <?php echo SITE_NAME; ?> Casinóban?</summary>
         <div class="faq-answer">
-          <p>A standard játékosok naponta akár EUR 500-t, havonta pedig akár EUR 7 000-t fizethetnek ki. A VIP tagok magasabb limiteket élveznek -- napi EUR 1 500 és havi EUR 20 000. A minimális kifizetés EUR 10.</p>
+          <p>A standard játékosok naponta akár 200 000 Ft-t, havonta pedig akár 2 800 000 Ft-t fizethetnek ki. A VIP tagok magasabb limiteket élveznek -- napi 600 000 Ft és havi 8 000 000 Ft. A minimális kifizetés 4 000 Ft.</p>
         </div>
       </details>
 

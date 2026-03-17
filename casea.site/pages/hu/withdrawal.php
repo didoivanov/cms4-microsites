@@ -26,17 +26,17 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <div class="info-card">
           <div class="info-card__icon">&#128176;</div>
           <h4>Min. Kifizetés</h4>
-          <p>EUR 10 minden fizetési módnál. Az ez alatti összegek nem dolgozhatók fel.</p>
+          <p>4 000 Ft minden fizetési módnál. Az ez alatti összegek nem dolgozhatók fel.</p>
         </div>
         <div class="info-card">
           <div class="info-card__icon">&#128200;</div>
           <h4>Napi Limit</h4>
-          <p>EUR 500 standard fiókok esetén. VIP tagok naponta akár EUR 1 500-t fizethetnek ki.</p>
+          <p>200 000 Ft standard fiókok esetén. VIP tagok naponta akár 600 000 Ft-t fizethetnek ki.</p>
         </div>
         <div class="info-card">
           <div class="info-card__icon">&#128197;</div>
           <h4>Havi Limit</h4>
-          <p>EUR 7 000 új játékosok számára. VIP tagok havonta maximum EUR 20 000-t élveznek.</p>
+          <p>2 800 000 Ft új játékosok számára. VIP tagok havonta maximum 8 000 000 Ft-t élveznek.</p>
         </div>
       </div>
     </div>
@@ -60,43 +60,43 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <tbody>
           <tr>
             <td>Visa / Mastercard</td>
-            <td>&euro;10</td>
+            <td>4 000 Ft</td>
             <td>1-3 munkanap</td>
             <td>A befizetéshez használt kártyára kerül visszautalásra</td>
           </tr>
           <tr>
             <td>Skrill</td>
-            <td>&euro;10</td>
+            <td>4 000 Ft</td>
             <td>Akár 24 óra</td>
             <td>Gyors feldolgozás, széles körben elérhető</td>
           </tr>
           <tr>
             <td>Neteller</td>
-            <td>&euro;10</td>
+            <td>4 000 Ft</td>
             <td>Akár 24 óra</td>
             <td>A legtöbb régióban elérhető</td>
           </tr>
           <tr>
             <td>Banki Átutalás</td>
-            <td>&euro;20</td>
+            <td>8 000 Ft</td>
             <td>2-5 munkanap</td>
             <td>Tartalék megoldás, ha az eredeti módszer nem elérhető</td>
           </tr>
           <tr>
             <td>Bitcoin</td>
-            <td>&euro;10</td>
+            <td>4 000 Ft</td>
             <td>Akár 24 óra</td>
             <td>A kaszinó feldolgozása után blockchain megerősítések szükségesek</td>
           </tr>
           <tr>
             <td>Ethereum</td>
-            <td>&euro;10</td>
+            <td>4 000 Ft</td>
             <td>Akár 24 óra</td>
             <td>A kriptovaluták általában a leggyorsabb kifizetést biztosítják</td>
           </tr>
           <tr>
             <td>Litecoin / Tether / Ripple</td>
-            <td>&euro;10</td>
+            <td>4 000 Ft</td>
             <td>Akár 24 óra</td>
             <td>Ellenőrizd az elérhetőséget a régiódban</td>
           </tr>
@@ -183,7 +183,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       <p>Ha aktív bónuszod van, győződj meg róla, hogy minden fogadási követelmény teljesen teljesítve van. Kifizetés igénylése aktív bónusz mellett érvényteleníti a bónuszt és a kapcsolódó nyereményeket. Ha csak befizetett pénzzel játszottál, emlékezz az 1x rollover-re, amelyet teljesíteni kell az extra díj elkerülése érdekében.</p>
 
       <h3>4. Maradj a limiteken belül</h3>
-      <p>A napi vagy havi felső határt meghaladó kifizetési kérelmeket elutasítják. Tervezd meg a kifizetéseidet ennek megfelelően: EUR 500 naponta standard fiókok esetén, EUR 1 500 naponta VIP tagok számára.</p>
+      <p>A napi vagy havi felső határt meghaladó kifizetési kérelmeket elutasítják. Tervezd meg a kifizetéseidet ennek megfelelően: 200 000 Ft naponta standard fiókok esetén, 600 000 Ft naponta VIP tagok számára.</p>
 
       <h3>5. Használd az eredeti befizetési módot</h3>
       <p>A <?php echo SITE_NAME; ?> előnyben részesíti az összeg visszaküldését ugyanarra a módszerre, amellyel befizettél. Másik módszer használata további ellenőrzéseket válthat ki, és lassíthatja a folyamatot.</p>
@@ -205,14 +205,14 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       <details class="faq-item">
         <summary>Mennyi a minimális kifizetés a <?php echo SITE_NAME; ?>-nál?</summary>
         <div class="faq-answer">
-          <p>A minimális kifizetési összeg EUR 10 minden fizetési módnál. Ez alatti összegek nem igényelhetők.</p>
+          <p>A minimális kifizetési összeg 4 000 Ft minden fizetési módnál. Ez alatti összegek nem igényelhetők.</p>
         </div>
       </details>
 
       <details class="faq-item">
         <summary>Mennyit fizethetek ki maximum havonta?</summary>
         <div class="faq-answer">
-          <p>A standard játékosok havonta akár EUR 7 000-t fizethetnek ki. A VIP tagok megemelt, havi EUR 20 000-es limittel rendelkeznek. Napi korlátok is érvényesek: EUR 500 standard fiókok, EUR 1 500 VIP esetén.</p>
+          <p>A standard játékosok havonta akár 2 800 000 Ft-t fizethetnek ki. A VIP tagok megemelt, havi 8 000 000 Ft-os limittel rendelkeznek. Napi korlátok is érvényesek: 200 000 Ft standard fiókok, 600 000 Ft VIP esetén.</p>
         </div>
       </details>
 

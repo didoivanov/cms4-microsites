@@ -3,7 +3,7 @@
  * Homepage - Polish
  */
 $page_title = SITE_NAME . ' Casino - ' . SITE_TAGLINE;
-$page_description = SITE_NAME . ' Casino oferuje ponad 10 000 gier kasynowych, krupierów na żywo, zakłady sportowe na 30+ dyscyplin oraz bonus powitalny do EUR 500 plus 200 darmowych spinów. Dołącz teraz i graj.';
+$page_description = SITE_NAME . ' Casino oferuje ponad 10 000 gier kasynowych, krupierów na żywo, zakłady sportowe na 30+ dyscyplin oraz bonus powitalny do 2 000 PLN plus 200 darmowych spinów. Dołącz teraz i graj.';
 $current_page = 'home';
 
 require_once __DIR__ . '/../../includes/header.php';
@@ -20,8 +20,8 @@ require_once __DIR__ . '/../../includes/header.php';
     <p class="hero__subtitle">Ponad 10 000 gier od 90+ dostawców, pełne zakłady sportowe na 30+ dyscyplin, stoły z krupierami na żywo i nagrody, które naprawdę się opłacają.</p>
     <div class="hero__bonus-card">
       <div class="hero__bonus-label">Pakiet Powitalny</div>
-      <div class="hero__bonus-value"><?php echo WELCOME_BONUS; ?></div>
-      <div class="hero__bonus-extra">Bonus Sportowy: 100% do &euro;100 &middot; Min. wpłata &euro;20</div>
+      <div class="hero__bonus-value">100% do 2 000 PLN + 200 darmowych spinów</div>
+      <div class="hero__bonus-extra">Bonus Sportowy: 100% do 400 PLN &middot; Min. wpłata 80 PLN</div>
     </div>
     <div class="hero__ctas">
       <a href="/play" class="btn btn--primary btn--lg" rel="nofollow"><?php echo __('cta_play', 'Play Now'); ?></a>
@@ -58,8 +58,8 @@ require_once __DIR__ . '/../../includes/header.php';
         <tr><th>Gry</th><td>10 000+ (sloty, gry stołowe, kasyno na żywo, gry błyskawiczne)</td></tr>
         <tr><th>Dostawcy</th><td>90+ (Pragmatic Play, Evolution, Microgaming, NetEnt, Playtech i więcej)</td></tr>
         <tr><th>Sport</th><td>30+ dyscyplin, esport, sporty wirtualne</td></tr>
-        <tr><th>Bonus Powitalny</th><td><?php echo WELCOME_BONUS_TEXT; ?></td></tr>
-        <tr><th>Min. Wpłata</th><td>EUR 10 (EUR 20 dla większości bonusów)</td></tr>
+        <tr><th>Bonus Powitalny</th><td>100% do 2 000 PLN + 200 darmowych spinów</td></tr>
+        <tr><th>Min. Wpłata</th><td>40 PLN (80 PLN dla większości bonusów)</td></tr>
         <tr><th>Waluty</th><td>EUR, USD, CAD, AUD, CHF, HUF, NOK, PLN, NZD, CZK, BRL, CLP, PEN</td></tr>
         <tr><th>Wsparcie</th><td>Czat na żywo i email 24/7</td></tr>
         <tr><th>Mobilnie</th><td>W pełni responsywna strona, aplikacja nie jest wymagana</td></tr>
@@ -170,13 +170,13 @@ require_once __DIR__ . '/../../includes/header.php';
         <div>
           <div class="highlight-box">
             <h4>Sportowy Bonus Powitalny</h4>
-            <p>Nowi gracze mogą odebrać 100% dopasowania do pierwszej wpłaty sportowej o wartości do EUR 100. Gracze z Finlandii, Niemiec, Norwegii, Szwajcarii i Austrii kwalifikują się do EUR 200. Bonus wymaga minimalnej wpłaty EUR 20 i 5- lub 6-krotnego obrotu w zależności od kraju.</p>
+            <p>Nowi gracze mogą odebrać 100% dopasowania do pierwszej wpłaty sportowej o wartości do 400 PLN. Gracze z Finlandii, Niemiec, Norwegii, Szwajcarii i Austrii kwalifikują się do 800 PLN. Bonus wymaga minimalnej wpłaty 80 PLN i 5- lub 6-krotnego obrotu w zależności od kraju.</p>
           </div>
           <table class="quick-table" style="margin-top: var(--space-6);">
             <tr><th>Typy Zakładów</th><td>Pre-match, na żywo, długoterminowe, akumulatory</td></tr>
             <tr><th>Dyscypliny</th><td>30+ w tym esport i sporty wirtualne</td></tr>
             <tr><th>Funkcje</th><td>Boost akumulatora, wcześniejsza wypłata, ulepszone kursy</td></tr>
-            <tr><th>Cashback</th><td>10% tygodniowo do EUR 500</td></tr>
+            <tr><th>Cashback</th><td>10% tygodniowo do 2 000 PLN</td></tr>
           </table>
         </div>
       </div>
@@ -187,14 +187,14 @@ require_once __DIR__ . '/../../includes/header.php';
   <section class="content-section content-section--alt" id="payments">
     <div class="container">
       <h2>Metody Płatności</h2>
-      <p><?php echo SITE_NAME; ?> obsługuje kilka popularnych opcji płatności. Dostępność zależy od Twojego kraju, a wpłaty zaczynają się już od EUR 10.</p>
+      <p><?php echo SITE_NAME; ?> obsługuje kilka popularnych opcji płatności. Dostępność zależy od Twojego kraju, a wpłaty zaczynają się już od 40 PLN.</p>
 
       <table class="quick-table">
         <tr><th>Metody Wpłat</th><td><?php echo implode(', ', $PAYMENT_METHODS); ?></td></tr>
-        <tr><th>Min. Wpłata</th><td>EUR 10 (EUR 20 dla większości bonusów)</td></tr>
-        <tr><th>Min. Wypłata</th><td>EUR 10</td></tr>
-        <tr><th>Maks. Wypłata (Dzienna)</th><td>EUR 500 (VIP: EUR 1 500)</td></tr>
-        <tr><th>Maks. Wypłata (Miesięczna)</th><td>EUR 7 000 (VIP: EUR 20 000)</td></tr>
+        <tr><th>Min. Wpłata</th><td>40 PLN (80 PLN dla większości bonusów)</td></tr>
+        <tr><th>Min. Wypłata</th><td>40 PLN</td></tr>
+        <tr><th>Maks. Wypłata (Dzienna)</th><td>2 000 PLN (VIP: 6 000 PLN)</td></tr>
+        <tr><th>Maks. Wypłata (Miesięczna)</th><td>30 000 PLN (VIP: 80 000 PLN)</td></tr>
         <tr><th>Czas Realizacji</th><td>Do 72 godzin (e-portfele i krypto najszybsze)</td></tr>
         <tr><th>Waluty</th><td>EUR, USD, CAD, AUD, CHF, HUF, NOK, PLN, NZD, CZK, BRL, CLP, PEN</td></tr>
       </table>
@@ -240,14 +240,14 @@ require_once __DIR__ . '/../../includes/header.php';
       <details class="faq-item">
         <summary>Jaki jest bonus powitalny w <?php echo SITE_NAME; ?> Casino?</summary>
         <div class="faq-answer">
-          <p>Nowi gracze kasynowi mogą odebrać 100% bonus powitalny do EUR 500 plus 200 darmowych spinów przy pierwszej wpłacie. Gracze zakładów sportowych kwalifikują się do 100% dopasowania do EUR 100 (lub EUR 200 w zależności od kraju). Minimalna wpłata wynosi EUR 20.</p>
+          <p>Nowi gracze kasynowi mogą odebrać 100% bonus powitalny do 2 000 PLN plus 200 darmowych spinów przy pierwszej wpłacie. Gracze zakładów sportowych kwalifikują się do 100% dopasowania do 400 PLN (lub 800 PLN w zależności od kraju). Minimalna wpłata wynosi 80 PLN.</p>
         </div>
       </details>
 
       <details class="faq-item">
         <summary>Jaki jest maksymalny limit wypłaty w <?php echo SITE_NAME; ?> Casino?</summary>
         <div class="faq-answer">
-          <p>Standardowi gracze mogą wypłacić do EUR 500 dziennie i EUR 7 000 miesięcznie. Członkowie VIP mają dostęp do wyższych limitów — do EUR 1 500 dziennie i EUR 20 000 miesięcznie. Minimalna wypłata wynosi EUR 10.</p>
+          <p>Standardowi gracze mogą wypłacić do 2 000 PLN dziennie i 30 000 PLN miesięcznie. Członkowie VIP mają dostęp do wyższych limitów -- do 6 000 PLN dziennie i 80 000 PLN miesięcznie. Minimalna wypłata wynosi 40 PLN.</p>
         </div>
       </details>
 
