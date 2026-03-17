@@ -1,6 +1,6 @@
 <?php
 $secret   = 'cms4-microsites-deploy-2026';
-$repoPath = '/home/cms4netp/repositories/cms4-microsites';
+$repoPath = '/home/cms4netp/simplemicrosites';
 $logFile  = '/home/cms4netp/deploy.log';
 
 $payload   = file_get_contents('php://input');
