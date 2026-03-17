@@ -31,4 +31,5 @@ return [
     'providers' => 'Szolgáltatók',
     'welcome_bonus' => 'Üdvözlő Bónusz',
     'live_support' => 'Élő Támogatás',
+    'sticky_bonus' => '100% 200 000 Ft-ig + 200 ingyenes pörgetés',
 ];

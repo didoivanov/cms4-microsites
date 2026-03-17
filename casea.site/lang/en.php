@@ -40,4 +40,5 @@ return [
     'providers'       => 'Providers',
     'welcome_bonus'   => 'Welcome Bonus',
     'live_support'    => 'Live Support',
+    'sticky_bonus'    => '100% up to &euro;500 + 200 Free Spins',
 ];

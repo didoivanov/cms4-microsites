@@ -238,6 +238,15 @@ document.addEventListener('DOMContentLoaded', function() {
     return a;
   }
 
+  // Currency config (injected by PHP in footer, falls back to EUR)
+  var cur = window.CASINO_CURRENCY || { symbol: '\u20AC', suffix: '', multiplier: 1, locale: 'en-US', jackpotBase: 2847391 };
+
+  function formatCurrency(amount) {
+    var converted = Math.round(amount * cur.multiplier);
+    var formatted = converted.toLocaleString(cur.locale);
+    return cur.symbol + formatted + cur.suffix;
+  }
+
   // Populate winners grid
   var winnersGrid = document.getElementById('winnersGrid');
   if (winnersGrid) {
@@ -245,7 +254,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var html = '';
     for (var i = 0; i < picked.length; i++) {
       var w = picked[i];
-      var formatted = w.amount.toLocaleString('en-US');
       html += '<div class="winner-card">'
         + '<div class="winner-card__avatar">' + emojis[i % emojis.length] + '</div>'
         + '<div class="winner-card__info">'
@@ -253,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
         + '<div class="winner-card__game">' + w.game + '</div>'
         + '</div>'
         + '<div style="text-align:right">'
-        + '<div class="winner-card__amount">&euro;' + formatted + '</div>'
+        + '<div class="winner-card__amount">' + formatCurrency(w.amount) + '</div>'
         + '<div class="winner-card__time">' + times[i % times.length] + '</div>'
         + '</div>'
         + '</div>';
@@ -264,10 +272,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // Jackpot counter animation
   var jackpotEl = document.getElementById('jackpotCounter');
   if (jackpotEl) {
-    var baseAmount = 2847391 + Math.floor(Math.random() * 200000);
+    var baseAmount = cur.jackpotBase + Math.floor(Math.random() * Math.round(cur.jackpotBase * 0.07));
     setInterval(function() {
-      baseAmount += Math.floor(Math.random() * 47) + 3;
-      jackpotEl.innerHTML = '&euro;' + baseAmount.toLocaleString('en-US');
+      baseAmount += Math.floor(Math.random() * Math.max(3, Math.round(cur.multiplier * 12))) + 3;
+      var formatted = baseAmount.toLocaleString(cur.locale);
+      jackpotEl.innerHTML = cur.symbol + formatted + cur.suffix;
     }, 3000);
   }
 

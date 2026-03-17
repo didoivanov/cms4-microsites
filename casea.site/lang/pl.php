@@ -31,4 +31,5 @@ return [
     'providers' => 'Dostawcy',
     'welcome_bonus' => 'Bonus Powitalny',
     'live_support' => 'Pomoc na Żywo',
+    'sticky_bonus' => '100% do 2 000 PLN + 200 darmowych spinów',
 ];

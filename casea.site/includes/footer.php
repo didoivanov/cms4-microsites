@@ -72,12 +72,29 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
   <div class="container">
     <div class="sticky-cta__text">
       <span><?php echo SITE_NAME; ?> Casino</span>
-      <span class="sticky-cta__bonus"><?php echo WELCOME_BONUS; ?></span>
+      <span class="sticky-cta__bonus"><?php echo __('sticky_bonus', '100% up to &euro;500 + 200 Free Spins'); ?></span>
     </div>
     <a href="/play" class="btn btn--primary" rel="nofollow"><?php echo __('cta_play', 'Play Now'); ?></a>
   </div>
 </div>
 
-<script src="/assets/js/app.js?v=20260317c"></script>
+<?php
+// Currency config for JS (winners, jackpot counter)
+$CURRENCY_MAP = [
+    'pl' => ['symbol' => 'PLN ', 'suffix' => '', 'multiplier' => 4.27, 'locale' => 'pl-PL', 'jackpot_base' => 12150000],
+    'hu' => ['symbol' => '',     'suffix' => ' Ft', 'multiplier' => 390, 'locale' => 'hu-HU', 'jackpot_base' => 1110000000],
+];
+$cur = isset($CURRENCY_MAP[$CURRENT_LANG]) ? $CURRENCY_MAP[$CURRENT_LANG] : ['symbol' => '&euro;', 'suffix' => '', 'multiplier' => 1, 'locale' => 'en-US', 'jackpot_base' => 2847391];
+?>
+<script>
+window.CASINO_CURRENCY = {
+  symbol: '<?php echo $cur["symbol"]; ?>',
+  suffix: '<?php echo $cur["suffix"]; ?>',
+  multiplier: <?php echo $cur["multiplier"]; ?>,
+  locale: '<?php echo $cur["locale"]; ?>',
+  jackpotBase: <?php echo $cur["jackpot_base"]; ?>
+};
+</script>
+<script src="/assets/js/app.js?v=20260317d"></script>
 </body>
 </html>

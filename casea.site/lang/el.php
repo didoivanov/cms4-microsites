@@ -40,4 +40,5 @@ return [
     'providers'       => 'Πάροχοι',
     'welcome_bonus'   => 'Μπόνους Καλωσορίσματος',
     'live_support'    => 'Live Υποστήριξη',
+    'sticky_bonus'    => '100% έως &euro;500 + 200 Δωρεάν Περιστροφές',
 ];

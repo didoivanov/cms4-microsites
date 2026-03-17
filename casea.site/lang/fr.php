@@ -31,4 +31,5 @@ return [
     'providers' => 'Fournisseurs',
     'welcome_bonus' => 'Bonus de Bienvenue',
     'live_support' => 'Support Live',
+    'sticky_bonus' => '100% jusqu\'à 500&euro; + 200 Tours Gratuits',
 ];

@@ -40,4 +40,5 @@ return [
     'providers'       => 'Ponudniki',
     'welcome_bonus'   => 'Dobrodošlični bonus',
     'live_support'    => 'Podpora v živo',
+    'sticky_bonus'    => '100% do 500&euro; + 200 brezplačnih vrtljajev',
 ];

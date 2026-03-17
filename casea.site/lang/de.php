@@ -40,4 +40,5 @@ return [
     'providers'       => 'Anbieter',
     'welcome_bonus'   => 'Willkommensbonus',
     'live_support'    => 'Live-Support',
+    'sticky_bonus'    => '100% bis zu 500&euro; + 200 Freispiele',
 ];
