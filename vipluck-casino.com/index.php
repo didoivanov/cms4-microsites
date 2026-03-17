@@ -3,6 +3,20 @@
  * Main Router
  * Handles clean URLs, language prefix detection, and routes to the correct page template.
  */
+
+// Serve static root files directly (Google verification, robots, sitemap)
+$_requested = isset($_GET['page']) ? trim($_GET['page'], '/') : '';
+if (preg_match('/^[\w.-]+\.(html|txt|xml)$/', $_requested)) {
+    $_static = __DIR__ . '/' . $_requested;
+    if (file_exists($_static)) {
+        $ext = pathinfo($_static, PATHINFO_EXTENSION);
+        $types = ['html' => 'text/html', 'txt' => 'text/plain', 'xml' => 'application/xml'];
+        header('Content-Type: ' . ($types[$ext] ?? 'text/plain'));
+        readfile($_static);
+        exit;
+    }
+}
+
 require_once __DIR__ . '/config.php';
 
 // Determine which page to load
