@@ -1,169 +1,229 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <!-- Homepage -->
   <url>
     <loc>https://vipluck.onl/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/"/>
   </url>
   <url>
-    <loc>https://vipluck.onl/fr</loc>
+    <loc>https://vipluck.onl/de/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/"/>
   </url>
   <url>
-    <loc>https://vipluck.onl/pl</loc>
+    <loc>https://vipluck.onl/fr/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/"/>
   </url>
   <url>
-    <loc>https://vipluck.onl/it</loc>
+    <loc>https://vipluck.onl/it/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/"/>
   </url>
-  <!-- Bonuses -->
+  <url>
+    <loc>https://vipluck.onl/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/"/>
+  </url>
   <url>
     <loc>https://vipluck.onl/bonuses</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/bonuses"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/bonuses"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/bonuses"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/bonuses"/>
+  </url>
+  <url>
+    <loc>https://vipluck.onl/de/bonuses</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/bonuses"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/bonuses"/>
   </url>
   <url>
     <loc>https://vipluck.onl/fr/bonuses</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/bonuses"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/bonuses"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/bonuses"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/bonuses"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/bonuses"/>
-  </url>
-  <url>
-    <loc>https://vipluck.onl/pl/bonuses</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/bonuses"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/bonuses"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/bonuses"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/bonuses"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/bonuses"/>
   </url>
   <url>
     <loc>https://vipluck.onl/it/bonuses</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/bonuses"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/bonuses"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/bonuses"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/bonuses"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/bonuses"/>
   </url>
-  <!-- Withdrawal -->
+  <url>
+    <loc>https://vipluck.onl/pl/bonuses</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/bonuses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/bonuses"/>
+  </url>
   <url>
     <loc>https://vipluck.onl/withdrawal</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/withdrawal"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/withdrawal"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/withdrawal"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/withdrawal"/>
+  </url>
+  <url>
+    <loc>https://vipluck.onl/de/withdrawal</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/withdrawal"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/withdrawal"/>
   </url>
   <url>
     <loc>https://vipluck.onl/fr/withdrawal</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/withdrawal"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/withdrawal"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/withdrawal"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/withdrawal"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/withdrawal"/>
-  </url>
-  <url>
-    <loc>https://vipluck.onl/pl/withdrawal</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/withdrawal"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/withdrawal"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/withdrawal"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/withdrawal"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/withdrawal"/>
   </url>
   <url>
     <loc>https://vipluck.onl/it/withdrawal</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/withdrawal"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/withdrawal"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/withdrawal"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/withdrawal"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/withdrawal"/>
   </url>
-  <!-- Support -->
+  <url>
+    <loc>https://vipluck.onl/pl/withdrawal</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/withdrawal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/withdrawal"/>
+  </url>
   <url>
     <loc>https://vipluck.onl/support</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/support"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/support"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/support"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/support"/>
+  </url>
+  <url>
+    <loc>https://vipluck.onl/de/support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/support"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/support"/>
   </url>
   <url>
     <loc>https://vipluck.onl/fr/support</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/support"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/support"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/support"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/support"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/support"/>
-  </url>
-  <url>
-    <loc>https://vipluck.onl/pl/support</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/support"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/support"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/support"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/support"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/support"/>
   </url>
   <url>
     <loc>https://vipluck.onl/it/support</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/support"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/support"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/support"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/support"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/support"/>
   </url>
-  <!-- Login -->
+  <url>
+    <loc>https://vipluck.onl/pl/support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/support"/>
+  </url>
   <url>
     <loc>https://vipluck.onl/login</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/login"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/login"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/login"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/login"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/login"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/login"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/login"/>
+  </url>
+  <url>
+    <loc>https://vipluck.onl/de/login</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/login"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/login"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/login"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/login"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/login"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/login"/>
   </url>
   <url>
     <loc>https://vipluck.onl/fr/login</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/login"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/login"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/login"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/login"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/login"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/login"/>
-  </url>
-  <url>
-    <loc>https://vipluck.onl/pl/login</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/login"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/login"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/login"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/login"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/login"/>
   </url>
   <url>
     <loc>https://vipluck.onl/it/login</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/login"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/login"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/login"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/login"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/login"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/login"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/login"/>
+  </url>
+  <url>
+    <loc>https://vipluck.onl/pl/login</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vipluck.onl/login"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vipluck.onl/de/login"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vipluck.onl/fr/login"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vipluck.onl/it/login"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://vipluck.onl/pl/login"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vipluck.onl/login"/>
   </url>
 </urlset>
