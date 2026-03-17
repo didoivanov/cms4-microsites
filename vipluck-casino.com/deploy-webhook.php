@@ -10,7 +10,6 @@ $repo_path = '/home/cms4netp/simplemicrosites';
 $log_file = __DIR__ . '/deploy-log.txt';
 $branch = 'main';
 
-// ─── Validate Request ────────────────────────────────────────────
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     die('Method not allowed');
@@ -35,7 +34,6 @@ if ($ref !== 'refs/heads/' . $branch) {
     die('Skipped: not target branch');
 }
 
-// ─── Helper: Recursive copy ─────────────────────────────────────
 function rcopy($src, $dst) {
     $count = 0;
     if (!is_dir($src)) return $count;
@@ -56,20 +54,18 @@ function rcopy($src, $dst) {
     return $count;
 }
 
-// ─── Deploy ──────────────────────────────────────────────────────
 $timestamp = date('Y-m-d H:i:s');
 $output = [];
 
-// Step 1: Git pull
-$cmd = "cd $repo_path && git pull origin $branch 2>&1";
+// Git fetch + reset (avoids dirty-worktree errors from previous deploys)
+$cmd = "cd $repo_path && git fetch origin $branch 2>&1 && git reset --hard origin/$branch 2>&1";
 exec($cmd, $output, $pull_code);
 
-// Step 2: Copy vipluck-casino.com files to THIS directory
+// Copy vipluck-casino.com files to THIS directory
 $src = $repo_path . '/vipluck-casino.com';
-$dst = __DIR__;  // This webhook's directory = vipluck.onl web root
+$dst = __DIR__;
 $file_count = 0;
 
-// Root files
 $root_files = ['.htaccess', 'config.php', 'index.php',
     'google9bd8dc12ea09b94c.html', 'robots.txt', 'sitemap.xml',
     'sitemap-pages.xml', 'sitemap-hreflang.xml', 'favicon.ico', 'site.webmanifest'];
@@ -80,7 +76,7 @@ foreach ($root_files as $f) {
     }
 }
 
-// Copy the webhook itself last (so it doesn't overwrite while running)
+// Copy the webhook itself last
 if (file_exists($src . '/deploy-webhook.php')) {
     @copy($src . '/deploy-webhook.php', $dst . '/deploy-webhook.php');
     $file_count++;
@@ -93,7 +89,6 @@ foreach (['includes', 'pages', 'assets', 'lang'] as $dir) {
     }
 }
 
-// ─── Log ─────────────────────────────────────────────────────────
 $log_entry = "[$timestamp] VipLuck deploy\n";
 $log_entry .= "Pull: exit=$pull_code\n";
 $log_entry .= "Files copied: $file_count\n";

@@ -3,6 +3,7 @@
  * GitHub Webhook Deploy Script - Casea.site
  * Pulls from the shared repo, then copies casea.site files
  * to this web root using PHP's native copy functions.
+ * Also attempts to copy vipluck-casino.com files to vipluck.onl.
  */
 
 $secret = 'cms4-microsites-deploy-2026';
@@ -57,8 +58,8 @@ function rcopy($src, $dst) {
 $timestamp = date('Y-m-d H:i:s');
 $output = [];
 
-// Git pull
-$cmd = "cd $repo_path && git pull origin $branch 2>&1";
+// Git fetch + reset (avoids dirty-worktree errors from previous deploys)
+$cmd = "cd $repo_path && git fetch origin $branch 2>&1 && git reset --hard origin/$branch 2>&1";
 exec($cmd, $output, $pull_code);
 
 // Copy casea.site files to THIS directory (repo root = casea web root)
@@ -85,20 +86,23 @@ foreach (['includes', 'pages', 'assets', 'lang'] as $dir) {
     }
 }
 
-// Also deploy vipluck-casino.com → /home/cms4netp/vipluck.onl/
+// Also deploy vipluck-casino.com to /home/cms4netp/vipluck.onl/
 $vl_src = $repo_path . '/vipluck-casino.com';
 $vl_dst = '/home/cms4netp/vipluck.onl';
 $vl_count = 0;
+$vl_errors = [];
 if (is_dir($vl_src) && is_dir($vl_dst)) {
     foreach ($root_files as $f) {
         if (file_exists($vl_src . '/' . $f)) {
-            @copy($vl_src . '/' . $f, $vl_dst . '/' . $f);
-            $vl_count++;
+            $ok = @copy($vl_src . '/' . $f, $vl_dst . '/' . $f);
+            if ($ok) $vl_count++;
+            else $vl_errors[] = $f;
         }
     }
     if (file_exists($vl_src . '/deploy-webhook.php')) {
-        @copy($vl_src . '/deploy-webhook.php', $vl_dst . '/deploy-webhook.php');
-        $vl_count++;
+        $ok = @copy($vl_src . '/deploy-webhook.php', $vl_dst . '/deploy-webhook.php');
+        if ($ok) $vl_count++;
+        else $vl_errors[] = 'deploy-webhook.php';
     }
     foreach (['includes', 'pages', 'assets', 'lang'] as $dir) {
         if (is_dir($vl_src . '/' . $dir)) {
@@ -107,14 +111,23 @@ if (is_dir($vl_src) && is_dir($vl_dst)) {
     }
 }
 
-$log_entry = "[$timestamp] Casea deploy | Pull=$pull_code | Casea=$file_count | VipLuck=$vl_count\n";
-$log_entry .= implode(" | ", $output) . "\n" . str_repeat('-', 60) . "\n";
+$log_entry = "[$timestamp] Casea deploy\n";
+$log_entry .= "Pull: exit=$pull_code\n";
+$log_entry .= "Casea files: $file_count\n";
+$log_entry .= "VipLuck files: $vl_count\n";
+if (!empty($vl_errors)) {
+    $log_entry .= "VipLuck errors: " . implode(', ', $vl_errors) . "\n";
+}
+$log_entry .= "Pull output: " . implode(" | ", $output) . "\n";
+$log_entry .= str_repeat('-', 60) . "\n";
 @file_put_contents($log_file, $log_entry, FILE_APPEND | LOCK_EX);
 
 http_response_code(200);
 echo json_encode([
     'status' => ($pull_code === 0) ? 'success' : 'error',
     'pull_code' => $pull_code,
-    'files_copied' => $file_count,
+    'casea_files' => $file_count,
+    'vipluck_files' => $vl_count,
+    'vipluck_errors' => $vl_errors,
     'timestamp' => $timestamp,
 ]);
