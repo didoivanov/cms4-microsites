@@ -1536,6 +1536,17 @@
 .hero__bonus-extra { color: #c0c8d8; }
 .hero__badge { color: var(--color-accent); }
 
+.hero .btn--outline,
+.page-hero .btn--outline {
+  color: #e2e8f0;
+  border-color: rgba(226,232,240,.4);
+}
+.hero .btn--outline:hover,
+.page-hero .btn--outline:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
 .page-hero,
 .page-hero h1,
 .page-hero p {
