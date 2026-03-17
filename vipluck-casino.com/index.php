@@ -23,7 +23,15 @@ if (preg_match('/^[\w.-]+\.(html|txt|xml)$/', $_requested)) {
     }
 }
 
-require_once __DIR__ . '/config.php';
+// Try local config first, fall back to repo source
+if (file_exists(__DIR__ . '/config.php')) {
+    require_once __DIR__ . '/config.php';
+} else {
+    require_once '/home/cms4netp/simplemicrosites/vipluck-casino.com/config.php';
+}
+
+// Define repo source fallback path
+define('REPO_SRC', '/home/cms4netp/simplemicrosites/vipluck-casino.com');
 
 // Determine which page to load
 $page = isset($_GET['page']) ? trim($_GET['page'], '/') : 'home';
@@ -72,16 +80,21 @@ if (!array_key_exists($page, $pages)) {
 
 // Check for localized page version
 if ($CURRENT_LANG !== 'en') {
-    $localized_file = 'pages/' . $CURRENT_LANG . '/' . basename($pages[$page]);
-    if (file_exists(__DIR__ . '/' . $localized_file)) {
-        $pages[$page] = $localized_file;
+    $localized_rel = 'pages/' . $CURRENT_LANG . '/' . basename($pages[$page]);
+    if (file_exists(__DIR__ . '/' . $localized_rel)) {
+        $pages[$page] = $localized_rel;
+    } elseif (defined('REPO_SRC') && file_exists(REPO_SRC . '/' . $localized_rel)) {
+        $pages[$page] = $localized_rel;
     }
 }
 
-// Load language strings
+// Load language strings (check local then repo source)
 $lang_file = __DIR__ . '/lang/' . $CURRENT_LANG . '.php';
+$lang_file_repo = defined('REPO_SRC') ? REPO_SRC . '/lang/' . $CURRENT_LANG . '.php' : '';
 if (file_exists($lang_file)) {
     $LANG = require $lang_file;
+} elseif ($lang_file_repo && file_exists($lang_file_repo)) {
+    $LANG = require $lang_file_repo;
 } else {
     $LANG = require __DIR__ . '/lang/en.php';
 }
@@ -101,5 +114,9 @@ $NAV_ITEMS = [
 
 $current_page = $page;
 
-// Load the page template
-require_once __DIR__ . '/' . $pages[$page];
+// Load the page template (check local then repo source)
+$page_file = __DIR__ . '/' . $pages[$page];
+if (!file_exists($page_file) && defined('REPO_SRC')) {
+    $page_file = REPO_SRC . '/' . $pages[$page];
+}
+require_once $page_file;

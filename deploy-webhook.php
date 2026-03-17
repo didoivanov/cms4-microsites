@@ -85,15 +85,29 @@ foreach (['includes', 'pages', 'assets', 'lang'] as $dir) {
     }
 }
 
-// Also try to update the vipluck webhook (cross-site copy)
-$vipluck_webhook_src = $repo_path . '/vipluck-casino.com/deploy-webhook.php';
-$vipluck_webhook_dst = '/home/cms4netp/vipluck.onl/deploy-webhook.php';
-$vipluck_updated = false;
-if (file_exists($vipluck_webhook_src)) {
-    $vipluck_updated = @copy($vipluck_webhook_src, $vipluck_webhook_dst);
+// Also deploy vipluck-casino.com → /home/cms4netp/vipluck.onl/
+$vl_src = $repo_path . '/vipluck-casino.com';
+$vl_dst = '/home/cms4netp/vipluck.onl';
+$vl_count = 0;
+if (is_dir($vl_src) && is_dir($vl_dst)) {
+    foreach ($root_files as $f) {
+        if (file_exists($vl_src . '/' . $f)) {
+            @copy($vl_src . '/' . $f, $vl_dst . '/' . $f);
+            $vl_count++;
+        }
+    }
+    if (file_exists($vl_src . '/deploy-webhook.php')) {
+        @copy($vl_src . '/deploy-webhook.php', $vl_dst . '/deploy-webhook.php');
+        $vl_count++;
+    }
+    foreach (['includes', 'pages', 'assets', 'lang'] as $dir) {
+        if (is_dir($vl_src . '/' . $dir)) {
+            $vl_count += rcopy($vl_src . '/' . $dir, $vl_dst . '/' . $dir);
+        }
+    }
 }
 
-$log_entry = "[$timestamp] Casea deploy | Pull=$pull_code | Files=$file_count | VipLuck webhook=" . ($vipluck_updated ? 'updated' : 'failed') . "\n";
+$log_entry = "[$timestamp] Casea deploy | Pull=$pull_code | Casea=$file_count | VipLuck=$vl_count\n";
 $log_entry .= implode(" | ", $output) . "\n" . str_repeat('-', 60) . "\n";
 @file_put_contents($log_file, $log_entry, FILE_APPEND | LOCK_EX);
 
