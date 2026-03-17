@@ -52,14 +52,10 @@ if (count($active_langs) > 1):
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
-    <nav class="nav-main" aria-label="Main navigation">
+    <nav class="nav-main nav-main--desktop" aria-label="Main navigation">
 <?php foreach ($NAV_ITEMS as $item): ?>
       <a href="<?php echo $item['url']; ?>"<?php echo ($current_page === $item['page']) ? ' class="active"' : ''; ?>><?php echo $item['label']; ?></a>
 <?php endforeach; ?>
-      <div class="mobile-actions">
-        <a href="<?php echo $lang_prefix; ?>/login" class="btn btn--outline"><?php echo __('nav_login', 'Log In'); ?></a>
-        <a href="/play" class="btn btn--primary" rel="nofollow"><?php echo __('nav_signup', 'Sign Up'); ?></a>
-      </div>
     </nav>
     <div class="nav-actions">
       <!-- Language selector -->
@@ -86,3 +82,13 @@ foreach ($LANGUAGES as $code => $lang_info):
     </div>
   </div>
 </header>
+<!-- Mobile nav overlay (outside header to avoid backdrop-filter containment) -->
+<nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+<?php foreach ($NAV_ITEMS as $item): ?>
+  <a href="<?php echo $item['url']; ?>"<?php echo ($current_page === $item['page']) ? ' class="active"' : ''; ?>><?php echo $item['label']; ?></a>
+<?php endforeach; ?>
+  <div class="mobile-actions">
+    <a href="<?php echo $lang_prefix; ?>/login" class="btn btn--outline"><?php echo __('nav_login', 'Log In'); ?></a>
+    <a href="/play" class="btn btn--primary" rel="nofollow"><?php echo __('nav_signup', 'Sign Up'); ?></a>
+  </div>
+</nav>

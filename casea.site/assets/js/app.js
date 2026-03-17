@@ -1,28 +1,28 @@
 // Mobile nav toggle
 document.addEventListener('DOMContentLoaded', function() {
   var toggle = document.querySelector('.nav-toggle');
-  var navMain = document.querySelector('.nav-main');
+  var navMobile = document.getElementById('navMobile');
 
-  if (toggle && navMain) {
+  if (toggle && navMobile) {
     toggle.addEventListener('click', function(e) {
       e.stopPropagation();
-      var isOpen = navMain.classList.contains('open');
+      var isOpen = navMobile.classList.contains('open');
       if (isOpen) {
         toggle.classList.remove('active');
-        navMain.classList.remove('open');
+        navMobile.classList.remove('open');
         document.body.style.overflow = '';
       } else {
         // Close lang selector if open
         document.querySelectorAll('.lang-selector').forEach(function(el) { el.classList.remove('open'); });
         toggle.classList.add('active');
-        navMain.classList.add('open');
+        navMobile.classList.add('open');
         document.body.style.overflow = 'hidden';
       }
     });
-    navMain.querySelectorAll('a').forEach(function(link) {
+    navMobile.querySelectorAll('a').forEach(function(link) {
       link.addEventListener('click', function() {
         toggle.classList.remove('active');
-        navMain.classList.remove('open');
+        navMobile.classList.remove('open');
         document.body.style.overflow = '';
       });
     });
