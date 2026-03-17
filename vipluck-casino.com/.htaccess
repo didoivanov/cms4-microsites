@@ -13,7 +13,7 @@ RewriteRule ^deploy-webhook\.php$ deploy-webhook.php [L]
 # ─── Static files (verification, robots, etc.) ───────────────────
 RewriteRule ^google[a-f0-9]+\.html$ - [L]
 RewriteRule ^robots\.txt$ - [L]
-RewriteRule ^sitemap\.xml$ - [L]
+RewriteRule ^sitemap[\w-]*\.xml$ - [L]
 
 # ─── Clean URLs ───────────────────────────────────────────────────
 # Skip real files and directories

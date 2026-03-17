@@ -15,6 +15,11 @@ RewriteRule ^google[a-f0-9]+\.html$ - [L]
 RewriteRule ^robots\.txt$ - [L]
 RewriteRule ^sitemap[\w-]*\.xml$ - [L]
 
+# ─── Serve files from repo subdirectory if not in web root ────────
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/casea.site/%{REQUEST_URI} -f
+RewriteRule ^(.+)$ casea.site/$1 [L]
+
 # ─── Clean URLs ───────────────────────────────────────────────────
 # Skip real files and directories
 RewriteCond %{REQUEST_FILENAME} !-f
