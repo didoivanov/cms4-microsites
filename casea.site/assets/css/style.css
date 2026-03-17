@@ -285,6 +285,7 @@
   align-items: center;
   gap: var(--space-1);
   white-space: nowrap;
+  width: auto;
 }
 
 .nav-mobile .mobile-lang a.active {
