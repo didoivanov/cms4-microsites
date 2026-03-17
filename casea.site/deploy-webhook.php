@@ -2,19 +2,31 @@
 /**
  * GitHub Webhook Deploy Script
  * Receives push events from GitHub and triggers git pull + cPanel deploy.
+ * 
+ * Security: Validates GitHub webhook signature using a shared secret.
  */
-$secret    = 'cms4-microsites-deploy-2026';
-$repo_path = '/home/cms4netp/simplemicrosites';
-$log_file  = '/home/cms4netp/deploy.log';
-$branch    = 'main';
 
+// ─── Configuration ───────────────────────────────────────────────
+$secret = 'cms4-microsites-deploy-2026';
+$repo_path = '/home/cms4netp/simplemicrosites';
+$log_file = $repo_path . '/deploy-log.txt';
+$branch = 'main';
+
+// ─── Validate Request ────────────────────────────────────────────
+// Only accept POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     die('Method not allowed');
 }
 
-$payload    = file_get_contents('php://input');
-$sig_header = $_SERVER['HTTP_X_HUB_SIGNATURE_256'] ?? '';
+// Get the raw payload
+$payload = file_get_contents('php://input');
+
+// Validate GitHub signature
+$sig_header = isset($_SERVER['HTTP_X_HUB_SIGNATURE_256']) 
+    ? $_SERVER['HTTP_X_HUB_SIGNATURE_256'] 
+    : '';
+
 if (!empty($secret)) {
     $expected = 'sha256=' . hash_hmac('sha256', $payload, $secret);
     if (!hash_equals($expected, $sig_header)) {
@@ -23,33 +35,42 @@ if (!empty($secret)) {
     }
 }
 
+// Parse payload
 $data = json_decode($payload, true);
-$event = $_SERVER['HTTP_X_GITHUB_EVENT'] ?? '';
-if ($event !== 'push') {
+
+// Only deploy on pushes to the target branch
+$ref = isset($data['ref']) ? $data['ref'] : '';
+if ($ref !== 'refs/heads/' . $branch) {
     http_response_code(200);
-    die(json_encode(['skipped' => $event]));
+    die('Skipped: not target branch');
 }
 
+// ─── Deploy ──────────────────────────────────────────────────────
 $timestamp = date('Y-m-d H:i:s');
 $output = [];
 
 // Pull latest changes
-$git = file_exists('/usr/local/cpanel/3rdparty/bin/git')
-     ? '/usr/local/cpanel/3rdparty/bin/git'
-     : 'git';
-exec("cd $repo_path && $git pull origin $branch 2>&1", $output, $pull_code);
+$cmd = "cd $repo_path && git pull origin $branch 2>&1";
+exec($cmd, $output, $return_code);
 
-// Trigger cPanel deployment (.cpanel.yml)
-exec("/usr/local/cpanel/bin/uapi VersionControlDeployment create repository_root=$repo_path 2>&1", $output, $deploy_code);
+// Run cPanel deploy
+$deploy_cmd = "/usr/local/cpanel/bin/uapi VersionControlDeployment create repository_root=$repo_path 2>&1";
+exec($deploy_cmd, $output, $deploy_code);
 
-$log = "[$timestamp] Pull code: $pull_code | Deploy code: $deploy_code\n"
-     . implode("\n", $output) . "\n---\n";
-file_put_contents($log_file, $log, FILE_APPEND | LOCK_EX);
+// Log results
+$log_entry = "[$timestamp] Deploy triggered\n";
+$log_entry .= "Pull exit code: $return_code\n";
+$log_entry .= "Deploy exit code: $deploy_code\n";
+$log_entry .= "Output:\n" . implode("\n", $output) . "\n";
+$log_entry .= str_repeat('-', 60) . "\n";
 
+file_put_contents($log_file, $log_entry, FILE_APPEND | LOCK_EX);
+
+// Respond
 http_response_code(200);
 echo json_encode([
-    'timestamp'   => $timestamp,
-    'pull_code'   => $pull_code,
+    'status' => ($return_code === 0) ? 'success' : 'error',
+    'pull_code' => $return_code,
     'deploy_code' => $deploy_code,
-    'output'      => implode("\n", $output),
+    'timestamp' => $timestamp,
 ]);

@@ -2,8 +2,6 @@
 deployment:
   tasks:
     # ─── Casea.site ──────────────────────────────────────────────
-    # Domain serves from /home/cms4netp/simplemicrosites/ (repo root)
-    # Copy casea.site/* to repo root
     - export DEPLOYPATH=/home/cms4netp/simplemicrosites
     - /bin/cp casea.site/.htaccess $DEPLOYPATH/
     - /bin/cp casea.site/config.php $DEPLOYPATH/
@@ -24,7 +22,6 @@ deployment:
     - /bin/mkdir -p $DEPLOYPATH/assets/img && /bin/cp -r casea.site/assets/img/. $DEPLOYPATH/assets/img/ 2>/dev/null || true
     - /bin/mkdir -p $DEPLOYPATH/lang && /bin/cp casea.site/lang/*.php $DEPLOYPATH/lang/
     # ─── VipLuck.onl ─────────────────────────────────────────────
-    # Domain serves from /home/cms4netp/vipluck.onl/ (separate directory)
     - export DEPLOYPATH=/home/cms4netp/vipluck.onl
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp vipluck-casino.com/.htaccess $DEPLOYPATH/
