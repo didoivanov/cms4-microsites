@@ -20,7 +20,7 @@ require_once __DIR__ . '/../../includes/header.php';
     <p class="hero__subtitle"><?php echo __('hero_subtitle', 'Več kot 10.000 iger od 90+ ponudnikov, popolna športna stavnica za 30+ športov, mize z živimi delilci in nagrade, ki se resnično izplačajo.'); ?></p>
     <div class="hero__bonus-card">
       <div class="hero__bonus-label"><?php echo __('welcome_label', 'Dobrodošlični paket'); ?></div>
-      <div class="hero__bonus-value"><?php echo WELCOME_BONUS; ?></div>
+      <div class="hero__bonus-value">100% do &euro;500 + 200 brezplačnih vrtljajev</div>
       <div class="hero__bonus-extra">Športni bonus: 100% do &euro;100 &middot; Min. polog &euro;20</div>
     </div>
     <div class="hero__ctas">
@@ -58,7 +58,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <tr><th>Igre</th><td>10.000+ (igralni avtomati, namizne igre, casino v živo, hitre igre)</td></tr>
         <tr><th>Ponudniki</th><td>90+ (Pragmatic Play, Evolution, Microgaming, NetEnt, Playtech in drugi)</td></tr>
         <tr><th>Športi</th><td>30+ športov, e-šport, virtualni športi</td></tr>
-        <tr><th>Dobrodošlični bonus</th><td><?php echo WELCOME_BONUS_TEXT; ?></td></tr>
+        <tr><th>Dobrodošlični bonus</th><td>100% do 500 EUR + 200 brezplačnih vrtljajev</td></tr>
         <tr><th>Min. polog</th><td>EUR 10 (EUR 20 za večino bonusov)</td></tr>
         <tr><th>Valute</th><td>EUR, USD, CAD, AUD, CHF, HUF, NOK, PLN, NZD, CZK, BRL, CLP, PEN</td></tr>
         <tr><th>Podpora</th><td>24/7 klepet v živo in e-pošta</td></tr>
