@@ -30,7 +30,9 @@ deployment:
     - /bin/cp vipluck-casino.com/deploy-webhook.php $DEPLOYPATH/
     - /bin/cp vipluck-casino.com/google9bd8dc12ea09b94c.html $DEPLOYPATH/ 2>/dev/null || true
     - /bin/cp vipluck-casino.com/robots.txt $DEPLOYPATH/ 2>/dev/null || true
-    - /bin/cp vipluck-casino.com/sitemap*.xml $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/cp vipluck-casino.com/sitemap.xml $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/cp vipluck-casino.com/sitemap-pages.xml $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/cp vipluck-casino.com/sitemap-hreflang.xml $DEPLOYPATH/ 2>/dev/null || true
     - /bin/cp vipluck-casino.com/favicon.ico $DEPLOYPATH/ 2>/dev/null || true
     - /bin/cp vipluck-casino.com/site.webmanifest $DEPLOYPATH/ 2>/dev/null || true
     - /bin/mkdir -p $DEPLOYPATH/includes && /bin/cp vipluck-casino.com/includes/*.php $DEPLOYPATH/includes/
