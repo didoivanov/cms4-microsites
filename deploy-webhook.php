@@ -1,12 +1,8 @@
 <?php
 /**
  * GitHub Webhook Deploy Script
- * Receives push events from GitHub and triggers git pull + file copy.
- * 
- * Instead of relying on cPanel UAPI (which can fail with "uncommitted changes"),
- * this webhook runs the .cpanel.yml copy tasks directly as shell commands.
- * 
- * Security: Validates GitHub webhook signature using a shared secret.
+ * Receives push events from GitHub, triggers git pull, then copies files
+ * using PHP functions (not shell exec) for reliability on shared hosting.
  */
 
 // ─── Configuration ───────────────────────────────────────────────
@@ -43,83 +39,86 @@ if ($ref !== 'refs/heads/' . $branch) {
     die('Skipped: not target branch');
 }
 
+// ─── Helper: Recursive directory copy using PHP ──────────────────
+function rcopy($src, $dst) {
+    $count = 0;
+    if (!is_dir($src)) return $count;
+    if (!is_dir($dst)) mkdir($dst, 0755, true);
+    
+    $dir = opendir($src);
+    while (($file = readdir($dir)) !== false) {
+        if ($file === '.' || $file === '..') continue;
+        $srcPath = $src . '/' . $file;
+        $dstPath = $dst . '/' . $file;
+        if (is_dir($srcPath)) {
+            $count += rcopy($srcPath, $dstPath);
+        } else {
+            copy($srcPath, $dstPath);
+            $count++;
+        }
+    }
+    closedir($dir);
+    return $count;
+}
+
 // ─── Deploy ──────────────────────────────────────────────────────
 $timestamp = date('Y-m-d H:i:s');
 $output = [];
 
-// Step 1: Pull latest changes
+// Step 1: Git pull
 $cmd = "cd $repo_path && git pull origin $branch 2>&1";
 exec($cmd, $output, $pull_code);
 
-// Step 2: Copy casea.site files to web root (repo root = web root for casea.site)
-$casea_cmds = [
-    "export DEPLOYPATH=$repo_path",
-    "/bin/cp $repo_path/casea.site/.htaccess $repo_path/",
-    "/bin/cp $repo_path/casea.site/config.php $repo_path/",
-    "/bin/cp $repo_path/casea.site/index.php $repo_path/",
-    "/bin/cp $repo_path/casea.site/deploy-webhook.php $repo_path/",
-    "/bin/cp $repo_path/casea.site/google9bd8dc12ea09b94c.html $repo_path/ 2>/dev/null",
-    "/bin/cp $repo_path/casea.site/robots.txt $repo_path/ 2>/dev/null",
-    "/bin/cp $repo_path/casea.site/sitemap.xml $repo_path/ 2>/dev/null",
-    "/bin/cp $repo_path/casea.site/sitemap-pages.xml $repo_path/ 2>/dev/null",
-    "/bin/cp $repo_path/casea.site/sitemap-hreflang.xml $repo_path/ 2>/dev/null",
-    "/bin/cp $repo_path/casea.site/favicon.ico $repo_path/ 2>/dev/null",
-    "/bin/cp $repo_path/casea.site/site.webmanifest $repo_path/ 2>/dev/null",
-    "/bin/cp -r $repo_path/casea.site/includes $repo_path/",
-    "/bin/cp -r $repo_path/casea.site/pages $repo_path/",
-    "/bin/cp -r $repo_path/casea.site/assets $repo_path/",
-    "/bin/cp -r $repo_path/casea.site/lang $repo_path/",
-];
+// Step 2: Copy casea.site → repo root (web root for casea.site)
+$casea_src = $repo_path . '/casea.site';
+$casea_dst = $repo_path;
+$casea_count = 0;
 
-$copy_output = [];
-$copy_code = 0;
-foreach ($casea_cmds as $c) {
-    exec($c . ' 2>&1', $copy_output, $rc);
-    if ($rc !== 0 && $copy_code === 0) {
-        $copy_code = $rc;
+// Copy root files
+$root_files = ['.htaccess', 'config.php', 'index.php', 'deploy-webhook.php',
+    'google9bd8dc12ea09b94c.html', 'robots.txt', 'sitemap.xml',
+    'sitemap-pages.xml', 'sitemap-hreflang.xml', 'favicon.ico', 'site.webmanifest'];
+foreach ($root_files as $f) {
+    if (file_exists($casea_src . '/' . $f)) {
+        copy($casea_src . '/' . $f, $casea_dst . '/' . $f);
+        $casea_count++;
+    }
+}
+// Copy directories
+foreach (['includes', 'pages', 'assets', 'lang'] as $dir) {
+    if (is_dir($casea_src . '/' . $dir)) {
+        $casea_count += rcopy($casea_src . '/' . $dir, $casea_dst . '/' . $dir);
     }
 }
 
-// Step 3: Copy vipluck-casino.com files to /home/cms4netp/vipluck.onl/
-$vipluck_path = '/home/cms4netp/vipluck.onl';
-$vipluck_cmds = [
-    "/bin/mkdir -p $vipluck_path",
-    "/bin/cp $repo_path/vipluck-casino.com/.htaccess $vipluck_path/",
-    "/bin/cp $repo_path/vipluck-casino.com/config.php $vipluck_path/",
-    "/bin/cp $repo_path/vipluck-casino.com/index.php $vipluck_path/",
-    "/bin/cp $repo_path/vipluck-casino.com/deploy-webhook.php $vipluck_path/",
-    "/bin/cp $repo_path/vipluck-casino.com/google9bd8dc12ea09b94c.html $vipluck_path/ 2>/dev/null",
-    "/bin/cp $repo_path/vipluck-casino.com/robots.txt $vipluck_path/ 2>/dev/null",
-    "/bin/cp $repo_path/vipluck-casino.com/sitemap.xml $vipluck_path/ 2>/dev/null",
-    "/bin/cp $repo_path/vipluck-casino.com/sitemap-pages.xml $vipluck_path/ 2>/dev/null",
-    "/bin/cp $repo_path/vipluck-casino.com/sitemap-hreflang.xml $vipluck_path/ 2>/dev/null",
-    "/bin/cp $repo_path/vipluck-casino.com/favicon.ico $vipluck_path/ 2>/dev/null",
-    "/bin/cp $repo_path/vipluck-casino.com/site.webmanifest $vipluck_path/ 2>/dev/null",
-    "/bin/cp -r $repo_path/vipluck-casino.com/includes $vipluck_path/",
-    "/bin/cp -r $repo_path/vipluck-casino.com/pages $vipluck_path/",
-    "/bin/cp -r $repo_path/vipluck-casino.com/assets $vipluck_path/",
-    "/bin/cp -r $repo_path/vipluck-casino.com/lang $vipluck_path/",
-];
+// Step 3: Copy vipluck-casino.com → /home/cms4netp/vipluck.onl/
+$vipluck_src = $repo_path . '/vipluck-casino.com';
+$vipluck_dst = '/home/cms4netp/vipluck.onl';
+$vipluck_count = 0;
 
-$vipluck_output = [];
-$vipluck_code = 0;
-foreach ($vipluck_cmds as $c) {
-    exec($c . ' 2>&1', $vipluck_output, $rc);
-    if ($rc !== 0 && $vipluck_code === 0) {
-        $vipluck_code = $rc;
+if (!is_dir($vipluck_dst)) mkdir($vipluck_dst, 0755, true);
+
+// Copy root files
+foreach ($root_files as $f) {
+    if (file_exists($vipluck_src . '/' . $f)) {
+        copy($vipluck_src . '/' . $f, $vipluck_dst . '/' . $f);
+        $vipluck_count++;
+    }
+}
+// Copy directories
+foreach (['includes', 'pages', 'assets', 'lang'] as $dir) {
+    if (is_dir($vipluck_src . '/' . $dir)) {
+        $vipluck_count += rcopy($vipluck_src . '/' . $dir, $vipluck_dst . '/' . $dir);
     }
 }
 
-// ─── Log Results ─────────────────────────────────────────────────
+// ─── Log ─────────────────────────────────────────────────────────
 $log_entry = "[$timestamp] Deploy triggered\n";
-$log_entry .= "Pull exit code: $pull_code\n";
-$log_entry .= "Casea copy exit code: $copy_code\n";
-$log_entry .= "VipLuck copy exit code: $vipluck_code\n";
-$log_entry .= "Pull output:\n" . implode("\n", $output) . "\n";
-$log_entry .= "Casea copy output:\n" . implode("\n", $copy_output) . "\n";
-$log_entry .= "VipLuck copy output:\n" . implode("\n", $vipluck_output) . "\n";
+$log_entry .= "Pull: exit=$pull_code\n";
+$log_entry .= "Casea files copied: $casea_count\n";
+$log_entry .= "VipLuck files copied: $vipluck_count\n";
+$log_entry .= "Pull output: " . implode("\n", $output) . "\n";
 $log_entry .= str_repeat('-', 60) . "\n";
-
 file_put_contents($log_file, $log_entry, FILE_APPEND | LOCK_EX);
 
 // ─── Respond ─────────────────────────────────────────────────────
@@ -127,7 +126,7 @@ http_response_code(200);
 echo json_encode([
     'status' => ($pull_code === 0) ? 'success' : 'error',
     'pull_code' => $pull_code,
-    'casea_copy_code' => $copy_code,
-    'vipluck_copy_code' => $vipluck_code,
+    'casea_files' => $casea_count,
+    'vipluck_files' => $vipluck_count,
     'timestamp' => $timestamp,
 ]);
