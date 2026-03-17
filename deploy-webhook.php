@@ -1,27 +1,23 @@
 <?php
 /**
- * GitHub Webhook Deploy Script
- * Receives push events from GitHub, triggers git pull, then copies files
- * using PHP functions (not shell exec) for reliability on shared hosting.
+ * GitHub Webhook Deploy Script - Casea.site
+ * Pulls from the shared repo, then copies casea.site files
+ * to this web root using PHP's native copy functions.
  */
 
-// ─── Configuration ───────────────────────────────────────────────
 $secret = 'cms4-microsites-deploy-2026';
 $repo_path = '/home/cms4netp/simplemicrosites';
-$log_file = $repo_path . '/deploy-log.txt';
+$log_file = __DIR__ . '/deploy-log.txt';
 $branch = 'main';
 
-// ─── Validate Request ────────────────────────────────────────────
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     die('Method not allowed');
 }
 
 $payload = file_get_contents('php://input');
-
 $sig_header = isset($_SERVER['HTTP_X_HUB_SIGNATURE_256']) 
-    ? $_SERVER['HTTP_X_HUB_SIGNATURE_256'] 
-    : '';
+    ? $_SERVER['HTTP_X_HUB_SIGNATURE_256'] : '';
 
 if (!empty($secret)) {
     $expected = 'sha256=' . hash_hmac('sha256', $payload, $secret);
@@ -32,28 +28,25 @@ if (!empty($secret)) {
 }
 
 $data = json_decode($payload, true);
-
 $ref = isset($data['ref']) ? $data['ref'] : '';
 if ($ref !== 'refs/heads/' . $branch) {
     http_response_code(200);
     die('Skipped: not target branch');
 }
 
-// ─── Helper: Recursive directory copy using PHP ──────────────────
 function rcopy($src, $dst) {
     $count = 0;
     if (!is_dir($src)) return $count;
-    if (!is_dir($dst)) mkdir($dst, 0755, true);
-    
+    if (!is_dir($dst)) @mkdir($dst, 0755, true);
     $dir = opendir($src);
     while (($file = readdir($dir)) !== false) {
         if ($file === '.' || $file === '..') continue;
-        $srcPath = $src . '/' . $file;
-        $dstPath = $dst . '/' . $file;
-        if (is_dir($srcPath)) {
-            $count += rcopy($srcPath, $dstPath);
+        $s = $src . '/' . $file;
+        $d = $dst . '/' . $file;
+        if (is_dir($s)) {
+            $count += rcopy($s, $d);
         } else {
-            copy($srcPath, $dstPath);
+            @copy($s, $d);
             $count++;
         }
     }
@@ -61,72 +54,45 @@ function rcopy($src, $dst) {
     return $count;
 }
 
-// ─── Deploy ──────────────────────────────────────────────────────
 $timestamp = date('Y-m-d H:i:s');
 $output = [];
 
-// Step 1: Git pull
+// Git pull
 $cmd = "cd $repo_path && git pull origin $branch 2>&1";
 exec($cmd, $output, $pull_code);
 
-// Step 2: Copy casea.site → repo root (web root for casea.site)
-$casea_src = $repo_path . '/casea.site';
-$casea_dst = $repo_path;
-$casea_count = 0;
+// Copy casea.site files to THIS directory (repo root = casea web root)
+$src = $repo_path . '/casea.site';
+$dst = __DIR__;
+$file_count = 0;
 
-// Copy root files
-$root_files = ['.htaccess', 'config.php', 'index.php', 'deploy-webhook.php',
+$root_files = ['.htaccess', 'config.php', 'index.php',
     'google9bd8dc12ea09b94c.html', 'robots.txt', 'sitemap.xml',
     'sitemap-pages.xml', 'sitemap-hreflang.xml', 'favicon.ico', 'site.webmanifest'];
 foreach ($root_files as $f) {
-    if (file_exists($casea_src . '/' . $f)) {
-        copy($casea_src . '/' . $f, $casea_dst . '/' . $f);
-        $casea_count++;
+    if (file_exists($src . '/' . $f)) {
+        @copy($src . '/' . $f, $dst . '/' . $f);
+        $file_count++;
     }
 }
-// Copy directories
+if (file_exists($src . '/deploy-webhook.php')) {
+    @copy($src . '/deploy-webhook.php', $dst . '/deploy-webhook.php');
+    $file_count++;
+}
 foreach (['includes', 'pages', 'assets', 'lang'] as $dir) {
-    if (is_dir($casea_src . '/' . $dir)) {
-        $casea_count += rcopy($casea_src . '/' . $dir, $casea_dst . '/' . $dir);
+    if (is_dir($src . '/' . $dir)) {
+        $file_count += rcopy($src . '/' . $dir, $dst . '/' . $dir);
     }
 }
 
-// Step 3: Copy vipluck-casino.com → /home/cms4netp/vipluck.onl/
-$vipluck_src = $repo_path . '/vipluck-casino.com';
-$vipluck_dst = '/home/cms4netp/vipluck.onl';
-$vipluck_count = 0;
+$log_entry = "[$timestamp] Casea deploy | Pull=$pull_code | Files=$file_count\n";
+$log_entry .= implode(" | ", $output) . "\n" . str_repeat('-', 60) . "\n";
+@file_put_contents($log_file, $log_entry, FILE_APPEND | LOCK_EX);
 
-if (!is_dir($vipluck_dst)) mkdir($vipluck_dst, 0755, true);
-
-// Copy root files
-foreach ($root_files as $f) {
-    if (file_exists($vipluck_src . '/' . $f)) {
-        copy($vipluck_src . '/' . $f, $vipluck_dst . '/' . $f);
-        $vipluck_count++;
-    }
-}
-// Copy directories
-foreach (['includes', 'pages', 'assets', 'lang'] as $dir) {
-    if (is_dir($vipluck_src . '/' . $dir)) {
-        $vipluck_count += rcopy($vipluck_src . '/' . $dir, $vipluck_dst . '/' . $dir);
-    }
-}
-
-// ─── Log ─────────────────────────────────────────────────────────
-$log_entry = "[$timestamp] Deploy triggered\n";
-$log_entry .= "Pull: exit=$pull_code\n";
-$log_entry .= "Casea files copied: $casea_count\n";
-$log_entry .= "VipLuck files copied: $vipluck_count\n";
-$log_entry .= "Pull output: " . implode("\n", $output) . "\n";
-$log_entry .= str_repeat('-', 60) . "\n";
-file_put_contents($log_file, $log_entry, FILE_APPEND | LOCK_EX);
-
-// ─── Respond ─────────────────────────────────────────────────────
 http_response_code(200);
 echo json_encode([
     'status' => ($pull_code === 0) ? 'success' : 'error',
     'pull_code' => $pull_code,
-    'casea_files' => $casea_count,
-    'vipluck_files' => $vipluck_count,
+    'files_copied' => $file_count,
     'timestamp' => $timestamp,
 ]);
