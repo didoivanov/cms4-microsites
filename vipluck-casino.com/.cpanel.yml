@@ -15,6 +15,7 @@ deployment:
     - /bin/cp vipluck-casino.com/favicon.ico $DEPLOYPATH/favicon.ico
     - /bin/cp vipluck-casino.com/site.webmanifest $DEPLOYPATH/site.webmanifest
     - /bin/cp vipluck-casino.com/deploy-webhook.php $DEPLOYPATH/deploy-webhook.php
+    - /bin/cp vipluck-casino.com/google9bd8dc12ea09b94c.html $DEPLOYPATH/google9bd8dc12ea09b94c.html
     - /bin/cp vipluck-casino.com/assets/css/base.css $DEPLOYPATH/assets/css/base.css
     - /bin/cp vipluck-casino.com/assets/css/style.css $DEPLOYPATH/assets/css/style.css
     - /bin/cp vipluck-casino.com/assets/js/app.js $DEPLOYPATH/assets/js/app.js
