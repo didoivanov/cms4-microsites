@@ -57,6 +57,29 @@ exec($cmd, $output, $return_code);
 $deploy_cmd = "/usr/local/cpanel/bin/uapi VersionControlDeployment create repository_root=$repo_path 2>&1";
 exec($deploy_cmd, $output, $deploy_code);
 
+// Fallback: manually copy files if cPanel deploy fails
+if ($deploy_code !== 0) {
+    $src = $repo_path . '/casea.site';
+    $dst = $repo_path;
+    $copy_cmds = [
+        "cp $src/.htaccess $dst/",
+        "cp $src/config.php $dst/",
+        "cp $src/index.php $dst/",
+        "cp $src/deploy-webhook.php $dst/ 2>/dev/null || true",
+        "mkdir -p $dst/includes && cp $src/includes/*.php $dst/includes/",
+        "mkdir -p $dst/pages && cp $src/pages/*.php $dst/pages/",
+        "for LANG in de el pl it fr es hu; do mkdir -p $dst/pages/\$LANG && cp $src/pages/\$LANG/*.php $dst/pages/\$LANG/; done",
+        "mkdir -p $dst/assets/css && cp $src/assets/css/*.css $dst/assets/css/",
+        "mkdir -p $dst/assets/js && cp $src/assets/js/*.js $dst/assets/js/",
+        "mkdir -p $dst/assets/img && cp $src/assets/img/* $dst/assets/img/ 2>/dev/null || true",
+        "mkdir -p $dst/lang && for LANG in en de el pl it fr es hu; do cp $src/lang/\$LANG.php $dst/lang/; done",
+    ];
+    foreach ($copy_cmds as $ccmd) {
+        exec($ccmd . ' 2>&1', $output);
+    }
+    $output[] = 'Fallback file copy completed';
+}
+
 // Log results
 $log_entry = "[$timestamp] Deploy triggered\n";
 $log_entry .= "Pull exit code: $return_code\n";
