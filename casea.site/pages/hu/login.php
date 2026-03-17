@@ -36,7 +36,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <li>Ha elfelejtetted a jelszavadat, használd a "Forgot your password?" linket a visszaállító email kéréséhez.</li>
         <li>Kerüld a VPN használatát, mivel a <?php echo SITE_NAME; ?> nem engedélyezi a VPN hozzáférést. A VPN-en keresztüli bejelentkezési kísérlet fiókkorlátozásokat eredményezhet.</li>
       </ul>
-      <p>Ha a fentiek egyike sem oldja meg a problémát, keresd az <a href="/support">ügyfélszolgálatot</a> élő chaten valós idejű segítségért.</p>
+      <p>Ha a fentiek egyike sem oldja meg a problémát, keresd az <a href="<?php echo $lang_prefix; ?>/support">ügyfélszolgálatot</a> élő chaten valós idejű segítségért.</p>
     </div>
   </section>
 

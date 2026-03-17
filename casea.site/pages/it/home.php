@@ -25,7 +25,7 @@ require_once __DIR__ . '/../../includes/header.php';
     </div>
     <div class="hero__ctas">
       <a href="/play" class="btn btn--primary btn--lg" rel="nofollow"><?php echo __('cta_play', 'Play Now'); ?></a>
-      <a href="/bonuses" class="btn btn--outline btn--lg">Vedi i Bonus</a>
+      <a href="<?php echo $lang_prefix; ?>/bonuses" class="btn btn--outline btn--lg">Vedi i Bonus</a>
     </div>
   </div>
 </section>
@@ -199,7 +199,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <tr><th>Valute</th><td>EUR, USD, CAD, AUD, CHF, HUF, NOK, PLN, NZD, CZK, BRL, CLP, PEN</td></tr>
       </table>
 
-      <p style="margin-top: var(--space-6);">Per una panoramica dettagliata dei metodi di prelievo, limiti, commissioni e consigli per velocizzare il tuo pagamento, visita la <a href="/withdrawal">pagina Prelievi</a>.</p>
+      <p style="margin-top: var(--space-6);">Per una panoramica dettagliata dei metodi di prelievo, limiti, commissioni e consigli per velocizzare il tuo pagamento, visita la <a href="<?php echo $lang_prefix; ?>/withdrawal">pagina Prelievi</a>.</p>
     </div>
   </section>
 
@@ -268,7 +268,7 @@ require_once __DIR__ . '/../../includes/header.php';
       <details class="faq-item">
         <summary>Come posso contattare il supporto clienti?</summary>
         <div class="faq-answer">
-          <p>Puoi contattare il team di supporto tramite live chat o email 24 ore su 24, 7 giorni su 7. La live chat è disponibile direttamente sul sito per risposte rapide. Per maggiori dettagli, visita la <a href="/support">pagina Supporto</a>.</p>
+          <p>Puoi contattare il team di supporto tramite live chat o email 24 ore su 24, 7 giorni su 7. La live chat è disponibile direttamente sul sito per risposte rapide. Per maggiori dettagli, visita la <a href="<?php echo $lang_prefix; ?>/support">pagina Supporto</a>.</p>
         </div>
       </details>
     </div>

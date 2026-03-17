@@ -84,7 +84,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         </div>
         <div class="info-card">
           <h4>Kifizetések &amp; Pénzforgalom</h4>
-          <p>Kérdések a kifizetési feldolgozási időkről, függőben lévő kérelmekről, elutasított kifizetésekről és limitbeállításokról. Részletes kifizetési információkért látogass el a <a href="/withdrawal">Kifizetések oldalra</a>.</p>
+          <p>Kérdések a kifizetési feldolgozási időkről, függőben lévő kérelmekről, elutasított kifizetésekről és limitbeállításokról. Részletes kifizetési információkért látogass el a <a href="<?php echo $lang_prefix; ?>/withdrawal">Kifizetések oldalra</a>.</p>
         </div>
         <div class="info-card">
           <h4>Bónuszok &amp; Promóciók</h4>

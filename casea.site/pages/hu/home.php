@@ -25,7 +25,7 @@ require_once __DIR__ . '/../../includes/header.php';
     </div>
     <div class="hero__ctas">
       <a href="/play" class="btn btn--primary btn--lg" rel="nofollow"><?php echo __('cta_play', 'Play Now'); ?></a>
-      <a href="/bonuses" class="btn btn--outline btn--lg">Bónuszok Megtekintése</a>
+      <a href="<?php echo $lang_prefix; ?>/bonuses" class="btn btn--outline btn--lg">Bónuszok Megtekintése</a>
     </div>
   </div>
 </section>
@@ -199,7 +199,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <tr><th>Valuták</th><td>EUR, USD, CAD, AUD, CHF, HUF, NOK, PLN, NZD, CZK, BRL, CLP, PEN</td></tr>
       </table>
 
-      <p style="margin-top: var(--space-6);">A kifizetési módok, limitek, díjak és tippek részletes áttekintéséért látogass el a <a href="/withdrawal">Kifizetések oldalra</a>.</p>
+      <p style="margin-top: var(--space-6);">A kifizetési módok, limitek, díjak és tippek részletes áttekintéséért látogass el a <a href="<?php echo $lang_prefix; ?>/withdrawal">Kifizetések oldalra</a>.</p>
     </div>
   </section>
 
@@ -268,7 +268,7 @@ require_once __DIR__ . '/../../includes/header.php';
       <details class="faq-item">
         <summary>Hogyan érhetem el az ügyfélszolgálatot?</summary>
         <div class="faq-answer">
-          <p>A támogató csapatot élő chaten vagy emailen érheted el a nap 24 órájában. Az élő chat közvetlenül a weboldalon érhető el gyors válaszokért. További részletekért látogass el a <a href="/support">Támogatás oldalra</a>.</p>
+          <p>A támogató csapatot élő chaten vagy emailen érheted el a nap 24 órájában. Az élő chat közvetlenül a weboldalon érhető el gyors válaszokért. További részletekért látogass el a <a href="<?php echo $lang_prefix; ?>/support">Támogatás oldalra</a>.</p>
         </div>
       </details>
     </div>

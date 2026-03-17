@@ -84,7 +84,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         </div>
         <div class="info-card">
           <h4>Prelievi &amp; Pagamenti</h4>
-          <p>Domande sui tempi di elaborazione dei prelievi, richieste in sospeso, pagamenti rifiutati e adeguamenti dei limiti. Per informazioni dettagliate sui prelievi, visita la <a href="/withdrawal">pagina Prelievi</a>.</p>
+          <p>Domande sui tempi di elaborazione dei prelievi, richieste in sospeso, pagamenti rifiutati e adeguamenti dei limiti. Per informazioni dettagliate sui prelievi, visita la <a href="<?php echo $lang_prefix; ?>/withdrawal">pagina Prelievi</a>.</p>
         </div>
         <div class="info-card">
           <h4>Bonus &amp; Promozioni</h4>

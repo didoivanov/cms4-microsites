@@ -36,7 +36,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <li>Wenn du dein Passwort vergessen hast, nutze den Link „Passwort vergessen?", um eine Zurücksetzungs-E-Mail anzufordern.</li>
         <li>Vermeide die Nutzung eines VPN, da <?php echo SITE_NAME; ?> keinen VPN-Zugang erlaubt. Ein Login-Versuch über ein VPN kann zu Kontobeschränkungen führen.</li>
       </ul>
-      <p>Wenn keine der oben genannten Maßnahmen hilft, wende dich an den <a href="/support">Kundenservice</a> per Live-Chat für Echtzeit-Hilfe.</p>
+      <p>Wenn keine der oben genannten Maßnahmen hilft, wende dich an den <a href="<?php echo $lang_prefix; ?>/support">Kundenservice</a> per Live-Chat für Echtzeit-Hilfe.</p>
     </div>
   </section>
 

@@ -84,7 +84,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         </div>
         <div class="info-card">
           <h4>Auszahlungen &amp; Gewinnauszahlung</h4>
-          <p>Fragen zu Auszahlungsbearbeitungszeiten, ausstehenden Anfragen, abgelehnten Auszahlungen und Limitanpassungen. Ausführliche Informationen zu Auszahlungen findest du auf der <a href="/withdrawal">Auszahlungsseite</a>.</p>
+          <p>Fragen zu Auszahlungsbearbeitungszeiten, ausstehenden Anfragen, abgelehnten Auszahlungen und Limitanpassungen. Ausführliche Informationen zu Auszahlungen findest du auf der <a href="<?php echo $lang_prefix; ?>/withdrawal">Auszahlungsseite</a>.</p>
         </div>
         <div class="info-card">
           <h4>Boni &amp; Aktionen</h4>

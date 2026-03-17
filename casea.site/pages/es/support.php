@@ -84,7 +84,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         </div>
         <div class="info-card">
           <h4>Retiros &amp; Cobros</h4>
-          <p>Preguntas sobre tiempos de procesamiento de retiros, solicitudes pendientes, pagos rechazados y ajustes de límites. Para información detallada sobre retiros, visita la <a href="/withdrawal">página de Retiros</a>.</p>
+          <p>Preguntas sobre tiempos de procesamiento de retiros, solicitudes pendientes, pagos rechazados y ajustes de límites. Para información detallada sobre retiros, visita la <a href="<?php echo $lang_prefix; ?>/withdrawal">página de Retiros</a>.</p>
         </div>
         <div class="info-card">
           <h4>Bonos &amp; Promociones</h4>

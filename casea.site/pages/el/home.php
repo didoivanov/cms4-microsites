@@ -25,7 +25,7 @@ require_once __DIR__ . '/../../includes/header.php';
     </div>
     <div class="hero__ctas">
       <a href="/play" class="btn btn--primary btn--lg" rel="nofollow"><?php echo __('cta_play', 'Play Now'); ?></a>
-      <a href="/bonuses" class="btn btn--outline btn--lg">Δες τα Μπόνους</a>
+      <a href="<?php echo $lang_prefix; ?>/bonuses" class="btn btn--outline btn--lg">Δες τα Μπόνους</a>
     </div>
   </div>
 </section>
@@ -199,7 +199,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <tr><th>Νομίσματα</th><td>EUR, USD, CAD, AUD, CHF, HUF, NOK, PLN, NZD, CZK, BRL, CLP, PEN</td></tr>
       </table>
 
-      <p style="margin-top: var(--space-6);">Για αναλυτική περιγραφή μεθόδων ανάληψης, ορίων, χρεώσεων και συμβουλών για ταχύτερη πληρωμή, επισκέψου τη σελίδα <a href="/withdrawal">Αναλήψεων</a>.</p>
+      <p style="margin-top: var(--space-6);">Για αναλυτική περιγραφή μεθόδων ανάληψης, ορίων, χρεώσεων και συμβουλών για ταχύτερη πληρωμή, επισκέψου τη σελίδα <a href="<?php echo $lang_prefix; ?>/withdrawal">Αναλήψεων</a>.</p>
     </div>
   </section>
 
@@ -268,7 +268,7 @@ require_once __DIR__ . '/../../includes/header.php';
       <details class="faq-item">
         <summary>Πώς μπορώ να επικοινωνήσω με την υποστήριξη πελατών;</summary>
         <div class="faq-answer">
-          <p>Μπορείς να επικοινωνήσεις με την ομάδα υποστήριξης μέσω live chat ή email όλο το 24ωρο. Το live chat είναι διαθέσιμο απευθείας στον ιστότοπο για γρήγορες απαντήσεις. Για περισσότερες λεπτομέρειες, επισκέψου τη σελίδα <a href="/support">Υποστήριξης</a>.</p>
+          <p>Μπορείς να επικοινωνήσεις με την ομάδα υποστήριξης μέσω live chat ή email όλο το 24ωρο. Το live chat είναι διαθέσιμο απευθείας στον ιστότοπο για γρήγορες απαντήσεις. Για περισσότερες λεπτομέρειες, επισκέψου τη σελίδα <a href="<?php echo $lang_prefix; ?>/support">Υποστήριξης</a>.</p>
         </div>
       </details>
     </div>

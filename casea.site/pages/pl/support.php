@@ -84,7 +84,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         </div>
         <div class="info-card">
           <h4>Wypłaty &amp; Wypłata Wygranych</h4>
-          <p>Pytania o czas realizacji wypłat, oczekujące wnioski, odrzucone płatności i zmiany limitów. Szczegółowe informacje o wypłatach znajdziesz na stronie <a href="/withdrawal">Wypłat</a>.</p>
+          <p>Pytania o czas realizacji wypłat, oczekujące wnioski, odrzucone płatności i zmiany limitów. Szczegółowe informacje o wypłatach znajdziesz na stronie <a href="<?php echo $lang_prefix; ?>/withdrawal">Wypłat</a>.</p>
         </div>
         <div class="info-card">
           <h4>Bonusy &amp; Promocje</h4>

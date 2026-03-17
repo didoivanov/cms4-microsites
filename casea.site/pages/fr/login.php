@@ -36,7 +36,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <li>Si tu as oublié ton mot de passe, utilise le lien « Mot de passe oublié ? » pour demander un email de réinitialisation.</li>
         <li>Évite d'utiliser un VPN, car <?php echo SITE_NAME; ?> n'autorise pas l'accès via VPN. Tenter de se connecter via un VPN pourrait entraîner des restrictions sur ton compte.</li>
       </ul>
-      <p>Si aucune de ces solutions ne résout le problème, contacte le <a href="/support">support client</a> via live chat pour une assistance en temps réel.</p>
+      <p>Si aucune de ces solutions ne résout le problème, contacte le <a href="<?php echo $lang_prefix; ?>/support">support client</a> via live chat pour une assistance en temps réel.</p>
     </div>
   </section>
 

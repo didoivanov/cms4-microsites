@@ -25,7 +25,7 @@ require_once __DIR__ . '/../../includes/header.php';
     </div>
     <div class="hero__ctas">
       <a href="/play" class="btn btn--primary btn--lg" rel="nofollow"><?php echo __('cta_play', 'Play Now'); ?></a>
-      <a href="/bonuses" class="btn btn--outline btn--lg">Boni ansehen</a>
+      <a href="<?php echo $lang_prefix; ?>/bonuses" class="btn btn--outline btn--lg">Boni ansehen</a>
     </div>
   </div>
 </section>
@@ -199,7 +199,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <tr><th>Währungen</th><td>EUR, USD, CAD, AUD, CHF, HUF, NOK, PLN, NZD, CZK, BRL, CLP, PEN</td></tr>
       </table>
 
-      <p style="margin-top: var(--space-6);">Eine ausführliche Übersicht zu Auszahlungsmethoden, Limits, Gebühren und Tipps für schnellere Auszahlungen findest du auf der <a href="/withdrawal">Auszahlungsseite</a>.</p>
+      <p style="margin-top: var(--space-6);">Eine ausführliche Übersicht zu Auszahlungsmethoden, Limits, Gebühren und Tipps für schnellere Auszahlungen findest du auf der <a href="<?php echo $lang_prefix; ?>/withdrawal">Auszahlungsseite</a>.</p>
     </div>
   </section>
 
@@ -268,7 +268,7 @@ require_once __DIR__ . '/../../includes/header.php';
       <details class="faq-item">
         <summary>Wie erreiche ich den Kundenservice?</summary>
         <div class="faq-answer">
-          <p>Du erreichst das Support-Team rund um die Uhr per Live-Chat oder E-Mail. Der Live-Chat ist direkt auf der Website für schnelle Antworten verfügbar. Weitere Details findest du auf der <a href="/support">Support-Seite</a>.</p>
+          <p>Du erreichst das Support-Team rund um die Uhr per Live-Chat oder E-Mail. Der Live-Chat ist direkt auf der Website für schnelle Antworten verfügbar. Weitere Details findest du auf der <a href="<?php echo $lang_prefix; ?>/support">Support-Seite</a>.</p>
         </div>
       </details>
     </div>
