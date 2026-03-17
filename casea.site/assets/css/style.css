@@ -185,6 +185,16 @@
   padding: var(--space-3) var(--space-8);
 }
 
+/* Mobile-only header CTA */
+.btn--mobile-cta {
+  display: none;
+  font-size: 0.75rem;
+  padding: 6px 14px;
+  margin-left: auto;
+  margin-right: var(--space-3);
+  flex-shrink: 0;
+}
+
 /* Mobile hamburger */
 .nav-toggle {
   display: none;
@@ -295,6 +305,7 @@
 }
 
 @media (max-width: 768px) {
+  .btn--mobile-cta { display: inline-flex; }
   .nav-toggle { display: flex; }
   .nav-main--desktop { display: none; }
   .nav-actions { display: none; }

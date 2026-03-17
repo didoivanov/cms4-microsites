@@ -12,6 +12,10 @@ $page_slug = ($current_page === 'home') ? '' : $current_page;
 <html lang="<?php echo $CURRENT_LANG; ?>">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php echo $page_title; ?></title>
 <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
@@ -31,8 +35,8 @@ if (count($active_langs) > 1):
 <?php endforeach; ?>
 <link rel="alternate" hreflang="x-default" href="<?php echo SITE_URL . '/' . $page_slug; ?>">
 <?php endif; ?>
-<link rel="stylesheet" href="/assets/css/base.css?v=20260317d">
-<link rel="stylesheet" href="/assets/css/style.css?v=20260317d">
+<link rel="stylesheet" href="/assets/css/base.css?v=20260317e">
+<link rel="stylesheet" href="/assets/css/style.css?v=20260317e">
 <?php if (!empty($THEME)): ?>
 <style>
 :root {
@@ -49,6 +53,7 @@ if (count($active_langs) > 1):
 <header class="site-header">
   <div class="container">
     <a href="<?php echo $lang_prefix; ?>/" class="site-logo"><?php echo SITE_NAME; ?></a>
+    <a href="/play" class="btn btn--primary btn--mobile-cta" rel="nofollow"><?php echo __('cta_play', 'Play Now'); ?></a>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>

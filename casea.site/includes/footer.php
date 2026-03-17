@@ -95,6 +95,6 @@ window.CASINO_CURRENCY = {
   jackpotBase: <?php echo $cur["jackpot_base"]; ?>
 };
 </script>
-<script src="/assets/js/app.js?v=20260317d"></script>
+<script src="/assets/js/app.js?v=20260317e"></script>
 </body>
 </html>
