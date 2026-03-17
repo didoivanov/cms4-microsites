@@ -1,0 +1,24 @@
+RewriteEngine On
+
+# ─── Force HTTPS ──────────────────────────────────────────────────
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ─── Play / CTA Redirect ─────────────────────────────────────────
+RewriteRule ^play/?$ https://playzzz.app/play/best-casinos [R=302,L]
+
+# ─── Webhook endpoint ────────────────────────────────────────────
+RewriteRule ^deploy-webhook\.php$ deploy-webhook.php [L]
+
+# ─── Static files (verification, robots, etc.) ───────────────────
+RewriteRule ^google[a-f0-9]+\.html$ - [L]
+RewriteRule ^robots\.txt$ - [L]
+# Sitemaps served via PHP router (index.php handles xml files)
+
+# ─── Clean URLs ───────────────────────────────────────────────────
+# Skip real files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route clean URLs to index.php router
+RewriteRule ^(.+)$ index.php?page=$1 [QSA,L]

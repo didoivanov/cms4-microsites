@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /includes/
+Disallow: /lang/
+Disallow: /play/
+
+Sitemap: https://daytonaspin-uk.com/sitemap.xml
