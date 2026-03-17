@@ -98,7 +98,7 @@ $vipluck_cmds = [
     "/bin/cp $repo_path/vipluck-casino.com/site.webmanifest $vipluck_path/ 2>/dev/null",
     "/bin/mkdir -p $vipluck_path/includes && /bin/cp $repo_path/vipluck-casino.com/includes/*.php $vipluck_path/includes/",
     "/bin/mkdir -p $vipluck_path/pages && /bin/cp $repo_path/vipluck-casino.com/pages/*.php $vipluck_path/pages/",
-    "for LANG in fr; do /bin/mkdir -p $vipluck_path/pages/\$LANG && /bin/cp $repo_path/vipluck-casino.com/pages/\$LANG/*.php $vipluck_path/pages/\$LANG/ 2>/dev/null; done",
+    "for LANG in fr pl it; do /bin/mkdir -p $vipluck_path/pages/\$LANG && /bin/cp $repo_path/vipluck-casino.com/pages/\$LANG/*.php $vipluck_path/pages/\$LANG/ 2>/dev/null; done",
     "/bin/mkdir -p $vipluck_path/assets/css && /bin/cp $repo_path/vipluck-casino.com/assets/css/*.css $vipluck_path/assets/css/",
     "/bin/mkdir -p $vipluck_path/assets/js && /bin/cp $repo_path/vipluck-casino.com/assets/js/*.js $vipluck_path/assets/js/",
     "/bin/mkdir -p $vipluck_path/assets/img && /bin/cp -r $repo_path/vipluck-casino.com/assets/img/. $vipluck_path/assets/img/ 2>/dev/null",

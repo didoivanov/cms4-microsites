@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /includes/
+Disallow: /lang/
+Disallow: /play/
+
+Sitemap: https://vipluck.onl/sitemap.xml

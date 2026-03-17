@@ -35,7 +35,7 @@ deployment:
     - /bin/cp vipluck-casino.com/site.webmanifest $DEPLOYPATH/ 2>/dev/null || true
     - /bin/mkdir -p $DEPLOYPATH/includes && /bin/cp vipluck-casino.com/includes/*.php $DEPLOYPATH/includes/
     - /bin/mkdir -p $DEPLOYPATH/pages && /bin/cp vipluck-casino.com/pages/*.php $DEPLOYPATH/pages/
-    - for LANG in fr; do /bin/mkdir -p $DEPLOYPATH/pages/$LANG && /bin/cp vipluck-casino.com/pages/$LANG/*.php $DEPLOYPATH/pages/$LANG/ 2>/dev/null || true; done
+    - for LANG in fr pl it; do /bin/mkdir -p $DEPLOYPATH/pages/$LANG && /bin/cp vipluck-casino.com/pages/$LANG/*.php $DEPLOYPATH/pages/$LANG/ 2>/dev/null || true; done
     - /bin/mkdir -p $DEPLOYPATH/assets/css && /bin/cp vipluck-casino.com/assets/css/*.css $DEPLOYPATH/assets/css/
     - /bin/mkdir -p $DEPLOYPATH/assets/js && /bin/cp vipluck-casino.com/assets/js/*.js $DEPLOYPATH/assets/js/
     - /bin/mkdir -p $DEPLOYPATH/assets/img && /bin/cp -r vipluck-casino.com/assets/img/. $DEPLOYPATH/assets/img/ 2>/dev/null || true
