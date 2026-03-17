@@ -15,6 +15,10 @@ if ($event !== 'push') { http_response_code(200); die(json_encode(['skipped' => 
 $ts      = date('Y-m-d H:i:s');
 $pullOut = shell_exec("cd {$repoPath} && /usr/local/cpanel/3rdparty/bin/git pull origin main 2>&1");
 
+// Debug: list directories in repo path
+$lsOut = shell_exec("ls -la {$repoPath}/ 2>&1");
+$lsOut2 = shell_exec("ls -la {$repoPath}/casea.site/ 2>&1");
+
 $sites = [
     'casea.site'         => '/home/cms4netp/simplemicrosites',
     'vipluck-casino.com' => '/home/cms4netp/vipluck.onl',
@@ -22,12 +26,16 @@ $sites = [
 $results = [];
 foreach ($sites as $subdir => $dest) {
     $src = $repoPath . '/' . $subdir;
-    if (!is_dir($src)) { $results[$subdir] = 'src missing'; continue; }
+    if (!is_dir($src)) { $results[$subdir] = "src missing: $src"; continue; }
     $cmds = [
         "cp {$src}/.htaccess {$dest}/",
         "cp {$src}/config.php {$dest}/",
         "cp {$src}/index.php {$dest}/",
         "cp {$src}/google9bd8dc12ea09b94c.html {$dest}/ 2>/dev/null || true",
+        "cp {$src}/robots.txt {$dest}/ 2>/dev/null || true",
+        "cp {$src}/sitemap.xml {$dest}/ 2>/dev/null || true",
+        "cp {$src}/sitemap-pages.xml {$dest}/ 2>/dev/null || true",
+        "cp {$src}/sitemap-hreflang.xml {$dest}/ 2>/dev/null || true",
         "cp {$src}/favicon.ico {$dest}/ 2>/dev/null || true",
         "cp {$src}/site.webmanifest {$dest}/ 2>/dev/null || true",
         "cp {$src}/deploy-webhook.php {$dest}/",
@@ -45,4 +53,10 @@ foreach ($sites as $subdir => $dest) {
 $log = "[{$ts}] Pull:\n{$pullOut}\nDeploy: " . json_encode($results) . "\n---\n";
 file_put_contents($logFile, $log, FILE_APPEND);
 http_response_code(200);
-echo json_encode(['timestamp' => $ts, 'pull' => trim($pullOut ?? ''), 'deploy' => $results]);
+echo json_encode([
+    'timestamp' => $ts, 
+    'pull' => trim($pullOut ?? ''), 
+    'deploy' => $results,
+    'debug_ls' => $lsOut,
+    'debug_casea' => $lsOut2,
+]);
