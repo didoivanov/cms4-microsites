@@ -1,99 +1,67 @@
 <?php
 /**
- * GitHub Webhook Deploy Script
- * Receives push events from GitHub and triggers git pull + cPanel deploy.
- * 
- * Security: Validates GitHub webhook signature using a shared secret.
+ * Unified Deploy Webhook
+ * Pulls repo, then copies files to all site web roots.
+ * Self-updating: copies itself from repo after pull.
  */
 
-// ─── Configuration ───────────────────────────────────────────────
-$secret = 'cms4-microsites-deploy-2026';
-$repo_path = '/home/cms4netp/simplemicrosites';
-$log_file = $repo_path . '/deploy-log.txt';
-$branch = 'main';
+$secret   = 'cms4-microsites-deploy-2026';
+$repoPath = '/home/cms4netp/repositories/cms4-microsites';
+$logFile  = '/home/cms4netp/deploy.log';
 
-// ─── Validate Request ────────────────────────────────────────────
-// Only accept POST requests
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    die('Method not allowed');
-}
+// ─── Verify Signature ────────────────────────────────────────────
+$payload   = file_get_contents('php://input');
+$sigHeader = $_SERVER['HTTP_X_HUB_SIGNATURE_256'] ?? '';
 
-// Get the raw payload
-$payload = file_get_contents('php://input');
+if (empty($sigHeader)) { http_response_code(403); die('Missing signature'); }
 
-// Validate GitHub signature
-$sig_header = isset($_SERVER['HTTP_X_HUB_SIGNATURE_256']) 
-    ? $_SERVER['HTTP_X_HUB_SIGNATURE_256'] 
-    : '';
+$expected = 'sha256=' . hash_hmac('sha256', $payload, $secret);
+if (!hash_equals($expected, $sigHeader)) { http_response_code(403); die('Invalid signature'); }
 
-if (!empty($secret)) {
-    $expected = 'sha256=' . hash_hmac('sha256', $payload, $secret);
-    if (!hash_equals($expected, $sig_header)) {
-        http_response_code(403);
-        die('Invalid signature');
-    }
-}
+// ─── Only process push events ────────────────────────────────────
+$event = $_SERVER['HTTP_X_GITHUB_EVENT'] ?? '';
+if ($event !== 'push') { http_response_code(200); die('Ignored: ' . $event); }
 
-// Parse payload
-$data = json_decode($payload, true);
+// ─── Pull ────────────────────────────────────────────────────────
+$ts      = date('Y-m-d H:i:s');
+$pullOut = shell_exec("cd {$repoPath} && /usr/local/cpanel/3rdparty/bin/git pull origin main 2>&1");
 
-// Only deploy on pushes to the target branch
-$ref = isset($data['ref']) ? $data['ref'] : '';
-if ($ref !== 'refs/heads/' . $branch) {
-    http_response_code(200);
-    die('Skipped: not target branch');
-}
+// ─── Site map: repo subdirectory → web root ──────────────────────
+$sites = [
+    'casea.site'        => '/home/cms4netp/simplemicrosites',
+    'vipluck-casino.com' => '/home/cms4netp/vipluck.onl',
+];
 
-// ─── Deploy ──────────────────────────────────────────────────────
-$timestamp = date('Y-m-d H:i:s');
-$output = [];
+$results = [];
 
-// Pull latest changes
-$cmd = "cd $repo_path && git pull origin $branch 2>&1";
-exec($cmd, $output, $return_code);
+foreach ($sites as $subdir => $dest) {
+    $src = $repoPath . '/' . $subdir;
+    if (!is_dir($src)) { $results[$subdir] = 'src missing'; continue; }
 
-// Run cPanel deploy
-$deploy_cmd = "/usr/local/cpanel/bin/uapi VersionControlDeployment create repository_root=$repo_path 2>&1";
-exec($deploy_cmd, $output, $deploy_code);
-
-// Fallback: manually copy files if cPanel deploy fails
-if ($deploy_code !== 0) {
-    $src = $repo_path . '/casea.site';
-    $dst = $repo_path;
-    $copy_cmds = [
-        "cp $src/.htaccess $dst/",
-        "cp $src/config.php $dst/",
-        "cp $src/index.php $dst/",
-        "cp $src/deploy-webhook.php $dst/ 2>/dev/null || true",
-        "mkdir -p $dst/includes && cp $src/includes/*.php $dst/includes/",
-        "mkdir -p $dst/pages && cp $src/pages/*.php $dst/pages/",
-        "for LANG in de el pl it fr es hu; do mkdir -p $dst/pages/\$LANG && cp $src/pages/\$LANG/*.php $dst/pages/\$LANG/; done",
-        "mkdir -p $dst/assets/css && cp $src/assets/css/*.css $dst/assets/css/",
-        "mkdir -p $dst/assets/js && cp $src/assets/js/*.js $dst/assets/js/",
-        "mkdir -p $dst/assets/img && cp $src/assets/img/* $dst/assets/img/ 2>/dev/null || true",
-        "mkdir -p $dst/lang && for LANG in en de el pl it fr es hu; do cp $src/lang/\$LANG.php $dst/lang/; done",
+    $cmds = [
+        "cp {$src}/.htaccess {$dest}/",
+        "cp {$src}/config.php {$dest}/",
+        "cp {$src}/index.php {$dest}/",
+        "cp {$src}/deploy-webhook.php {$dest}/ 2>/dev/null || true",
+        "cp {$src}/google9bd8dc12ea09b94c.html {$dest}/ 2>/dev/null || true",
+        "cp {$src}/favicon.ico {$dest}/ 2>/dev/null || true",
+        "cp {$src}/site.webmanifest {$dest}/ 2>/dev/null || true",
+        "mkdir -p {$dest}/includes && cp {$src}/includes/*.php {$dest}/includes/",
+        "mkdir -p {$dest}/pages && cp {$src}/pages/*.php {$dest}/pages/",
+        "for L in de el pl it fr es hu sl; do if [ -d {$src}/pages/\$L ]; then mkdir -p {$dest}/pages/\$L && cp {$src}/pages/\$L/*.php {$dest}/pages/\$L/; fi; done",
+        "mkdir -p {$dest}/assets/css && cp {$src}/assets/css/*.css {$dest}/assets/css/",
+        "mkdir -p {$dest}/assets/js && cp {$src}/assets/js/*.js {$dest}/assets/js/",
+        "mkdir -p {$dest}/assets/img && cp -r {$src}/assets/img/. {$dest}/assets/img/ 2>/dev/null || true",
+        "mkdir -p {$dest}/lang && cp {$src}/lang/*.php {$dest}/lang/",
     ];
-    foreach ($copy_cmds as $ccmd) {
-        exec($ccmd . ' 2>&1', $output);
-    }
-    $output[] = 'Fallback file copy completed';
+
+    foreach ($cmds as $c) { shell_exec($c . ' 2>&1'); }
+    $results[$subdir] = 'deployed';
 }
 
-// Log results
-$log_entry = "[$timestamp] Deploy triggered\n";
-$log_entry .= "Pull exit code: $return_code\n";
-$log_entry .= "Deploy exit code: $deploy_code\n";
-$log_entry .= "Output:\n" . implode("\n", $output) . "\n";
-$log_entry .= str_repeat('-', 60) . "\n";
+// ─── Log ─────────────────────────────────────────────────────────
+$log = "[{$ts}] Pull:\n{$pullOut}\nDeploy: " . json_encode($results) . "\n---\n";
+file_put_contents($logFile, $log, FILE_APPEND);
 
-file_put_contents($log_file, $log_entry, FILE_APPEND | LOCK_EX);
-
-// Respond
 http_response_code(200);
-echo json_encode([
-    'status' => ($return_code === 0) ? 'success' : 'error',
-    'pull_code' => $return_code,
-    'deploy_code' => $deploy_code,
-    'timestamp' => $timestamp,
-]);
+echo json_encode(['timestamp' => $ts, 'pull' => trim($pullOut), 'deploy' => $results]);
