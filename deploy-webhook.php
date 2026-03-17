@@ -85,7 +85,15 @@ foreach (['includes', 'pages', 'assets', 'lang'] as $dir) {
     }
 }
 
-$log_entry = "[$timestamp] Casea deploy | Pull=$pull_code | Files=$file_count\n";
+// Also try to update the vipluck webhook (cross-site copy)
+$vipluck_webhook_src = $repo_path . '/vipluck-casino.com/deploy-webhook.php';
+$vipluck_webhook_dst = '/home/cms4netp/vipluck.onl/deploy-webhook.php';
+$vipluck_updated = false;
+if (file_exists($vipluck_webhook_src)) {
+    $vipluck_updated = @copy($vipluck_webhook_src, $vipluck_webhook_dst);
+}
+
+$log_entry = "[$timestamp] Casea deploy | Pull=$pull_code | Files=$file_count | VipLuck webhook=" . ($vipluck_updated ? 'updated' : 'failed') . "\n";
 $log_entry .= implode(" | ", $output) . "\n" . str_repeat('-', 60) . "\n";
 @file_put_contents($log_file, $log_entry, FILE_APPEND | LOCK_EX);
 
