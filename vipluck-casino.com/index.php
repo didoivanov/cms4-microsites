@@ -7,13 +7,19 @@
 // Serve static root files directly (Google verification, robots, sitemap)
 $_requested = isset($_GET['page']) ? trim($_GET['page'], '/') : '';
 if (preg_match('/^[\w.-]+\.(html|txt|xml)$/', $_requested)) {
-    $_static = __DIR__ . '/' . $_requested;
-    if (file_exists($_static)) {
-        $ext = pathinfo($_static, PATHINFO_EXTENSION);
-        $types = ['html' => 'text/html', 'txt' => 'text/plain', 'xml' => 'application/xml'];
-        header('Content-Type: ' . ($types[$ext] ?? 'text/plain'));
-        readfile($_static);
-        exit;
+    // Check current directory first, then repo source directory as fallback
+    $_candidates = [
+        __DIR__ . '/' . $_requested,
+        '/home/cms4netp/simplemicrosites/vipluck-casino.com/' . $_requested,
+    ];
+    foreach ($_candidates as $_static) {
+        if (file_exists($_static)) {
+            $ext = pathinfo($_static, PATHINFO_EXTENSION);
+            $types = ['html' => 'text/html', 'txt' => 'text/plain', 'xml' => 'application/xml'];
+            header('Content-Type: ' . ($types[$ext] ?? 'text/plain'));
+            readfile($_static);
+            exit;
+        }
     }
 }
 
