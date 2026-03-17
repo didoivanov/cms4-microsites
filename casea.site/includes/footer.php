@@ -78,6 +78,6 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
   </div>
 </div>
 
-<script src="/assets/js/app.js?v=20260317"></script>
+<script src="/assets/js/app.js?v=20260317b"></script>
 </body>
 </html>

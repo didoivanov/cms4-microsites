@@ -362,4 +362,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     gameGrid.innerHTML = gHtml;
   }
+
+  // Wrap data-tables in scrollable container for mobile
+  document.querySelectorAll('.data-table').forEach(function(table) {
+    if (!table.parentElement.classList.contains('data-table-wrap')) {
+      var wrapper = document.createElement('div');
+      wrapper.className = 'data-table-wrap';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    }
+  });
 });

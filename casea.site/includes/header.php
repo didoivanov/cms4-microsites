@@ -31,8 +31,8 @@ if (count($active_langs) > 1):
 <?php endforeach; ?>
 <link rel="alternate" hreflang="x-default" href="<?php echo SITE_URL . '/' . $page_slug; ?>">
 <?php endif; ?>
-<link rel="stylesheet" href="/assets/css/base.css?v=20260317">
-<link rel="stylesheet" href="/assets/css/style.css?v=20260317">
+<link rel="stylesheet" href="/assets/css/base.css?v=20260317b">
+<link rel="stylesheet" href="/assets/css/style.css?v=20260317b">
 <?php if (!empty($THEME)): ?>
 <style>
 :root {
@@ -87,6 +87,17 @@ foreach ($LANGUAGES as $code => $lang_info):
 <?php foreach ($NAV_ITEMS as $item): ?>
   <a href="<?php echo $item['url']; ?>"<?php echo ($current_page === $item['page']) ? ' class="active"' : ''; ?>><?php echo $item['label']; ?></a>
 <?php endforeach; ?>
+  <div class="mobile-lang">
+<?php
+foreach ($LANGUAGES as $code => $lang_info):
+    if (!$lang_info[2]) continue;
+    $m_prefix = ($code === 'en') ? '' : '/' . $code;
+    $m_url = $m_prefix . '/' . $page_slug;
+    $m_flag = isset($lang_info[3]) ? $lang_info[3] : '';
+?>
+    <a href="<?php echo $m_url; ?>"<?php echo ($code === $CURRENT_LANG) ? ' class="active"' : ''; ?>><span class="lang-flag"><?php echo $m_flag; ?></span> <?php echo strtoupper($code); ?></a>
+<?php endforeach; ?>
+  </div>
   <div class="mobile-actions">
     <a href="<?php echo $lang_prefix; ?>/login" class="btn btn--outline"><?php echo __('nav_login', 'Log In'); ?></a>
     <a href="/play" class="btn btn--primary" rel="nofollow"><?php echo __('nav_signup', 'Sign Up'); ?></a>
