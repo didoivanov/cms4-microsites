@@ -1,0 +1,15 @@
+# Root-level files that get overwritten by deploy webhooks
+/deploy-webhook.php
+/index.php
+/config.php
+/.htaccess
+/robots.txt
+/sitemap*.xml
+/google*.html
+/favicon.ico
+/site.webmanifest
+/deploy-log.txt
+/includes/
+/pages/
+/assets/
+/lang/
