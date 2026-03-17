@@ -65,13 +65,10 @@ $casea_cmds = [
     "/bin/cp $repo_path/casea.site/sitemap-hreflang.xml $repo_path/ 2>/dev/null",
     "/bin/cp $repo_path/casea.site/favicon.ico $repo_path/ 2>/dev/null",
     "/bin/cp $repo_path/casea.site/site.webmanifest $repo_path/ 2>/dev/null",
-    "/bin/mkdir -p $repo_path/includes && /bin/cp $repo_path/casea.site/includes/*.php $repo_path/includes/",
-    "/bin/mkdir -p $repo_path/pages && /bin/cp $repo_path/casea.site/pages/*.php $repo_path/pages/",
-    "for LANG in de el pl it fr es hu sl; do /bin/mkdir -p $repo_path/pages/\$LANG && /bin/cp $repo_path/casea.site/pages/\$LANG/*.php $repo_path/pages/\$LANG/ 2>/dev/null; done",
-    "/bin/mkdir -p $repo_path/assets/css && /bin/cp $repo_path/casea.site/assets/css/*.css $repo_path/assets/css/",
-    "/bin/mkdir -p $repo_path/assets/js && /bin/cp $repo_path/casea.site/assets/js/*.js $repo_path/assets/js/",
-    "/bin/mkdir -p $repo_path/assets/img && /bin/cp -r $repo_path/casea.site/assets/img/. $repo_path/assets/img/ 2>/dev/null",
-    "/bin/mkdir -p $repo_path/lang && /bin/cp $repo_path/casea.site/lang/*.php $repo_path/lang/",
+    "/bin/cp -r $repo_path/casea.site/includes $repo_path/",
+    "/bin/cp -r $repo_path/casea.site/pages $repo_path/",
+    "/bin/cp -r $repo_path/casea.site/assets $repo_path/",
+    "/bin/cp -r $repo_path/casea.site/lang $repo_path/",
 ];
 
 $copy_output = [];
@@ -98,13 +95,10 @@ $vipluck_cmds = [
     "/bin/cp $repo_path/vipluck-casino.com/sitemap-hreflang.xml $vipluck_path/ 2>/dev/null",
     "/bin/cp $repo_path/vipluck-casino.com/favicon.ico $vipluck_path/ 2>/dev/null",
     "/bin/cp $repo_path/vipluck-casino.com/site.webmanifest $vipluck_path/ 2>/dev/null",
-    "/bin/mkdir -p $vipluck_path/includes && /bin/cp $repo_path/vipluck-casino.com/includes/*.php $vipluck_path/includes/",
-    "/bin/mkdir -p $vipluck_path/pages && /bin/cp $repo_path/vipluck-casino.com/pages/*.php $vipluck_path/pages/",
-    "for LANG in fr pl it; do /bin/mkdir -p $vipluck_path/pages/\$LANG && /bin/cp $repo_path/vipluck-casino.com/pages/\$LANG/*.php $vipluck_path/pages/\$LANG/ 2>/dev/null; done",
-    "/bin/mkdir -p $vipluck_path/assets/css && /bin/cp $repo_path/vipluck-casino.com/assets/css/*.css $vipluck_path/assets/css/",
-    "/bin/mkdir -p $vipluck_path/assets/js && /bin/cp $repo_path/vipluck-casino.com/assets/js/*.js $vipluck_path/assets/js/",
-    "/bin/mkdir -p $vipluck_path/assets/img && /bin/cp -r $repo_path/vipluck-casino.com/assets/img/. $vipluck_path/assets/img/ 2>/dev/null",
-    "/bin/mkdir -p $vipluck_path/lang && /bin/cp $repo_path/vipluck-casino.com/lang/*.php $vipluck_path/lang/",
+    "/bin/cp -r $repo_path/vipluck-casino.com/includes $vipluck_path/",
+    "/bin/cp -r $repo_path/vipluck-casino.com/pages $vipluck_path/",
+    "/bin/cp -r $repo_path/vipluck-casino.com/assets $vipluck_path/",
+    "/bin/cp -r $repo_path/vipluck-casino.com/lang $vipluck_path/",
 ];
 
 $vipluck_output = [];
