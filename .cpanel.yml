@@ -8,6 +8,10 @@ deployment:
     - /bin/cp casea.site/index.php $DEPLOYPATH/
     - /bin/cp casea.site/deploy-webhook.php $DEPLOYPATH/
     - /bin/cp casea.site/google9bd8dc12ea09b94c.html $DEPLOYPATH/
+    - /bin/cp casea.site/robots.txt $DEPLOYPATH/
+    - /bin/cp casea.site/sitemap.xml $DEPLOYPATH/
+    - /bin/cp casea.site/sitemap-pages.xml $DEPLOYPATH/
+    - /bin/cp casea.site/sitemap-hreflang.xml $DEPLOYPATH/
     - /bin/cp casea.site/favicon.ico $DEPLOYPATH/ 2>/dev/null || true
     - /bin/cp casea.site/site.webmanifest $DEPLOYPATH/ 2>/dev/null || true
     - /bin/mkdir -p $DEPLOYPATH/includes
