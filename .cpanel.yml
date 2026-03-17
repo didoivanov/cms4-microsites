@@ -1,42 +1,7 @@
 ---
+# Each domain points directly to its subdirectory in this repo.
+# Git pull updates files in place - no copying needed.
+# This file is required by cPanel but deployment is a no-op.
 deployment:
   tasks:
-    # ─── Casea.site ──────────────────────────────────────────────
-    - export DEPLOYPATH=/home/cms4netp/simplemicrosites
-    - /bin/cp casea.site/.htaccess $DEPLOYPATH/
-    - /bin/cp casea.site/config.php $DEPLOYPATH/
-    - /bin/cp casea.site/index.php $DEPLOYPATH/
-    - /bin/cp casea.site/deploy-webhook.php $DEPLOYPATH/
-    - /bin/cp casea.site/google9bd8dc12ea09b94c.html $DEPLOYPATH/
-    - /bin/cp casea.site/robots.txt $DEPLOYPATH/
-    - /bin/cp casea.site/sitemap.xml $DEPLOYPATH/
-    - /bin/cp casea.site/sitemap-pages.xml $DEPLOYPATH/
-    - /bin/cp casea.site/sitemap-hreflang.xml $DEPLOYPATH/
-    - /bin/cp casea.site/favicon.ico $DEPLOYPATH/ 2>/dev/null || true
-    - /bin/cp casea.site/site.webmanifest $DEPLOYPATH/ 2>/dev/null || true
-    - /bin/mkdir -p $DEPLOYPATH/includes
-    - /bin/cp casea.site/includes/*.php $DEPLOYPATH/includes/
-    - /bin/mkdir -p $DEPLOYPATH/pages
-    - /bin/cp casea.site/pages/*.php $DEPLOYPATH/pages/
-    - for LANG in de el pl it fr es hu sl; do /bin/mkdir -p $DEPLOYPATH/pages/$LANG && /bin/cp casea.site/pages/$LANG/*.php $DEPLOYPATH/pages/$LANG/ 2>/dev/null || true; done
-    - /bin/mkdir -p $DEPLOYPATH/assets/css && /bin/cp casea.site/assets/css/*.css $DEPLOYPATH/assets/css/
-    - /bin/mkdir -p $DEPLOYPATH/assets/js && /bin/cp casea.site/assets/js/*.js $DEPLOYPATH/assets/js/
-    - /bin/mkdir -p $DEPLOYPATH/assets/img && /bin/cp -r casea.site/assets/img/. $DEPLOYPATH/assets/img/ 2>/dev/null || true
-    - /bin/mkdir -p $DEPLOYPATH/lang && /bin/cp casea.site/lang/*.php $DEPLOYPATH/lang/
-    # ─── VipLuck.onl ─────────────────────────────────────────────
-    - export DEPLOYPATH=/home/cms4netp/vipluck.onl
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp vipluck-casino.com/.htaccess $DEPLOYPATH/
-    - /bin/cp vipluck-casino.com/config.php $DEPLOYPATH/
-    - /bin/cp vipluck-casino.com/index.php $DEPLOYPATH/
-    - /bin/cp vipluck-casino.com/deploy-webhook.php $DEPLOYPATH/
-    - /bin/cp vipluck-casino.com/google9bd8dc12ea09b94c.html $DEPLOYPATH/
-    - /bin/cp vipluck-casino.com/favicon.ico $DEPLOYPATH/ 2>/dev/null || true
-    - /bin/cp vipluck-casino.com/site.webmanifest $DEPLOYPATH/ 2>/dev/null || true
-    - /bin/mkdir -p $DEPLOYPATH/includes && /bin/cp vipluck-casino.com/includes/*.php $DEPLOYPATH/includes/
-    - /bin/mkdir -p $DEPLOYPATH/pages && /bin/cp vipluck-casino.com/pages/*.php $DEPLOYPATH/pages/
-    - for LANG in fr; do /bin/mkdir -p $DEPLOYPATH/pages/$LANG && /bin/cp vipluck-casino.com/pages/$LANG/*.php $DEPLOYPATH/pages/$LANG/ 2>/dev/null || true; done
-    - /bin/mkdir -p $DEPLOYPATH/assets/css && /bin/cp vipluck-casino.com/assets/css/*.css $DEPLOYPATH/assets/css/
-    - /bin/mkdir -p $DEPLOYPATH/assets/js && /bin/cp vipluck-casino.com/assets/js/*.js $DEPLOYPATH/assets/js/
-    - /bin/mkdir -p $DEPLOYPATH/assets/img && /bin/cp -r vipluck-casino.com/assets/img/. $DEPLOYPATH/assets/img/ 2>/dev/null || true
-    - /bin/mkdir -p $DEPLOYPATH/lang && /bin/cp vipluck-casino.com/lang/*.php $DEPLOYPATH/lang/
+    - /bin/echo "Deployed at $(date)"
