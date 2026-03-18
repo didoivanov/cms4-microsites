@@ -9,7 +9,7 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
 $page_slug = ($current_page === 'home') ? '' : $current_page;
 ?>
 <!DOCTYPE html>
-<html lang="<?php echo $CURRENT_LANG; ?>">
+<html lang="<?php echo isset($LANGUAGES[$CURRENT_LANG][4]) ? $LANGUAGES[$CURRENT_LANG][4] : $CURRENT_LANG; ?>">
 <head>
 <meta charset="UTF-8">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -31,7 +31,7 @@ if (count($active_langs) > 1):
         $href_prefix = ($code === 'en') ? '' : '/' . $code;
         $href = SITE_URL . $href_prefix . '/' . $page_slug;
 ?>
-<link rel="alternate" hreflang="<?php echo $code; ?>" href="<?php echo $href; ?>">
+<link rel="alternate" hreflang="<?php echo isset($lang_info[4]) ? $lang_info[4] : $code; ?>" href="<?php echo $href; ?>">
 <?php endforeach; ?>
 <link rel="alternate" hreflang="x-default" href="<?php echo SITE_URL . '/' . $page_slug; ?>">
 <?php endif; ?>

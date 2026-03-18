@@ -53,12 +53,15 @@ $THEME = [
 ];
 
 // ─── Languages ───────────────────────────────────────────────────
+// Format: [label, native_name, active, flag_emoji, lang_code]
+// lang_code (index 4) overrides the array key for html lang="" and hreflang=""
+// If omitted, the array key is used as the lang code
 $LANGUAGES = [
-    'en' => ['English',    'English',    true,  "\xF0\x9F\x87\xAC\xF0\x9F\x87\xA7"],
-    'nl' => ['Nederlands', 'Nederlands', true,  "\xF0\x9F\x87\xB3\xF0\x9F\x87\xB1"],
-    'fr' => ['Français',    'Français',    true,  "\xF0\x9F\x87\xAB\xF0\x9F\x87\xB7"],
-    'it' => ['Italiano',     'Italiano',     true,  "\xF0\x9F\x87\xAE\xF0\x9F\x87\xB9"],
-    'uk' => ['English (UK)', 'English (UK)', true,  "\xF0\x9F\x87\xAC\xF0\x9F\x87\xA7"],
+    'en' => ['English',      'English',      true,  "\xF0\x9F\x87\xAC\xF0\x9F\x87\xA7", 'en'],
+    'nl' => ['Nederlands',   'Nederlands',   true,  "\xF0\x9F\x87\xB3\xF0\x9F\x87\xB1", 'nl'],
+    'fr' => ['Français',     'Français',     true,  "\xF0\x9F\x87\xAB\xF0\x9F\x87\xB7", 'fr'],
+    'it' => ['Italiano',     'Italiano',     true,  "\xF0\x9F\x87\xAE\xF0\x9F\x87\xB9", 'it'],
+    'uk' => ['English (UK)', 'English (UK)', true,  "\xF0\x9F\x87\xAC\xF0\x9F\x87\xA7", 'en-GB'],
 ];
 
 // Current language (set by router)
