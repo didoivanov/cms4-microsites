@@ -40,10 +40,10 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Setting Limits</h2>
       <p>Before you start playing at any online casino, consider setting the following limits:</p>
       <ul>
-        <li><strong>Deposit limits</strong> -- set a daily, weekly, or monthly cap on how much you can deposit</li>
-        <li><strong>Loss limits</strong> -- decide the maximum amount you are prepared to lose in a given period</li>
-        <li><strong>Time limits</strong> -- set a timer or alarm to remind yourself when to stop</li>
-        <li><strong>Session reminders</strong> -- many casinos offer reality check pop-ups that tell you how long you have been playing</li>
+        <li><strong>Deposit limits</strong> - set a daily, weekly, or monthly cap on how much you can deposit</li>
+        <li><strong>Loss limits</strong> - decide the maximum amount you are prepared to lose in a given period</li>
+        <li><strong>Time limits</strong> - set a timer or alarm to remind yourself when to stop</li>
+        <li><strong>Session reminders</strong> - many casinos offer reality check pop-ups that tell you how long you have been playing</li>
       </ul>
       <p>Most reputable online casinos, including <?php echo SITE_NAME; ?>, provide these tools within your account settings. Use them.</p>
 
@@ -62,8 +62,8 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Self-Exclusion</h2>
       <p>If you feel you need a break from gambling, there are several options available to UK players:</p>
 
-      <h3>GamStop -- Multi-Operator Self-Exclusion</h3>
-      <p><a href="https://www.gamstop.co.uk" target="_blank" rel="noopener noreferrer">GamStop</a> is the UK's free national self-exclusion scheme. When you register with GamStop, you will be excluded from all online gambling companies licensed in Great Britain for a period of your choosing -- 6 months, 1 year, or 5 years. This covers casinos, sportsbooks, bingo, and lottery sites holding a UKGC licence. Registration takes a few minutes and cannot be reversed early.</p>
+      <h3>GamStop - Multi-Operator Self-Exclusion</h3>
+      <p><a href="https://www.gamstop.co.uk" target="_blank" rel="noopener noreferrer">GamStop</a> is the UK's free national self-exclusion scheme. When you register with GamStop, you will be excluded from all online gambling companies licensed in Great Britain for a period of your choosing - 6 months, 1 year, or 5 years. This covers casinos, sportsbooks, bingo, and lottery sites holding a UKGC licence. Registration takes a few minutes and cannot be reversed early.</p>
 
       <h3>Casino-Level Self-Exclusion</h3>
       <p>At <?php echo SITE_NAME; ?> Casino, you can also request to be excluded from the platform for a set period or permanently by contacting their support team. During a self-exclusion period, you will not be able to log in or place bets.</p>

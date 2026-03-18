@@ -13,7 +13,7 @@ require_once __DIR__ . '/../../includes/header.php';
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <div class="hero__badge">Ouvert -- 7 000+ jeux et paris sportifs en direct</div>
+    <div class="hero__badge">Ouvert - 7 000+ jeux et paris sportifs en direct</div>
     <h1>
       <span class="brand-name"><?php echo SITE_NAME; ?></span><br>
       <span class="brand-type">Casino</span>
@@ -117,7 +117,7 @@ require_once __DIR__ . '/../../includes/header.php';
   <section class="content-section content-section--alt" id="games">
     <div class="container">
       <h2>Jeux Populaires sur <?php echo SITE_NAME; ?></h2>
-      <p>Parcourez une selection des titres les plus joues du casino. Des machines a sous a forte volatilite aux jeux de table classiques, en passant par les salles de croupiers en direct et les marches sportifs -- il y en a pour tous les gouts.</p>
+      <p>Parcourez une selection des titres les plus joues du casino. Des machines a sous a forte volatilite aux jeux de table classiques, en passant par les salles de croupiers en direct et les marches sportifs - il y en a pour tous les gouts.</p>
 
       <div class="game-tabs">
         <button class="game-tab active">Tous les Jeux</button>
@@ -176,7 +176,7 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Casino Mobile</h2>
       <div class="two-col" style="align-items:center">
         <div>
-          <p><?php echo SITE_NAME; ?> ne dispose pas d'une application mobile dediee, mais le site est entierement compatible avec tous les smartphones et tablettes. La plateforme basee sur navigateur offre les memes fonctionnalites, jeux et outils de gestion de compte que la version de bureau. Aucun telechargement necessaire -- ouvrez votre navigateur mobile, connectez-vous et jouez.</p>
+          <p><?php echo SITE_NAME; ?> ne dispose pas d'une application mobile dediee, mais le site est entierement compatible avec tous les smartphones et tablettes. La plateforme basee sur navigateur offre les memes fonctionnalites, jeux et outils de gestion de compte que la version de bureau. Aucun telechargement necessaire - ouvrez votre navigateur mobile, connectez-vous et jouez.</p>
         </div>
         <div style="text-align:center">
           <img src="/assets/img/westace-mobile.png" alt="<?php echo SITE_NAME; ?> Casino lobby mobile avec bonus de bienvenue et navigation dans les jeux" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
@@ -187,7 +187,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <li>Tables de croupiers en direct et sportsbook en deplacement</li>
         <li>Deposez et retirez directement depuis votre telephone</li>
         <li>Support par live chat disponible sur mobile</li>
-        <li>Aucun telechargement d'application necessaire -- fonctionne sur iOS et Android</li>
+        <li>Aucun telechargement d'application necessaire - fonctionne sur iOS et Android</li>
       </ul>
     </div>
   </section>

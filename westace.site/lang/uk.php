@@ -12,7 +12,7 @@ return [
     'nav_signup'      => 'Sign Up',
 
     // Hero
-    'hero_badge'      => 'Open now -- 7,000+ games and live sports betting',
+    'hero_badge'      => 'Open now - 7,000+ games and live sports betting',
     'hero_subtitle'   => 'Over 7,000 games from 100+ providers, a full sportsbook, live dealer tables and bonuses that keep on paying.',
     'welcome_label'   => 'Welcome Package',
 
@@ -23,7 +23,7 @@ return [
     'cta_ready_desc'  => 'Create your account in under a minute and claim your welcome bonus today.',
 
     // Footer
-    'footer_disclaimer' => 'This website is an independent affiliate site and is not operated by %s Casino. All casino games are provided by %s. We may receive a commission for referrals. Gambling can be addictive -- please gamble responsibly. You must be 18 years or older to participate. Bonus terms, wagering requirements and withdrawal conditions apply. Check the availability of services in your jurisdiction before signing up.',
+    'footer_disclaimer' => 'This website is an independent affiliate site and is not operated by %s Casino. All casino games are provided by %s. We may receive a commission for referrals. Gambling can be addictive - please gamble responsibly. You must be 18 years or older to participate. Bonus terms, wagering requirements and withdrawal conditions apply. Check the availability of services in your jurisdiction before signing up.',
     'footer_brand_desc' => 'Over 7,000 games, 100+ providers, full sportsbook and 24/7 live support. Play casino games, bet on sports and enjoy generous bonus offers.',
     'footer_payments'   => 'Payments',
     'footer_help'       => 'Help',

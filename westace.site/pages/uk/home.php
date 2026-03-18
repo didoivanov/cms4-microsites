@@ -184,7 +184,7 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Mobile Casino</h2>
       <div class="two-col" style="align-items:center">
         <div>
-          <p><?php echo SITE_NAME; ?> does not have a dedicated mobile app, but the website runs smoothly on any UK mobile network. The browser-based platform delivers the same features, games, and account management tools you would find on the desktop version. No downloads required -- open Safari, Chrome, or any mobile browser, log in, and play.</p>
+          <p><?php echo SITE_NAME; ?> does not have a dedicated mobile app, but the website runs smoothly on any UK mobile network. The browser-based platform delivers the same features, games, and account management tools you would find on the desktop version. No downloads required - open Safari, Chrome, or any mobile browser, log in, and play.</p>
         </div>
         <div style="text-align:center">
           <img src="/assets/img/westace-mobile.png" alt="<?php echo SITE_NAME; ?> Casino mobile lobby with welcome bonus and game navigation" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
@@ -195,7 +195,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <li>Live dealer tables and sportsbook on the go</li>
         <li>Deposit and withdraw directly from your phone</li>
         <li>Live chat support available on mobile</li>
-        <li>No app download needed -- works on iOS and Android</li>
+        <li>No app download needed - works on iOS and Android</li>
       </ul>
     </div>
   </section>

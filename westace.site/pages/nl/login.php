@@ -26,7 +26,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
           <h3>Inloggen op Desktop</h3>
           <p>Ga naar de <?php echo SITE_NAME; ?>-website en klik op de knop "Log In" rechtsboven op de pagina. Voer je e-mailadres en wachtwoord in en klik op "Log In" om toegang te krijgen tot je account. Als je je wachtwoord bent vergeten, klik dan op de resetlink onder het inlogformulier.</p>
           <h3>Inloggen op Mobiel</h3>
-          <p>Open op je telefoon of tablet de <?php echo SITE_NAME; ?>-website in je mobiele browser. Tik op de knop "Log In", voer je e-mailadres en wachtwoord in en tik op "Log In." De mobiele versie biedt dezelfde functies als de desktopsite -- geen app-download nodig.</p>
+          <p>Open op je telefoon of tablet de <?php echo SITE_NAME; ?>-website in je mobiele browser. Tik op de knop "Log In", voer je e-mailadres en wachtwoord in en tik op "Log In." De mobiele versie biedt dezelfde functies als de desktopsite - geen app-download nodig.</p>
         </div>
         <div style="text-align:center;flex-shrink:0">
           <img src="/assets/img/westace-login-screen.png" alt="<?php echo SITE_NAME; ?> Casino inlogscherm met e-mail- en wachtwoordvelden" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">

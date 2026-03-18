@@ -22,9 +22,9 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Quelles Donnees Nous Collectons</h2>
       <p>Nous limitons la collecte de donnees au strict minimum. Aucune inscription, aucun compte et aucune information personnelle ne sont requis pour consulter ce site. Les donnees que nous pouvons collecter comprennent :</p>
       <ul>
-        <li><strong>Donnees analytiques anonymisees</strong> -- pages consultees, region geographique approximative, type d'appareil et source de reference. Ces donnees nous aident a comprendre comment le site est utilise et a ameliorer notre contenu.</li>
-        <li><strong>Cookies et technologies similaires</strong> -- petits fichiers texte stockes dans votre navigateur pour l'analyse et le fonctionnement de base du site. Consultez notre <a href="<?php echo $lang_prefix; ?>/cookies">Politique de Cookies</a> pour tous les details.</li>
-        <li><strong>Journaux de serveur</strong> -- votre adresse IP, type de navigateur et pages visitees peuvent etre enregistres automatiquement par notre hebergeur a des fins de securite et de fonctionnement. Ces journaux sont conserves pour une duree limitee et ne sont pas utilises a des fins marketing.</li>
+        <li><strong>Donnees analytiques anonymisees</strong> - pages consultees, region geographique approximative, type d'appareil et source de reference. Ces donnees nous aident a comprendre comment le site est utilise et a ameliorer notre contenu.</li>
+        <li><strong>Cookies et technologies similaires</strong> - petits fichiers texte stockes dans votre navigateur pour l'analyse et le fonctionnement de base du site. Consultez notre <a href="<?php echo $lang_prefix; ?>/cookies">Politique de Cookies</a> pour tous les details.</li>
+        <li><strong>Journaux de serveur</strong> - votre adresse IP, type de navigateur et pages visitees peuvent etre enregistres automatiquement par notre hebergeur a des fins de securite et de fonctionnement. Ces journaux sont conserves pour une duree limitee et ne sont pas utilises a des fins marketing.</li>
       </ul>
       <p>Nous ne collectons ni noms, ni adresses e-mail, ni numeros de telephone, ni informations de paiement, ni aucune autre donnee personnelle identifiable via ce site. Nous ne stockons aucune donnee financiere, aucun historique de paris, ni aucune information de compte client.</p>
 
@@ -40,9 +40,9 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Services Tiers</h2>
       <p>Nous pouvons utiliser les services tiers suivants, chacun regi par sa propre politique de confidentialite :</p>
       <ul>
-        <li><strong>Google Analytics</strong> -- pour l'analyse anonymisee du trafic</li>
-        <li><strong>Cloudflare</strong> -- pour la diffusion de contenu et la securite</li>
-        <li><strong>Liens partenaires affilies</strong> -- lorsque vous cliquez sur un lien pour visiter <?php echo SITE_NAME; ?> Casino, vous quittez notre site et etes soumis aux pratiques de confidentialite de l'operateur du casino</li>
+        <li><strong>Google Analytics</strong> - pour l'analyse anonymisee du trafic</li>
+        <li><strong>Cloudflare</strong> - pour la diffusion de contenu et la securite</li>
+        <li><strong>Liens partenaires affilies</strong> - lorsque vous cliquez sur un lien pour visiter <?php echo SITE_NAME; ?> Casino, vous quittez notre site et etes soumis aux pratiques de confidentialite de l'operateur du casino</li>
       </ul>
 
       <h2>Vos Droits en Vertu du RGPD</h2>
@@ -51,7 +51,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <li>Demander l'acces a toute donnee personnelle que nous detenons a votre sujet</li>
         <li>Demander la rectification ou la suppression de ces donnees</li>
         <li>Vous opposer au traitement ou en demander la limitation</li>
-        <li>Portabilite des donnees -- recevoir vos donnees dans un format structure et lisible par machine</li>
+        <li>Portabilite des donnees - recevoir vos donnees dans un format structure et lisible par machine</li>
         <li>Retirer votre consentement a tout moment (par exemple en desactivant les cookies dans votre navigateur)</li>
         <li>Deposer une plainte aupres de la CNIL (Commission Nationale de l'Informatique et des Libertes)</li>
       </ul>

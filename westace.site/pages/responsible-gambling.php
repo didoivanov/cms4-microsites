@@ -39,10 +39,10 @@ require_once __DIR__ . '/../includes/header.php';
       <h2>Setting Limits</h2>
       <p>Before you start playing at any online casino, consider setting the following limits:</p>
       <ul>
-        <li><strong>Deposit limits</strong> -- set a daily, weekly, or monthly cap on how much you can deposit</li>
-        <li><strong>Loss limits</strong> -- decide the maximum amount you are prepared to lose in a given period</li>
-        <li><strong>Time limits</strong> -- set a timer or alarm to remind yourself when to stop</li>
-        <li><strong>Session reminders</strong> -- many casinos offer reality check pop-ups that tell you how long you have been playing</li>
+        <li><strong>Deposit limits</strong> - set a daily, weekly, or monthly cap on how much you can deposit</li>
+        <li><strong>Loss limits</strong> - decide the maximum amount you are prepared to lose in a given period</li>
+        <li><strong>Time limits</strong> - set a timer or alarm to remind yourself when to stop</li>
+        <li><strong>Session reminders</strong> - many casinos offer reality check pop-ups that tell you how long you have been playing</li>
       </ul>
       <p>Most reputable online casinos, including <?php echo SITE_NAME; ?>, provide these tools within your account settings. Use them.</p>
 

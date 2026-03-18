@@ -154,11 +154,11 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       </ul>
       <p>Si vous avez répondu oui à plusieurs de ces questions, nous vous recommandons de contacter un organisme d'aide :</p>
       <ul>
-        <li><strong>Joueurs Info Service</strong> -- aide et information sur les problèmes de jeu -- <a href="https://www.joueurs-info-service.fr" target="_blank" rel="noopener noreferrer">joueurs-info-service.fr</a> -- 0 974 75 13 13</li>
-        <li><strong>SOS Joueurs</strong> -- accompagnement et soutien pour les joueurs en difficulté -- <a href="https://www.sosjoueurs.org" target="_blank" rel="noopener noreferrer">sosjoueurs.org</a></li>
-        <li><strong>Adictel</strong> -- aide en ligne pour les problèmes d'addiction au jeu -- <a href="https://www.adictel.com" target="_blank" rel="noopener noreferrer">adictel.com</a></li>
-        <li><strong>IFAC</strong> -- Institut Fédératif des Addictions Comportementales -- recherche et orientation sur les addictions comportementales</li>
-        <li><strong>ANJ</strong> -- Autorité Nationale des Jeux -- <a href="https://www.anj.fr" target="_blank" rel="noopener noreferrer">anj.fr</a></li>
+        <li><strong>Joueurs Info Service</strong> - aide et information sur les problèmes de jeu - <a href="https://www.joueurs-info-service.fr" target="_blank" rel="noopener noreferrer">joueurs-info-service.fr</a> - 0 974 75 13 13</li>
+        <li><strong>SOS Joueurs</strong> - accompagnement et soutien pour les joueurs en difficulté - <a href="https://www.sosjoueurs.org" target="_blank" rel="noopener noreferrer">sosjoueurs.org</a></li>
+        <li><strong>Adictel</strong> - aide en ligne pour les problèmes d'addiction au jeu - <a href="https://www.adictel.com" target="_blank" rel="noopener noreferrer">adictel.com</a></li>
+        <li><strong>IFAC</strong> - Institut Fédératif des Addictions Comportementales - recherche et orientation sur les addictions comportementales</li>
+        <li><strong>ANJ</strong> - Autorité Nationale des Jeux - <a href="https://www.anj.fr" target="_blank" rel="noopener noreferrer">anj.fr</a></li>
       </ul>
 
       <h3>Conseils Pratiques</h3>

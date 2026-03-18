@@ -13,7 +13,7 @@ require_once __DIR__ . '/../../includes/header.php';
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <div class="hero__badge">Nu geopend -- 7.000+ spellen en live sportweddenschappen</div>
+    <div class="hero__badge">Nu geopend - 7.000+ spellen en live sportweddenschappen</div>
     <h1>
       <span class="brand-name"><?php echo SITE_NAME; ?></span><br>
       <span class="brand-type">Casino</span>
@@ -117,7 +117,7 @@ require_once __DIR__ . '/../../includes/header.php';
   <section class="content-section content-section--alt" id="games">
     <div class="container">
       <h2>Populaire Spellen bij <?php echo SITE_NAME; ?></h2>
-      <p>Bekijk een selectie van de meest gespeelde titels in het casino. Van high-volatility slots tot klassieke tafelspellen, live dealer kamers en sportweddenschappen -- er is voor elk type speler iets te vinden.</p>
+      <p>Bekijk een selectie van de meest gespeelde titels in het casino. Van high-volatility slots tot klassieke tafelspellen, live dealer kamers en sportweddenschappen - er is voor elk type speler iets te vinden.</p>
 
       <div class="game-tabs">
         <button class="game-tab active">Alle Spellen</button>
@@ -176,7 +176,7 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Mobiel Casino</h2>
       <div class="two-col" style="align-items:center">
         <div>
-          <p><?php echo SITE_NAME; ?> heeft geen speciale mobiele app, maar de website werkt volledig op alle smartphones en tablets. Het browsergebaseerde platform biedt dezelfde functies, spellen en accountbeheermogelijkheden als de desktopversie. Geen downloads nodig -- open je mobiele browser, log in en speel.</p>
+          <p><?php echo SITE_NAME; ?> heeft geen speciale mobiele app, maar de website werkt volledig op alle smartphones en tablets. Het browsergebaseerde platform biedt dezelfde functies, spellen en accountbeheermogelijkheden als de desktopversie. Geen downloads nodig - open je mobiele browser, log in en speel.</p>
         </div>
         <div style="text-align:center">
           <img src="/assets/img/westace-mobile.png" alt="<?php echo SITE_NAME; ?> Casino mobiele lobby met welkomstbonus en spelnavigatie" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
@@ -187,7 +187,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <li>Live dealer tafels en sportsbook onderweg</li>
         <li>Storten en opnemen rechtstreeks vanaf je telefoon</li>
         <li>Live chat ondersteuning beschikbaar op mobiel</li>
-        <li>Geen app-download nodig -- werkt op iOS en Android</li>
+        <li>Geen app-download nodig - werkt op iOS en Android</li>
       </ul>
     </div>
   </section>

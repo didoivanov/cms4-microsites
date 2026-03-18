@@ -9,7 +9,7 @@ $current_page = 'sports';
 require_once __DIR__ . '/../includes/header.php';
 
 $hero_title = SITE_NAME . ' Sportsbook';
-$hero_description = 'Pre-match odds, live in-play betting, virtual sports, and horse racing -- all in one place alongside our full casino.';
+$hero_description = 'Pre-match odds, live in-play betting, virtual sports, and horse racing - all in one place alongside our full casino.';
 $hero_cta = 'Start Betting';
 require_once __DIR__ . '/../includes/page-hero.php';
 ?>
@@ -33,7 +33,7 @@ require_once __DIR__ . '/../includes/page-hero.php';
         <div class="info-card">
           <div class="info-card__icon">&#9917;</div>
           <h4>Pre-Match Betting</h4>
-          <p>Place bets on upcoming matches across 30+ sports. Football, tennis, basketball, cricket, ice hockey, MMA, and more -- with singles, accumulators, and system bets available.</p>
+          <p>Place bets on upcoming matches across 30+ sports. Football, tennis, basketball, cricket, ice hockey, MMA, and more - with singles, accumulators, and system bets available.</p>
         </div>
         <div class="info-card">
           <div class="info-card__icon">&#9889;</div>
@@ -43,7 +43,7 @@ require_once __DIR__ . '/../includes/page-hero.php';
         <div class="info-card">
           <div class="info-card__icon">&#127918;</div>
           <h4>Virtual Sports</h4>
-          <p>Simulated events running around the clock -- virtual football, basketball, tennis, horse racing, and greyhounds. Results every few minutes, no waiting for real fixtures.</p>
+          <p>Simulated events running around the clock - virtual football, basketball, tennis, horse racing, and greyhounds. Results every few minutes, no waiting for real fixtures.</p>
         </div>
       </div>
     </div>
@@ -59,24 +59,24 @@ require_once __DIR__ . '/../includes/page-hero.php';
         <div>
           <h3>Popular Sports</h3>
           <ul class="check-list">
-            <li>Football -- Premier League, La Liga, Bundesliga, Serie A, Champions League, World Cup qualifiers, and hundreds of lower leagues</li>
-            <li>Tennis -- Grand Slams, ATP, WTA, and Challenger events</li>
-            <li>Basketball -- NBA, EuroLeague, national leagues</li>
-            <li>Ice Hockey -- NHL, KHL, SHL, and European leagues</li>
-            <li>Cricket -- IPL, international test matches, T20 World Cup</li>
-            <li>MMA / Boxing -- UFC, Bellator, and major boxing cards</li>
-            <li>Esports -- CS2, Dota 2, League of Legends, Valorant</li>
+            <li>Football - Premier League, La Liga, Bundesliga, Serie A, Champions League, World Cup qualifiers, and hundreds of lower leagues</li>
+            <li>Tennis - Grand Slams, ATP, WTA, and Challenger events</li>
+            <li>Basketball - NBA, EuroLeague, national leagues</li>
+            <li>Ice Hockey - NHL, KHL, SHL, and European leagues</li>
+            <li>Cricket - IPL, international test matches, T20 World Cup</li>
+            <li>MMA / Boxing - UFC, Bellator, and major boxing cards</li>
+            <li>Esports - CS2, Dota 2, League of Legends, Valorant</li>
           </ul>
         </div>
         <div>
           <h3>More Sports</h3>
           <ul class="check-list">
             <li>Rugby Union and Rugby League</li>
-            <li>American Football -- NFL, college football</li>
-            <li>Baseball -- MLB, NPB, KBO</li>
-            <li>Handball -- European and international events</li>
-            <li>Volleyball -- national leagues and international</li>
-            <li>Table Tennis -- professional and world events</li>
+            <li>American Football - NFL, college football</li>
+            <li>Baseball - MLB, NPB, KBO</li>
+            <li>Handball - European and international events</li>
+            <li>Volleyball - national leagues and international</li>
+            <li>Table Tennis - professional and world events</li>
             <li>Darts, Snooker, Cycling, Formula 1</li>
           </ul>
         </div>
@@ -103,11 +103,11 @@ require_once __DIR__ . '/../includes/page-hero.php';
 
       <h3>Available Virtual Sports</h3>
       <ul>
-        <li><strong>Virtual Football</strong> -- full match simulations with league tables and cup formats</li>
-        <li><strong>Virtual Basketball</strong> -- quarter-by-quarter simulations with standard basketball markets</li>
-        <li><strong>Virtual Tennis</strong> -- set-by-set matches with match winner and correct score options</li>
-        <li><strong>Virtual Horse Racing</strong> -- flat and jump racing with win, place, and forecast bets</li>
-        <li><strong>Virtual Greyhounds</strong> -- short races with win and forecast markets</li>
+        <li><strong>Virtual Football</strong> - full match simulations with league tables and cup formats</li>
+        <li><strong>Virtual Basketball</strong> - quarter-by-quarter simulations with standard basketball markets</li>
+        <li><strong>Virtual Tennis</strong> - set-by-set matches with match winner and correct score options</li>
+        <li><strong>Virtual Horse Racing</strong> - flat and jump racing with win, place, and forecast bets</li>
+        <li><strong>Virtual Greyhounds</strong> - short races with win and forecast markets</li>
       </ul>
       <p>New virtual events start every 2-3 minutes, so there is always something to bet on.</p>
     </div>

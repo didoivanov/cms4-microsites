@@ -246,10 +246,10 @@ require_once __DIR__ . '/../includes/page-hero.php';
         <div>
           <h3>Required Documents</h3>
           <ul>
-            <li><strong>Proof of ID</strong> -- a passport, driving licence, or national ID card</li>
-            <li><strong>Selfie with ID</strong> -- a photo of you holding the ID document</li>
-            <li><strong>Proof of address</strong> -- a utility bill or bank statement dated within the last 3 months</li>
-            <li><strong>Source of funds</strong> -- documentation showing where your gambling funds come from (anti-money laundering requirement)</li>
+            <li><strong>Proof of ID</strong> - a passport, driving licence, or national ID card</li>
+            <li><strong>Selfie with ID</strong> - a photo of you holding the ID document</li>
+            <li><strong>Proof of address</strong> - a utility bill or bank statement dated within the last 3 months</li>
+            <li><strong>Source of funds</strong> - documentation showing where your gambling funds come from (anti-money laundering requirement)</li>
           </ul>
           <p>You have 30 days to submit the requested documents. Your account may be restricted until verification is complete.</p>
         </div>

@@ -22,7 +22,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       <h2>Welkomstpakket voor Nieuwe Spelers</h2>
       <div class="two-col" style="align-items:center;gap:var(--space-8);margin-bottom:var(--space-6)">
         <div>
-          <p>Nieuwe spelers bij <?php echo SITE_NAME; ?> kunnen een welkomstpakket claimen over drie stortingen met een totale waarde van tot &euro;2.000 + 150 Gratis Spins. Elke storting wordt verdubbeld met een 100% matchbonus en 50 Gratis Spins. De minimale kwalificerende storting is &euro;20 per niveau. Geen promotiecode nodig -- ga naar de kassa, selecteer de aanbieding en doe je kwalificerende storting.</p>
+          <p>Nieuwe spelers bij <?php echo SITE_NAME; ?> kunnen een welkomstpakket claimen over drie stortingen met een totale waarde van tot &euro;2.000 + 150 Gratis Spins. Elke storting wordt verdubbeld met een 100% matchbonus en 50 Gratis Spins. De minimale kwalificerende storting is &euro;20 per niveau. Geen promotiecode nodig - ga naar de kassa, selecteer de aanbieding en doe je kwalificerende storting.</p>
         </div>
         <div style="text-align:center;flex-shrink:0">
           <img src="/assets/img/westace-bonuses-screen.png" alt="<?php echo SITE_NAME; ?> Casino promotiepagina met welkomstbonus en actieve acties" style="max-width:280px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
@@ -263,7 +263,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
   <section class="content-section content-section--alt" id="cashback">
     <div class="container">
       <h2>Dagelijkse Cashback</h2>
-      <p>Spelers op VIP-niveau 2 tot en met 5 ontvangen dagelijks cashback op basis van nettoverliezen bij casinospellen met echt geld. Het percentage stijgt met je VIP-niveau en de inzetvereiste is slechts 1x -- speel het een keer door en de cashback is van jou.</p>
+      <p>Spelers op VIP-niveau 2 tot en met 5 ontvangen dagelijks cashback op basis van nettoverliezen bij casinospellen met echt geld. Het percentage stijgt met je VIP-niveau en de inzetvereiste is slechts 1x - speel het een keer door en de cashback is van jou.</p>
 
       <div class="data-table-wrap">
         <table class="data-table">

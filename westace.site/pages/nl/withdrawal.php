@@ -247,10 +247,10 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <div>
           <h3>Vereiste Documenten</h3>
           <ul>
-            <li><strong>Identiteitsbewijs</strong> -- een paspoort, rijbewijs of nationale identiteitskaart</li>
-            <li><strong>Selfie met ID</strong> -- een foto van jou terwijl je het identiteitsdocument vasthoudt</li>
-            <li><strong>Adresbewijs</strong> -- een energierekening of bankafschrift van maximaal 3 maanden oud</li>
-            <li><strong>Bron van inkomen</strong> -- documentatie die aantoont waar je gokgeld vandaan komt (antiwitwasregelgeving)</li>
+            <li><strong>Identiteitsbewijs</strong> - een paspoort, rijbewijs of nationale identiteitskaart</li>
+            <li><strong>Selfie met ID</strong> - een foto van jou terwijl je het identiteitsdocument vasthoudt</li>
+            <li><strong>Adresbewijs</strong> - een energierekening of bankafschrift van maximaal 3 maanden oud</li>
+            <li><strong>Bron van inkomen</strong> - documentatie die aantoont waar je gokgeld vandaan komt (antiwitwasregelgeving)</li>
           </ul>
           <p>Je hebt 30 dagen om de gevraagde documenten in te dienen. Je account kan beperkt worden totdat de verificatie is voltooid.</p>
         </div>

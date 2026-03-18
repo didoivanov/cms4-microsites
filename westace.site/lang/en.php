@@ -23,7 +23,7 @@ return [
     'cta_ready_desc'  => 'Create your account in under a minute and claim your welcome bonus today.',
 
     // Footer
-    'footer_disclaimer' => 'This website is an independent affiliate site and is not operated by %s Casino. All casino games are provided by %s. We may receive a commission for referrals. Gambling can be addictive -- play responsibly. You must be 18 years or older to participate. Bonus terms, wagering requirements, and withdrawal conditions apply. Please verify the availability of services in your jurisdiction before registering.',
+    'footer_disclaimer' => 'This website is an independent affiliate site and is not operated by %s Casino. All casino games are provided by %s. We may receive a commission for referrals. Gambling can be addictive - play responsibly. You must be 18 years or older to participate. Bonus terms, wagering requirements, and withdrawal conditions apply. Please verify the availability of services in your jurisdiction before registering.',
     'footer_brand_desc' => 'Over 7,000 games, 100+ providers, full sportsbook, and 24/7 live support. Play casino games, bet on sports, and enjoy generous bonus offers.',
     'footer_payments'   => 'Payments',
     'footer_help'       => 'Help',

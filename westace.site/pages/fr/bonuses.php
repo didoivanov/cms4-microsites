@@ -22,7 +22,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       <h2>Pack de Bienvenue pour les Nouveaux Joueurs</h2>
       <div class="two-col" style="align-items:center;gap:var(--space-8);margin-bottom:var(--space-6)">
         <div>
-          <p>Les nouveaux joueurs sur <?php echo SITE_NAME; ?> peuvent reclamer un pack de bienvenue sur trois depots d'une valeur combinee allant jusqu'a 2 000 &euro; + 150 Tours Gratuits. Chaque depot s'accompagne d'un bonus de 100% et de 50 Tours Gratuits. Le depot minimum requis est de 20 &euro; par niveau. Aucun code promo n'est necessaire -- rendez-vous simplement a la caisse, selectionnez l'offre et effectuez votre depot qualifiant.</p>
+          <p>Les nouveaux joueurs sur <?php echo SITE_NAME; ?> peuvent reclamer un pack de bienvenue sur trois depots d'une valeur combinee allant jusqu'a 2 000 &euro; + 150 Tours Gratuits. Chaque depot s'accompagne d'un bonus de 100% et de 50 Tours Gratuits. Le depot minimum requis est de 20 &euro; par niveau. Aucun code promo n'est necessaire - rendez-vous simplement a la caisse, selectionnez l'offre et effectuez votre depot qualifiant.</p>
         </div>
         <div style="text-align:center;flex-shrink:0">
           <img src="/assets/img/westace-bonuses-screen.png" alt="<?php echo SITE_NAME; ?> Casino page promotions montrant le bonus de bienvenue et les promotions actives" style="max-width:280px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
@@ -263,7 +263,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
   <section class="content-section content-section--alt" id="cashback">
     <div class="container">
       <h2>Cashback Quotidien</h2>
-      <p>Les joueurs aux niveaux VIP 2 a 5 recoivent un cashback quotidien base sur les pertes nettes des paris en argent reel au casino. Le pourcentage augmente avec votre niveau VIP et l'exigence de mise est de seulement 1x -- jouez-le une seule fois et le cashback est a vous.</p>
+      <p>Les joueurs aux niveaux VIP 2 a 5 recoivent un cashback quotidien base sur les pertes nettes des paris en argent reel au casino. Le pourcentage augmente avec votre niveau VIP et l'exigence de mise est de seulement 1x - jouez-le une seule fois et le cashback est a vous.</p>
 
       <div class="data-table-wrap">
         <table class="data-table">

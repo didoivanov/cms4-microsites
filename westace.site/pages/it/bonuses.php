@@ -22,7 +22,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       <h2>Pacchetto di Benvenuto per Nuovi Giocatori</h2>
       <div class="two-col" style="align-items:center;gap:var(--space-8);margin-bottom:var(--space-6)">
         <div>
-          <p>I nuovi giocatori su <?php echo SITE_NAME; ?> possono richiedere un pacchetto di benvenuto su tre depositi con un valore complessivo fino a 2.000 &euro; + 150 Giri Gratuiti. Ogni deposito prevede un bonus match del 100% e 50 Giri Gratuiti. Il deposito minimo qualificante e di 20 &euro; per ogni livello. Non serve alcun codice promozionale -- vai alla cassa, seleziona l'offerta ed effettua il tuo deposito qualificante.</p>
+          <p>I nuovi giocatori su <?php echo SITE_NAME; ?> possono richiedere un pacchetto di benvenuto su tre depositi con un valore complessivo fino a 2.000 &euro; + 150 Giri Gratuiti. Ogni deposito prevede un bonus match del 100% e 50 Giri Gratuiti. Il deposito minimo qualificante e di 20 &euro; per ogni livello. Non serve alcun codice promozionale - vai alla cassa, seleziona l'offerta ed effettua il tuo deposito qualificante.</p>
         </div>
         <div style="text-align:center;flex-shrink:0">
           <img src="/assets/img/westace-bonuses-screen.png" alt="Pagina promozioni <?php echo SITE_NAME; ?> Casino con bonus di benvenuto e promozioni attive" style="max-width:280px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
@@ -263,7 +263,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
   <section class="content-section content-section--alt" id="cashback">
     <div class="container">
       <h2>Cashback Giornaliero</h2>
-      <p>I giocatori con livello VIP da 2 a 5 ricevono un cashback giornaliero basato sulle perdite nette dalle scommesse casino con denaro reale. La percentuale aumenta con il livello VIP e il requisito di scommessa e di solo 1x -- giocalo una volta e il cashback e tuo.</p>
+      <p>I giocatori con livello VIP da 2 a 5 ricevono un cashback giornaliero basato sulle perdite nette dalle scommesse casino con denaro reale. La percentuale aumenta con il livello VIP e il requisito di scommessa e di solo 1x - giocalo una volta e il cashback e tuo.</p>
 
       <div class="data-table-wrap">
         <table class="data-table">

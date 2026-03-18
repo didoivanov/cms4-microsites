@@ -247,10 +247,10 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <div>
           <h3>Documenti Richiesti</h3>
           <ul>
-            <li><strong>Documento d'identità</strong> -- passaporto, patente di guida o carta d'identità nazionale</li>
-            <li><strong>Selfie con documento</strong> -- una foto in cui tieni in mano il documento d'identità</li>
-            <li><strong>Prova di residenza</strong> -- bolletta di un'utenza o estratto conto bancario emesso negli ultimi 3 mesi</li>
-            <li><strong>Provenienza dei fondi</strong> -- documentazione che dimostri la provenienza dei fondi destinati al gioco (requisito antiriciclaggio)</li>
+            <li><strong>Documento d'identità</strong> - passaporto, patente di guida o carta d'identità nazionale</li>
+            <li><strong>Selfie con documento</strong> - una foto in cui tieni in mano il documento d'identità</li>
+            <li><strong>Prova di residenza</strong> - bolletta di un'utenza o estratto conto bancario emesso negli ultimi 3 mesi</li>
+            <li><strong>Provenienza dei fondi</strong> - documentazione che dimostri la provenienza dei fondi destinati al gioco (requisito antiriciclaggio)</li>
           </ul>
           <p>Hai 30 giorni per presentare i documenti richiesti. Il tuo account potrebbe essere limitato fino al completamento della verifica.</p>
         </div>

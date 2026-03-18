@@ -23,7 +23,7 @@ return [
     'cta_ready_desc'  => 'Maak binnen een minuut een account aan en claim vandaag nog je welkomstbonus.',
 
     // Footer
-    'footer_disclaimer' => 'Deze website is een onafhankelijke affiliate site en wordt niet beheerd door %s Casino. Alle casinospellen worden aangeboden door %s. Wij kunnen een commissie ontvangen voor doorverwijzingen. Gokken kan verslavend zijn -- speel verantwoord. Je moet 18 jaar of ouder zijn om deel te nemen. Bonusvoorwaarden, inzetvereisten en opnamevoorwaarden zijn van toepassing. Controleer de beschikbaarheid van diensten in jouw rechtsgebied voordat je je registreert.',
+    'footer_disclaimer' => 'Deze website is een onafhankelijke affiliate site en wordt niet beheerd door %s Casino. Alle casinospellen worden aangeboden door %s. Wij kunnen een commissie ontvangen voor doorverwijzingen. Gokken kan verslavend zijn - speel verantwoord. Je moet 18 jaar of ouder zijn om deel te nemen. Bonusvoorwaarden, inzetvereisten en opnamevoorwaarden zijn van toepassing. Controleer de beschikbaarheid van diensten in jouw rechtsgebied voordat je je registreert.',
     'footer_brand_desc' => 'Meer dan 7.000 spellen, 100+ providers, volledig sportsbook en 24/7 live ondersteuning. Speel casinospellen, wed op sport en geniet van royale bonusaanbiedingen.',
     'footer_payments'   => 'Betalingen',
     'footer_help'       => 'Hulp',

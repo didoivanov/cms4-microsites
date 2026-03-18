@@ -154,10 +154,10 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       </ul>
       <p>Αν απαντήσατε ναι σε αρκετές από αυτές τις ερωτήσεις, σας συνιστούμε να επικοινωνήσετε με έναν φορέα βοήθειας:</p>
       <ul>
-        <li><strong>ΚΕΘΕΑ</strong> (Κέντρο Θεραπείας Εξαρτημένων Ατόμων) -- δωρεάν συμβουλευτική και υποστήριξη -- <a href="https://www.kethea.gr" target="_blank" rel="noopener noreferrer">kethea.gr</a> -- Γραμμή Βοήθειας: 1114</li>
-        <li><strong>ΕΕΕΠ</strong> (Επιτροπή Εποπτείας και Ελέγχου Παιγνίων) -- η ελληνική ρυθμιστική αρχή τυχερών παιχνιδιών -- <a href="https://www.gamingcommission.gov.gr" target="_blank" rel="noopener noreferrer">gamingcommission.gov.gr</a></li>
-        <li><strong>Ανώνυμοι Τζογαδόροι</strong> -- διεθνής οργάνωση υποστήριξης -- <a href="https://www.gamblersanonymous.org" target="_blank" rel="noopener noreferrer">gamblersanonymous.org</a></li>
-        <li><strong>Γραμμή Βοήθειας ΚΕΘΕΑ</strong> -- δωρεάν, εμπιστευτική υποστήριξη και συμβουλευτική -- 1114</li>
+        <li><strong>ΚΕΘΕΑ</strong> (Κέντρο Θεραπείας Εξαρτημένων Ατόμων) - δωρεάν συμβουλευτική και υποστήριξη - <a href="https://www.kethea.gr" target="_blank" rel="noopener noreferrer">kethea.gr</a> - Γραμμή Βοήθειας: 1114</li>
+        <li><strong>ΕΕΕΠ</strong> (Επιτροπή Εποπτείας και Ελέγχου Παιγνίων) - η ελληνική ρυθμιστική αρχή τυχερών παιχνιδιών - <a href="https://www.gamingcommission.gov.gr" target="_blank" rel="noopener noreferrer">gamingcommission.gov.gr</a></li>
+        <li><strong>Ανώνυμοι Τζογαδόροι</strong> - διεθνής οργάνωση υποστήριξης - <a href="https://www.gamblersanonymous.org" target="_blank" rel="noopener noreferrer">gamblersanonymous.org</a></li>
+        <li><strong>Γραμμή Βοήθειας ΚΕΘΕΑ</strong> - δωρεάν, εμπιστευτική υποστήριξη και συμβουλευτική - 1114</li>
       </ul>
 
       <h3>Χρήσιμες Συμβουλές</h3>

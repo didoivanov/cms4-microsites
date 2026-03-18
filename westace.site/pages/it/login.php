@@ -26,7 +26,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
           <h3>Accesso da Desktop</h3>
           <p>Visita il sito <?php echo SITE_NAME; ?> e clicca sul pulsante "Accesso" nell'angolo in alto a destra della pagina. Inserisci il tuo indirizzo email e la password, quindi clicca su "Accesso" per entrare nel tuo account. Se hai dimenticato la password, clicca sul link di reimpostazione sotto il modulo di accesso.</p>
           <h3>Accesso da Mobile</h3>
-          <p>Dal tuo telefono o tablet, apri il sito <?php echo SITE_NAME; ?> nel tuo browser mobile. Tocca il pulsante "Accesso", inserisci email e password, e tocca "Accesso". La versione mobile offre le stesse funzionalità del sito desktop -- nessun download di app necessario.</p>
+          <p>Dal tuo telefono o tablet, apri il sito <?php echo SITE_NAME; ?> nel tuo browser mobile. Tocca il pulsante "Accesso", inserisci email e password, e tocca "Accesso". La versione mobile offre le stesse funzionalità del sito desktop - nessun download di app necessario.</p>
         </div>
         <div style="text-align:center;flex-shrink:0">
           <img src="/assets/img/westace-login-screen.png" alt="Modulo di accesso <?php echo SITE_NAME; ?> Casino con campi email e password" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">

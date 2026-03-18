@@ -247,10 +247,10 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <div>
           <h3>Documents Requis</h3>
           <ul>
-            <li><strong>Pièce d'identité</strong> -- passeport, permis de conduire ou carte nationale d'identité</li>
-            <li><strong>Selfie avec pièce d'identité</strong> -- une photo de vous tenant le document d'identité</li>
-            <li><strong>Justificatif de domicile</strong> -- facture de services publics ou relevé bancaire datant de moins de 3 mois</li>
-            <li><strong>Origine des fonds</strong> -- document attestant la provenance de vos fonds de jeu (exigence anti-blanchiment)</li>
+            <li><strong>Pièce d'identité</strong> - passeport, permis de conduire ou carte nationale d'identité</li>
+            <li><strong>Selfie avec pièce d'identité</strong> - une photo de vous tenant le document d'identité</li>
+            <li><strong>Justificatif de domicile</strong> - facture de services publics ou relevé bancaire datant de moins de 3 mois</li>
+            <li><strong>Origine des fonds</strong> - document attestant la provenance de vos fonds de jeu (exigence anti-blanchiment)</li>
           </ul>
           <p>Vous disposez de 30 jours pour soumettre les documents demandés. Votre compte peut être restreint tant que la vérification n'est pas terminée.</p>
         </div>

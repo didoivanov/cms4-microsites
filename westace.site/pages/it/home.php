@@ -13,7 +13,7 @@ require_once __DIR__ . '/../../includes/header.php';
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <div class="hero__badge">Aperto -- 7.000+ giochi e scommesse sportive live</div>
+    <div class="hero__badge">Aperto - 7.000+ giochi e scommesse sportive live</div>
     <h1>
       <span class="brand-name"><?php echo SITE_NAME; ?></span><br>
       <span class="brand-type">Casino</span>
@@ -117,7 +117,7 @@ require_once __DIR__ . '/../../includes/header.php';
   <section class="content-section content-section--alt" id="games">
     <div class="container">
       <h2>Giochi Popolari su <?php echo SITE_NAME; ?></h2>
-      <p>Sfoglia alcuni dei titoli piu giocati nel casino. Dalle slot ad alta volatilita ai classici giochi da tavolo, dalle sale con croupier dal vivo ai mercati sportivi -- c'e qualcosa per ogni tipo di giocatore.</p>
+      <p>Sfoglia alcuni dei titoli piu giocati nel casino. Dalle slot ad alta volatilita ai classici giochi da tavolo, dalle sale con croupier dal vivo ai mercati sportivi - c'e qualcosa per ogni tipo di giocatore.</p>
 
       <div class="game-tabs">
         <button class="game-tab active">Tutti i Giochi</button>
@@ -176,7 +176,7 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Casino Mobile</h2>
       <div class="two-col" style="align-items:center">
         <div>
-          <p><?php echo SITE_NAME; ?> non ha un'app mobile dedicata, ma il sito web e completamente compatibile con tutti gli smartphone e tablet. La piattaforma browser offre le stesse funzionalita, giochi e strumenti di gestione dell'account che trovi nella versione desktop. Nessun download necessario -- apri il tuo browser mobile, accedi e gioca.</p>
+          <p><?php echo SITE_NAME; ?> non ha un'app mobile dedicata, ma il sito web e completamente compatibile con tutti gli smartphone e tablet. La piattaforma browser offre le stesse funzionalita, giochi e strumenti di gestione dell'account che trovi nella versione desktop. Nessun download necessario - apri il tuo browser mobile, accedi e gioca.</p>
         </div>
         <div style="text-align:center">
           <img src="/assets/img/westace-mobile.png" alt="<?php echo SITE_NAME; ?> Casino lobby mobile con bonus di benvenuto e navigazione giochi" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
@@ -187,7 +187,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <li>Tavoli con croupier dal vivo e scommesse sportive in mobilita</li>
         <li>Deposita e preleva direttamente dal tuo telefono</li>
         <li>Assistenza via live chat disponibile su mobile</li>
-        <li>Nessuna app da scaricare -- funziona su iOS e Android</li>
+        <li>Nessuna app da scaricare - funziona su iOS e Android</li>
       </ul>
     </div>
   </section>

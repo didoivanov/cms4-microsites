@@ -22,9 +22,9 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>What Data We Collect</h2>
       <p>We keep data collection to an absolute minimum. We do not require registration, accounts, or personal details to browse this site. The data we may collect includes:</p>
       <ul>
-        <li><strong>Anonymised analytics data</strong> -- page views, approximate geographic region, device type, and referral source. This helps us understand how the site is used and improve our content.</li>
-        <li><strong>Cookies and similar technologies</strong> -- small text files stored in your browser for analytics and basic site functionality. See our <a href="<?php echo $lang_prefix; ?>/cookies">Cookie Policy</a> for full details.</li>
-        <li><strong>Server logs</strong> -- your IP address, browser type, and pages visited may be recorded automatically by our hosting provider for security and operational purposes. These logs are retained for a limited period and are not used for marketing.</li>
+        <li><strong>Anonymised analytics data</strong> - page views, approximate geographic region, device type, and referral source. This helps us understand how the site is used and improve our content.</li>
+        <li><strong>Cookies and similar technologies</strong> - small text files stored in your browser for analytics and basic site functionality. See our <a href="<?php echo $lang_prefix; ?>/cookies">Cookie Policy</a> for full details.</li>
+        <li><strong>Server logs</strong> - your IP address, browser type, and pages visited may be recorded automatically by our hosting provider for security and operational purposes. These logs are retained for a limited period and are not used for marketing.</li>
       </ul>
       <p>We do not collect names, email addresses, phone numbers, payment details, or any other personally identifiable information through this website. We do not store financial data, betting history, or any customer account information.</p>
 
@@ -40,9 +40,9 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Third-Party Services</h2>
       <p>We may use the following third-party services, each governed by its own privacy policy:</p>
       <ul>
-        <li><strong>Google Analytics</strong> -- for anonymised traffic analysis</li>
-        <li><strong>Cloudflare</strong> -- for content delivery and security</li>
-        <li><strong>Affiliate partner links</strong> -- when you click a link to visit <?php echo SITE_NAME; ?> Casino, you leave our site and are subject to the casino operator's privacy practices</li>
+        <li><strong>Google Analytics</strong> - for anonymised traffic analysis</li>
+        <li><strong>Cloudflare</strong> - for content delivery and security</li>
+        <li><strong>Affiliate partner links</strong> - when you click a link to visit <?php echo SITE_NAME; ?> Casino, you leave our site and are subject to the casino operator's privacy practices</li>
       </ul>
 
       <h2>Your Rights Under UK GDPR</h2>
@@ -51,7 +51,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <li>Request access to any personal data we hold about you</li>
         <li>Request correction or deletion of that data</li>
         <li>Object to or restrict processing</li>
-        <li>Data portability -- receive your data in a structured, machine-readable format</li>
+        <li>Data portability - receive your data in a structured, machine-readable format</li>
         <li>Withdraw consent at any time (e.g. by disabling cookies in your browser)</li>
         <li>Lodge a complaint with the Information Commissioner's Office (ICO)</li>
       </ul>

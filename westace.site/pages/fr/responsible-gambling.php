@@ -40,10 +40,10 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Fixer des Limites</h2>
       <p>Avant de commencer a jouer dans un casino en ligne, pensez a fixer les limites suivantes :</p>
       <ul>
-        <li><strong>Limites de depot</strong> -- fixez un plafond quotidien, hebdomadaire ou mensuel sur le montant que vous pouvez deposer</li>
-        <li><strong>Limites de perte</strong> -- decidez du montant maximum que vous etes pret a perdre sur une periode donnee</li>
-        <li><strong>Limites de temps</strong> -- programmez un minuteur ou une alarme pour vous rappeler quand vous arreter</li>
-        <li><strong>Rappels de session</strong> -- de nombreux casinos proposent des notifications de controle de realite qui vous indiquent depuis combien de temps vous jouez</li>
+        <li><strong>Limites de depot</strong> - fixez un plafond quotidien, hebdomadaire ou mensuel sur le montant que vous pouvez deposer</li>
+        <li><strong>Limites de perte</strong> - decidez du montant maximum que vous etes pret a perdre sur une periode donnee</li>
+        <li><strong>Limites de temps</strong> - programmez un minuteur ou une alarme pour vous rappeler quand vous arreter</li>
+        <li><strong>Rappels de session</strong> - de nombreux casinos proposent des notifications de controle de realite qui vous indiquent depuis combien de temps vous jouez</li>
       </ul>
       <p>La plupart des casinos en ligne reputables, y compris <?php echo SITE_NAME; ?>, proposent ces outils dans les parametres de votre compte. Utilisez-les.</p>
 
@@ -102,11 +102,11 @@ require_once __DIR__ . '/../../includes/header.php';
       </div>
 
       <h2>En Cas de Crise</h2>
-      <p>Si vous traversez une crise liee aux jeux d'argent -- detresse financiere, pensees suicidaires ou graves problemes relationnels -- contactez immediatement :</p>
+      <p>Si vous traversez une crise liee aux jeux d'argent - detresse financiere, pensees suicidaires ou graves problemes relationnels - contactez immediatement :</p>
       <ul>
-        <li><strong>Joueurs Info Service</strong> -- appelez le 0 974 75 13 13 (appel non surtaxe, 7j/7)</li>
-        <li><strong>3114 (numero national de prevention du suicide)</strong> -- appelez le 3114 (gratuit, 24h/24, 7j/7)</li>
-        <li><strong>Votre medecin traitant</strong> -- il peut vous orienter vers un addictologue ou un centre specialise</li>
+        <li><strong>Joueurs Info Service</strong> - appelez le 0 974 75 13 13 (appel non surtaxe, 7j/7)</li>
+        <li><strong>3114 (numero national de prevention du suicide)</strong> - appelez le 3114 (gratuit, 24h/24, 7j/7)</li>
+        <li><strong>Votre medecin traitant</strong> - il peut vous orienter vers un addictologue ou un centre specialise</li>
       </ul>
 
       <h2>Notre Engagement</h2>

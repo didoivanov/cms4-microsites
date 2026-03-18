@@ -40,10 +40,10 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Impostare dei Limiti</h2>
       <p>Prima di iniziare a giocare in qualsiasi casino online, valuta di impostare i seguenti limiti:</p>
       <ul>
-        <li><strong>Limiti di deposito</strong> -- stabilisci un tetto giornaliero, settimanale o mensile su quanto puoi depositare</li>
-        <li><strong>Limiti di perdita</strong> -- decidi l'importo massimo che sei disposto a perdere in un determinato periodo</li>
-        <li><strong>Limiti di tempo</strong> -- imposta un timer o una sveglia per ricordarti quando fermarti</li>
-        <li><strong>Promemoria di sessione</strong> -- molti casino offrono pop-up di verifica che ti informano su quanto tempo stai giocando</li>
+        <li><strong>Limiti di deposito</strong> - stabilisci un tetto giornaliero, settimanale o mensile su quanto puoi depositare</li>
+        <li><strong>Limiti di perdita</strong> - decidi l'importo massimo che sei disposto a perdere in un determinato periodo</li>
+        <li><strong>Limiti di tempo</strong> - imposta un timer o una sveglia per ricordarti quando fermarti</li>
+        <li><strong>Promemoria di sessione</strong> - molti casino offrono pop-up di verifica che ti informano su quanto tempo stai giocando</li>
       </ul>
       <p>La maggior parte dei casino online affidabili, incluso <?php echo SITE_NAME; ?>, mette a disposizione questi strumenti nelle impostazioni del tuo account. Utilizzali.</p>
 
@@ -75,13 +75,13 @@ require_once __DIR__ . '/../../includes/header.php';
       <p>Se tu o qualcuno che conosci ha un problema con il gioco d'azzardo, le seguenti organizzazioni offrono supporto gratuito e riservato:</p>
       <div class="info-grid">
         <div class="info-card">
-          <h4>Telefono Verde -- GAP</h4>
+          <h4>Telefono Verde - GAP</h4>
           <p>Telefono Verde contro il Gioco d'Azzardo Patologico, gestito dall'Istituto Superiore di Sanita. Servizio gratuito e anonimo.</p>
           <p>Telefono: <strong>800 558822</strong></p>
         </div>
         <div class="info-card">
           <h4>ADM</h4>
-          <p>Agenzia delle Dogane e dei Monopoli -- l'autorita italiana che regola il gioco d'azzardo. Informazioni su licenze, regolamentazione e tutela dei giocatori.</p>
+          <p>Agenzia delle Dogane e dei Monopoli - l'autorita italiana che regola il gioco d'azzardo. Informazioni su licenze, regolamentazione e tutela dei giocatori.</p>
           <p><a href="https://www.adm.gov.it" target="_blank" rel="noopener noreferrer">www.adm.gov.it</a></p>
         </div>
         <div class="info-card">

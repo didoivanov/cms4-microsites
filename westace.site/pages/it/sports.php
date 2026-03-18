@@ -10,7 +10,7 @@ $lang_prefix = '/it';
 require_once __DIR__ . '/../../includes/header.php';
 
 $hero_title = SITE_NAME . ' Scommesse Sportive';
-$hero_description = 'Quote pre-partita, scommesse live, sport virtuali e ippica -- tutto in un unico posto accanto al nostro casino completo.';
+$hero_description = 'Quote pre-partita, scommesse live, sport virtuali e ippica - tutto in un unico posto accanto al nostro casino completo.';
 $hero_cta = 'Scommetti Ora';
 require_once __DIR__ . '/../../includes/page-hero.php';
 ?>
@@ -34,7 +34,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <div class="info-card">
           <div class="info-card__icon">&#9917;</div>
           <h4>Scommesse Pre-Partita</h4>
-          <p>Piazza scommesse sulle partite in programma in oltre 30 sport. Calcio, tennis, basket, cricket, hockey su ghiaccio, MMA e altro -- con scommesse singole, multiple e di sistema disponibili.</p>
+          <p>Piazza scommesse sulle partite in programma in oltre 30 sport. Calcio, tennis, basket, cricket, hockey su ghiaccio, MMA e altro - con scommesse singole, multiple e di sistema disponibili.</p>
         </div>
         <div class="info-card">
           <div class="info-card__icon">&#9889;</div>
@@ -44,7 +44,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <div class="info-card">
           <div class="info-card__icon">&#127918;</div>
           <h4>Sport Virtuali</h4>
-          <p>Eventi simulati disponibili 24 ore su 24 -- calcio virtuale, basket, tennis, ippica e corse di levrieri. Risultati ogni pochi minuti, senza attendere le partite reali.</p>
+          <p>Eventi simulati disponibili 24 ore su 24 - calcio virtuale, basket, tennis, ippica e corse di levrieri. Risultati ogni pochi minuti, senza attendere le partite reali.</p>
         </div>
       </div>
     </div>
@@ -60,24 +60,24 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <div>
           <h3>Sport Popolari</h3>
           <ul class="check-list">
-            <li>Calcio -- Serie A, Coppa Italia, Premier League, La Liga, Bundesliga, Champions League, qualificazioni Coppa del Mondo e centinaia di campionati minori</li>
-            <li>Tennis -- Grand Slam, ATP, WTA e tornei Challenger</li>
-            <li>Basket -- NBA, EuroLeague, campionati nazionali</li>
-            <li>Hockey su Ghiaccio -- NHL, KHL, SHL e campionati europei</li>
-            <li>Cricket -- IPL, test match internazionali, T20 World Cup</li>
-            <li>MMA / Boxe -- UFC, Bellator e grandi serate di boxe</li>
-            <li>Esports -- CS2, Dota 2, League of Legends, Valorant</li>
+            <li>Calcio - Serie A, Coppa Italia, Premier League, La Liga, Bundesliga, Champions League, qualificazioni Coppa del Mondo e centinaia di campionati minori</li>
+            <li>Tennis - Grand Slam, ATP, WTA e tornei Challenger</li>
+            <li>Basket - NBA, EuroLeague, campionati nazionali</li>
+            <li>Hockey su Ghiaccio - NHL, KHL, SHL e campionati europei</li>
+            <li>Cricket - IPL, test match internazionali, T20 World Cup</li>
+            <li>MMA / Boxe - UFC, Bellator e grandi serate di boxe</li>
+            <li>Esports - CS2, Dota 2, League of Legends, Valorant</li>
           </ul>
         </div>
         <div>
           <h3>Altri Sport</h3>
           <ul class="check-list">
             <li>Rugby a 15 e Rugby a 13</li>
-            <li>Football Americano -- NFL, football universitario</li>
-            <li>Baseball -- MLB, NPB, KBO</li>
-            <li>Pallamano -- competizioni europee e internazionali</li>
-            <li>Pallavolo -- campionati nazionali e internazionali</li>
-            <li>Tennis Tavolo -- eventi professionistici e mondiali</li>
+            <li>Football Americano - NFL, football universitario</li>
+            <li>Baseball - MLB, NPB, KBO</li>
+            <li>Pallamano - competizioni europee e internazionali</li>
+            <li>Pallavolo - campionati nazionali e internazionali</li>
+            <li>Tennis Tavolo - eventi professionistici e mondiali</li>
             <li>Freccette, Snooker, Ciclismo, Formula 1</li>
           </ul>
         </div>
@@ -104,11 +104,11 @@ require_once __DIR__ . '/../../includes/page-hero.php';
 
       <h3>Sport Virtuali Disponibili</h3>
       <ul>
-        <li><strong>Calcio Virtuale</strong> -- simulazioni di partite complete con classifiche e formati a eliminazione</li>
-        <li><strong>Basket Virtuale</strong> -- simulazioni quarto per quarto con i mercati standard del basket</li>
-        <li><strong>Tennis Virtuale</strong> -- partite set per set con opzioni vincitore del match e risultato esatto</li>
-        <li><strong>Ippica Virtuale</strong> -- corse in piano e ad ostacoli con scommesse vincitore, piazzato e accoppiata</li>
-        <li><strong>Levrieri Virtuali</strong> -- corse brevi con mercati vincitore e accoppiata</li>
+        <li><strong>Calcio Virtuale</strong> - simulazioni di partite complete con classifiche e formati a eliminazione</li>
+        <li><strong>Basket Virtuale</strong> - simulazioni quarto per quarto con i mercati standard del basket</li>
+        <li><strong>Tennis Virtuale</strong> - partite set per set con opzioni vincitore del match e risultato esatto</li>
+        <li><strong>Ippica Virtuale</strong> - corse in piano e ad ostacoli con scommesse vincitore, piazzato e accoppiata</li>
+        <li><strong>Levrieri Virtuali</strong> - corse brevi con mercati vincitore e accoppiata</li>
       </ul>
       <p>Nuovi eventi virtuali partono ogni 2-3 minuti, quindi c'è sempre qualcosa su cui scommettere.</p>
     </div>

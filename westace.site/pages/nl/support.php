@@ -154,10 +154,10 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       </ul>
       <p>Als je op meerdere van deze vragen ja hebt geantwoord, raden wij aan contact op te nemen met een hulporganisatie:</p>
       <ul>
-        <li><strong>AGOG</strong> (Anonieme Gokkers) -- hulp en ondersteuning bij gokgerelateerde problemen via agog.nl</li>
-        <li><strong>Jellinek</strong> -- professionele verslavingszorg en behandeling via jellinek.nl</li>
-        <li><strong>LOKET Kansspel</strong> -- informatie en advies over kansspelverslaving via loketkansspel.nl</li>
-        <li><strong>Verslavingszorg Nederland</strong> -- landelijk netwerk voor verslavingszorg en begeleiding</li>
+        <li><strong>AGOG</strong> (Anonieme Gokkers) - hulp en ondersteuning bij gokgerelateerde problemen via agog.nl</li>
+        <li><strong>Jellinek</strong> - professionele verslavingszorg en behandeling via jellinek.nl</li>
+        <li><strong>LOKET Kansspel</strong> - informatie en advies over kansspelverslaving via loketkansspel.nl</li>
+        <li><strong>Verslavingszorg Nederland</strong> - landelijk netwerk voor verslavingszorg en begeleiding</li>
       </ul>
 
       <h3>Praktische Tips</h3>

@@ -153,10 +153,10 @@ require_once __DIR__ . '/../includes/page-hero.php';
       </ul>
       <p>If you answered yes to several of these questions, we recommend contacting a help organisation:</p>
       <ul>
-        <li><strong>GamCare</strong> -- free advice and support for gambling-related issues</li>
-        <li><strong>Gamble Aware</strong> -- information and resources for responsible gambling</li>
-        <li><strong>Gambling Therapy</strong> -- free, confidential support and counselling</li>
-        <li><strong>Gamblers Anonymous</strong> -- peer support and recovery meetings worldwide</li>
+        <li><strong>GamCare</strong> - free advice and support for gambling-related issues</li>
+        <li><strong>Gamble Aware</strong> - information and resources for responsible gambling</li>
+        <li><strong>Gambling Therapy</strong> - free, confidential support and counselling</li>
+        <li><strong>Gamblers Anonymous</strong> - peer support and recovery meetings worldwide</li>
       </ul>
 
       <h3>Helpful Tips</h3>

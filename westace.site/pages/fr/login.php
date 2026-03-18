@@ -26,7 +26,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
           <h3>Connexion sur Ordinateur</h3>
           <p>Rendez-vous sur le site <?php echo SITE_NAME; ?> et cliquez sur le bouton « Connexion » en haut à droite de la page. Saisissez votre adresse email et votre mot de passe, puis cliquez sur « Connexion » pour accéder à votre compte. Si vous avez oublié votre mot de passe, cliquez sur le lien de réinitialisation sous le formulaire de connexion.</p>
           <h3>Connexion sur Mobile</h3>
-          <p>Sur votre téléphone ou tablette, ouvrez le site <?php echo SITE_NAME; ?> dans votre navigateur mobile. Appuyez sur le bouton « Connexion », saisissez votre email et votre mot de passe, puis appuyez sur « Connexion ». La version mobile offre les mêmes fonctionnalités que le site desktop -- aucun téléchargement d'application n'est nécessaire.</p>
+          <p>Sur votre téléphone ou tablette, ouvrez le site <?php echo SITE_NAME; ?> dans votre navigateur mobile. Appuyez sur le bouton « Connexion », saisissez votre email et votre mot de passe, puis appuyez sur « Connexion ». La version mobile offre les mêmes fonctionnalités que le site desktop - aucun téléchargement d'application n'est nécessaire.</p>
         </div>
         <div style="text-align:center;flex-shrink:0">
           <img src="/assets/img/westace-login-screen.png" alt="Formulaire de connexion <?php echo SITE_NAME; ?> Casino avec champs email et mot de passe" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">

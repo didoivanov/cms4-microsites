@@ -40,10 +40,10 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Limieten Instellen</h2>
       <p>Overweeg voordat je bij een online casino gaat spelen de volgende limieten in te stellen:</p>
       <ul>
-        <li><strong>Stortingslimieten</strong> -- stel een dagelijks, wekelijks of maandelijks maximum in voor hoeveel je kunt storten</li>
-        <li><strong>Verlieslimieten</strong> -- bepaal het maximale bedrag dat je bereid bent te verliezen in een bepaalde periode</li>
-        <li><strong>Tijdslimieten</strong> -- stel een timer of wekker in om jezelf eraan te herinneren wanneer je moet stoppen</li>
-        <li><strong>Sessieherinneringen</strong> -- veel casino's bieden realiteitschecks die je laten zien hoe lang je al speelt</li>
+        <li><strong>Stortingslimieten</strong> - stel een dagelijks, wekelijks of maandelijks maximum in voor hoeveel je kunt storten</li>
+        <li><strong>Verlieslimieten</strong> - bepaal het maximale bedrag dat je bereid bent te verliezen in een bepaalde periode</li>
+        <li><strong>Tijdslimieten</strong> - stel een timer of wekker in om jezelf eraan te herinneren wanneer je moet stoppen</li>
+        <li><strong>Sessieherinneringen</strong> - veel casino's bieden realiteitschecks die je laten zien hoe lang je al speelt</li>
       </ul>
       <p>De meeste betrouwbare online casino's, waaronder <?php echo SITE_NAME; ?>, bieden deze hulpmiddelen aan in je accountinstellingen. Maak er gebruik van.</p>
 
@@ -97,11 +97,11 @@ require_once __DIR__ . '/../../includes/header.php';
       </div>
 
       <h2>In Crisis?</h2>
-      <p>Als je in een acute crisis verkeert door gokproblemen -- financiele nood, suicidale gedachten of ernstige relatieproblemen -- neem dan onmiddellijk contact op:</p>
+      <p>Als je in een acute crisis verkeert door gokproblemen - financiele nood, suicidale gedachten of ernstige relatieproblemen - neem dan onmiddellijk contact op:</p>
       <ul>
-        <li><strong>113 Zelfmoordpreventie</strong> -- bel 113 of 0800-0113 (gratis, 24/7) of chat via <a href="https://www.113.nl" target="_blank" rel="noopener noreferrer">www.113.nl</a></li>
-        <li><strong>Jellinek Crisislijn</strong> -- bel 088 505 1220 voor directe hulp bij verslavingsproblemen</li>
-        <li><strong>Huisarts</strong> -- je huisarts kan je doorverwijzen naar gespecialiseerde verslavingszorg</li>
+        <li><strong>113 Zelfmoordpreventie</strong> - bel 113 of 0800-0113 (gratis, 24/7) of chat via <a href="https://www.113.nl" target="_blank" rel="noopener noreferrer">www.113.nl</a></li>
+        <li><strong>Jellinek Crisislijn</strong> - bel 088 505 1220 voor directe hulp bij verslavingsproblemen</li>
+        <li><strong>Huisarts</strong> - je huisarts kan je doorverwijzen naar gespecialiseerde verslavingszorg</li>
       </ul>
 
       <h2>Onze Toezegging</h2>

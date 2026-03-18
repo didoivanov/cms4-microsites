@@ -22,9 +22,9 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Welke Gegevens Wij Verzamelen</h2>
       <p>Wij houden de gegevensverzameling tot een absoluut minimum. Je hoeft je niet te registreren, een account aan te maken of persoonlijke gegevens te verstrekken om deze site te bekijken. De gegevens die wij mogelijk verzamelen zijn:</p>
       <ul>
-        <li><strong>Geanonimiseerde analysegegevens</strong> -- paginaweergaven, geschatte geografische regio, apparaattype en verwijzingsbron. Dit helpt ons te begrijpen hoe de site wordt gebruikt en onze content te verbeteren.</li>
-        <li><strong>Cookies en vergelijkbare technologieen</strong> -- kleine tekstbestanden die in je browser worden opgeslagen voor analyse en basisfunctionaliteit van de site. Zie ons <a href="<?php echo $lang_prefix; ?>/cookies">Cookiebeleid</a> voor volledige details.</li>
-        <li><strong>Serverlogboeken</strong> -- je IP-adres, browsertype en bezochte pagina's kunnen automatisch worden vastgelegd door onze hostingprovider voor beveiligings- en operationele doeleinden. Deze logboeken worden voor een beperkte periode bewaard en worden niet gebruikt voor marketing.</li>
+        <li><strong>Geanonimiseerde analysegegevens</strong> - paginaweergaven, geschatte geografische regio, apparaattype en verwijzingsbron. Dit helpt ons te begrijpen hoe de site wordt gebruikt en onze content te verbeteren.</li>
+        <li><strong>Cookies en vergelijkbare technologieen</strong> - kleine tekstbestanden die in je browser worden opgeslagen voor analyse en basisfunctionaliteit van de site. Zie ons <a href="<?php echo $lang_prefix; ?>/cookies">Cookiebeleid</a> voor volledige details.</li>
+        <li><strong>Serverlogboeken</strong> - je IP-adres, browsertype en bezochte pagina's kunnen automatisch worden vastgelegd door onze hostingprovider voor beveiligings- en operationele doeleinden. Deze logboeken worden voor een beperkte periode bewaard en worden niet gebruikt voor marketing.</li>
       </ul>
       <p>Wij verzamelen geen namen, e-mailadressen, telefoonnummers, betalingsgegevens of andere persoonsgegevens via deze website. Wij slaan geen financiele gegevens, wedgeschiedenis of accountinformatie van klanten op.</p>
 
@@ -40,9 +40,9 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Diensten van Derden</h2>
       <p>Wij maken mogelijk gebruik van de volgende diensten van derden, elk met een eigen privacybeleid:</p>
       <ul>
-        <li><strong>Google Analytics</strong> -- voor geanonimiseerde verkeersanalyse</li>
-        <li><strong>Cloudflare</strong> -- voor contentlevering en beveiliging</li>
-        <li><strong>Affiliate partnerlinks</strong> -- wanneer je op een link klikt om <?php echo SITE_NAME; ?> Casino te bezoeken, verlaat je onze site en val je onder het privacybeleid van de casino-exploitant</li>
+        <li><strong>Google Analytics</strong> - voor geanonimiseerde verkeersanalyse</li>
+        <li><strong>Cloudflare</strong> - voor contentlevering en beveiliging</li>
+        <li><strong>Affiliate partnerlinks</strong> - wanneer je op een link klikt om <?php echo SITE_NAME; ?> Casino te bezoeken, verlaat je onze site en val je onder het privacybeleid van de casino-exploitant</li>
       </ul>
 
       <h2>Je Rechten onder de AVG</h2>
@@ -51,7 +51,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <li>Toegang te vragen tot persoonsgegevens die wij over je bewaren</li>
         <li>Correctie of verwijdering van die gegevens te verzoeken</li>
         <li>Bezwaar te maken tegen of beperking van verwerking te vragen</li>
-        <li>Gegevensoverdraagbaarheid -- je gegevens in een gestructureerd, machineleesbaar formaat te ontvangen</li>
+        <li>Gegevensoverdraagbaarheid - je gegevens in een gestructureerd, machineleesbaar formaat te ontvangen</li>
         <li>Toestemming op elk moment in te trekken (bijv. door cookies in je browser uit te schakelen)</li>
         <li>Een klacht in te dienen bij de Autoriteit Persoonsgegevens</li>
       </ul>

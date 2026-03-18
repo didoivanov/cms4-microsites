@@ -154,11 +154,11 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       </ul>
       <p>Se hai risposto sì a diverse di queste domande, ti consigliamo di contattare un servizio di aiuto:</p>
       <ul>
-        <li><strong>Telefono Verde contro il Gioco d'Azzardo Patologico</strong> -- linea gratuita di assistenza -- 800 558822</li>
-        <li><strong>ADM (Agenzia delle Dogane e dei Monopoli)</strong> -- autorità regolatrice del gioco in Italia -- <a href="https://www.adm.gov.it" target="_blank" rel="noopener noreferrer">adm.gov.it</a></li>
-        <li><strong>Gioca Responsabile</strong> -- informazioni e risorse per il gioco responsabile -- <a href="https://www.giocaresponsabile.it" target="_blank" rel="noopener noreferrer">giocaresponsabile.it</a></li>
-        <li><strong>Giocatori Anonimi</strong> -- supporto tra pari e incontri di recupero</li>
-        <li><strong>Gambling Therapy</strong> -- supporto gratuito e confidenziale online</li>
+        <li><strong>Telefono Verde contro il Gioco d'Azzardo Patologico</strong> - linea gratuita di assistenza - 800 558822</li>
+        <li><strong>ADM (Agenzia delle Dogane e dei Monopoli)</strong> - autorità regolatrice del gioco in Italia - <a href="https://www.adm.gov.it" target="_blank" rel="noopener noreferrer">adm.gov.it</a></li>
+        <li><strong>Gioca Responsabile</strong> - informazioni e risorse per il gioco responsabile - <a href="https://www.giocaresponsabile.it" target="_blank" rel="noopener noreferrer">giocaresponsabile.it</a></li>
+        <li><strong>Giocatori Anonimi</strong> - supporto tra pari e incontri di recupero</li>
+        <li><strong>Gambling Therapy</strong> - supporto gratuito e confidenziale online</li>
       </ul>
 
       <h3>Consigli Pratici</h3>

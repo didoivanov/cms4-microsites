@@ -10,7 +10,7 @@ $lang_prefix = '/nl';
 require_once __DIR__ . '/../../includes/header.php';
 
 $hero_title = SITE_NAME . ' Sportsbook';
-$hero_description = 'Pre-match odds, live in-play wedden, virtuele sporten en paardenrennen -- alles op een plek naast ons volledige casino.';
+$hero_description = 'Pre-match odds, live in-play wedden, virtuele sporten en paardenrennen - alles op een plek naast ons volledige casino.';
 $hero_cta = 'Begin met Wedden';
 require_once __DIR__ . '/../../includes/page-hero.php';
 ?>
@@ -34,7 +34,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <div class="info-card">
           <div class="info-card__icon">&#9917;</div>
           <h4>Pre-Match Wedden</h4>
-          <p>Plaats weddenschappen op aankomende wedstrijden in 30+ sporten. Voetbal, tennis, basketbal, cricket, ijshockey, MMA en meer -- met enkele inzetten, accumulators en systeemweddenschappen.</p>
+          <p>Plaats weddenschappen op aankomende wedstrijden in 30+ sporten. Voetbal, tennis, basketbal, cricket, ijshockey, MMA en meer - met enkele inzetten, accumulators en systeemweddenschappen.</p>
         </div>
         <div class="info-card">
           <div class="info-card__icon">&#9889;</div>
@@ -44,7 +44,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <div class="info-card">
           <div class="info-card__icon">&#127918;</div>
           <h4>Virtuele Sporten</h4>
-          <p>Gesimuleerde evenementen die de klok rond draaien -- virtueel voetbal, basketbal, tennis, paardenrennen en hondrennen. Uitslagen elke paar minuten, geen wachten op echte wedstrijden.</p>
+          <p>Gesimuleerde evenementen die de klok rond draaien - virtueel voetbal, basketbal, tennis, paardenrennen en hondrennen. Uitslagen elke paar minuten, geen wachten op echte wedstrijden.</p>
         </div>
       </div>
     </div>
@@ -60,24 +60,24 @@ require_once __DIR__ . '/../../includes/page-hero.php';
         <div>
           <h3>Populaire Sporten</h3>
           <ul class="check-list">
-            <li>Voetbal -- Eredivisie, Premier League, La Liga, Bundesliga, Serie A, Champions League, WK-kwalificaties en honderden lagere divisies</li>
-            <li>Tennis -- Grand Slams, ATP, WTA en Challenger-toernooien</li>
-            <li>Basketbal -- NBA, EuroLeague, nationale competities</li>
-            <li>IJshockey -- NHL, KHL, SHL en Europese competities</li>
-            <li>Cricket -- IPL, internationale testwedstrijden, T20 World Cup</li>
-            <li>MMA / Boksen -- UFC, Bellator en grote boksavonden</li>
-            <li>Esports -- CS2, Dota 2, League of Legends, Valorant</li>
+            <li>Voetbal - Eredivisie, Premier League, La Liga, Bundesliga, Serie A, Champions League, WK-kwalificaties en honderden lagere divisies</li>
+            <li>Tennis - Grand Slams, ATP, WTA en Challenger-toernooien</li>
+            <li>Basketbal - NBA, EuroLeague, nationale competities</li>
+            <li>IJshockey - NHL, KHL, SHL en Europese competities</li>
+            <li>Cricket - IPL, internationale testwedstrijden, T20 World Cup</li>
+            <li>MMA / Boksen - UFC, Bellator en grote boksavonden</li>
+            <li>Esports - CS2, Dota 2, League of Legends, Valorant</li>
           </ul>
         </div>
         <div>
           <h3>Meer Sporten</h3>
           <ul class="check-list">
             <li>Rugby Union en Rugby League</li>
-            <li>American Football -- NFL, college football</li>
-            <li>Honkbal -- MLB, NPB, KBO</li>
-            <li>Handbal -- Europese en internationale evenementen</li>
-            <li>Volleybal -- nationale competities en internationaal</li>
-            <li>Tafeltennis -- professionele en wereldevenementen</li>
+            <li>American Football - NFL, college football</li>
+            <li>Honkbal - MLB, NPB, KBO</li>
+            <li>Handbal - Europese en internationale evenementen</li>
+            <li>Volleybal - nationale competities en internationaal</li>
+            <li>Tafeltennis - professionele en wereldevenementen</li>
             <li>Darts, Snooker, Wielrennen, Formule 1</li>
           </ul>
         </div>
@@ -104,11 +104,11 @@ require_once __DIR__ . '/../../includes/page-hero.php';
 
       <h3>Beschikbare Virtuele Sporten</h3>
       <ul>
-        <li><strong>Virtueel Voetbal</strong> -- volledige wedstrijdsimulaties met competitietabellen en bekerformats</li>
-        <li><strong>Virtueel Basketbal</strong> -- kwart-voor-kwart simulaties met standaard basketbalmarkten</li>
-        <li><strong>Virtueel Tennis</strong> -- set-voor-set wedstrijden met wedstrijdwinnaar en correcte score-opties</li>
-        <li><strong>Virtueel Paardenrennen</strong> -- vlakke en springraces met win-, plaats- en forecastweddenschappen</li>
-        <li><strong>Virtueel Hondrennen</strong> -- korte races met win- en forecastmarkten</li>
+        <li><strong>Virtueel Voetbal</strong> - volledige wedstrijdsimulaties met competitietabellen en bekerformats</li>
+        <li><strong>Virtueel Basketbal</strong> - kwart-voor-kwart simulaties met standaard basketbalmarkten</li>
+        <li><strong>Virtueel Tennis</strong> - set-voor-set wedstrijden met wedstrijdwinnaar en correcte score-opties</li>
+        <li><strong>Virtueel Paardenrennen</strong> - vlakke en springraces met win-, plaats- en forecastweddenschappen</li>
+        <li><strong>Virtueel Hondrennen</strong> - korte races met win- en forecastmarkten</li>
       </ul>
       <p>Nieuwe virtuele evenementen starten elke 2-3 minuten, dus er is altijd iets om op te wedden.</p>
     </div>

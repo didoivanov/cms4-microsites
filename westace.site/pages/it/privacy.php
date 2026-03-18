@@ -22,9 +22,9 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Quali Dati Raccogliamo</h2>
       <p>Limitiamo la raccolta dati al minimo indispensabile. Non sono richiesti registrazione, account o dati personali per consultare questo sito. I dati che potremmo raccogliere includono:</p>
       <ul>
-        <li><strong>Dati analitici anonimizzati</strong> -- pagine visualizzate, area geografica approssimativa, tipo di dispositivo e fonte di provenienza. Questi dati ci aiutano a capire come viene utilizzato il sito e a migliorare i nostri contenuti.</li>
-        <li><strong>Cookie e tecnologie simili</strong> -- piccoli file di testo memorizzati nel tuo browser per finalita analitiche e per il funzionamento di base del sito. Consulta la nostra <a href="<?php echo $lang_prefix; ?>/cookies">Politica sui Cookie</a> per tutti i dettagli.</li>
-        <li><strong>Log del server</strong> -- il tuo indirizzo IP, tipo di browser e pagine visitate possono essere registrati automaticamente dal nostro provider di hosting per motivi di sicurezza e operativi. Questi log vengono conservati per un periodo limitato e non vengono utilizzati per finalita di marketing.</li>
+        <li><strong>Dati analitici anonimizzati</strong> - pagine visualizzate, area geografica approssimativa, tipo di dispositivo e fonte di provenienza. Questi dati ci aiutano a capire come viene utilizzato il sito e a migliorare i nostri contenuti.</li>
+        <li><strong>Cookie e tecnologie simili</strong> - piccoli file di testo memorizzati nel tuo browser per finalita analitiche e per il funzionamento di base del sito. Consulta la nostra <a href="<?php echo $lang_prefix; ?>/cookies">Politica sui Cookie</a> per tutti i dettagli.</li>
+        <li><strong>Log del server</strong> - il tuo indirizzo IP, tipo di browser e pagine visitate possono essere registrati automaticamente dal nostro provider di hosting per motivi di sicurezza e operativi. Questi log vengono conservati per un periodo limitato e non vengono utilizzati per finalita di marketing.</li>
       </ul>
       <p>Non raccogliamo nomi, indirizzi email, numeri di telefono, dati di pagamento o altre informazioni personali identificabili tramite questo sito. Non memorizziamo dati finanziari, cronologia delle scommesse o informazioni sugli account dei clienti.</p>
 
@@ -40,9 +40,9 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Servizi di Terze Parti</h2>
       <p>Potremmo utilizzare i seguenti servizi di terze parti, ciascuno regolato dalla propria informativa sulla privacy:</p>
       <ul>
-        <li><strong>Google Analytics</strong> -- per l'analisi anonimizzata del traffico</li>
-        <li><strong>Cloudflare</strong> -- per la distribuzione dei contenuti e la sicurezza</li>
-        <li><strong>Link affiliati</strong> -- quando clicchi su un link per visitare <?php echo SITE_NAME; ?> Casino, lasci il nostro sito e sei soggetto alle pratiche sulla privacy dell'operatore del casino</li>
+        <li><strong>Google Analytics</strong> - per l'analisi anonimizzata del traffico</li>
+        <li><strong>Cloudflare</strong> - per la distribuzione dei contenuti e la sicurezza</li>
+        <li><strong>Link affiliati</strong> - quando clicchi su un link per visitare <?php echo SITE_NAME; ?> Casino, lasci il nostro sito e sei soggetto alle pratiche sulla privacy dell'operatore del casino</li>
       </ul>
 
       <h2>I Tuoi Diritti ai Sensi del GDPR</h2>
@@ -51,7 +51,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <li>Richiedere l'accesso a qualsiasi dato personale in nostro possesso</li>
         <li>Richiedere la rettifica o la cancellazione di tali dati</li>
         <li>Opporti al trattamento o richiederne la limitazione</li>
-        <li>Portabilita dei dati -- ricevere i tuoi dati in un formato strutturato e leggibile da dispositivo automatico</li>
+        <li>Portabilita dei dati - ricevere i tuoi dati in un formato strutturato e leggibile da dispositivo automatico</li>
         <li>Revocare il consenso in qualsiasi momento (ad esempio disattivando i cookie nelle impostazioni del browser)</li>
         <li>Presentare un reclamo al Garante per la protezione dei dati personali</li>
       </ul>

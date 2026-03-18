@@ -26,7 +26,7 @@ require_once __DIR__ . '/../../includes/page-hero.php';
           <h3>Desktop Login</h3>
           <p>Visit the <?php echo SITE_NAME; ?> website and click the "Log In" button in the top right corner of the page. Enter your email address and password, then click "Log In" to access your account. If you have forgotten your password, click the reset link below the login form.</p>
           <h3>Mobile Login</h3>
-          <p>On your phone or tablet, open the <?php echo SITE_NAME; ?> website in your mobile browser. Tap the "Log In" button, enter your email and password, and tap "Log In." The mobile version offers the same features as the desktop site -- no app download needed.</p>
+          <p>On your phone or tablet, open the <?php echo SITE_NAME; ?> website in your mobile browser. Tap the "Log In" button, enter your email and password, and tap "Log In." The mobile version offers the same features as the desktop site - no app download needed.</p>
         </div>
         <div style="text-align:center;flex-shrink:0">
           <img src="/assets/img/westace-login-screen.png" alt="<?php echo SITE_NAME; ?> Casino login form with email and password fields" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">

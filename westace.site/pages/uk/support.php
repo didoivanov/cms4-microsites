@@ -154,11 +154,11 @@ require_once __DIR__ . '/../../includes/page-hero.php';
       </ul>
       <p>If you answered yes to several of these questions, we recommend contacting a help organisation:</p>
       <ul>
-        <li><strong>GamCare</strong> -- free advice and support for gambling-related issues -- <a href="https://www.gamcare.org.uk" target="_blank" rel="noopener noreferrer">gamcare.org.uk</a> -- 0808 8020 133</li>
-        <li><strong>BeGambleAware</strong> -- information and resources for responsible gambling -- <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer">begambleaware.org</a></li>
-        <li><strong>GamStop</strong> -- free self-exclusion scheme for online gambling in Great Britain -- <a href="https://www.gamstop.co.uk" target="_blank" rel="noopener noreferrer">gamstop.co.uk</a></li>
-        <li><strong>Gambling Commission (UKGC)</strong> -- the UK regulatory body for gambling -- <a href="https://www.gamblingcommission.gov.uk" target="_blank" rel="noopener noreferrer">gamblingcommission.gov.uk</a></li>
-        <li><strong>National Gambling Helpline</strong> -- free, confidential support and counselling -- 0808 8020 133</li>
+        <li><strong>GamCare</strong> - free advice and support for gambling-related issues - <a href="https://www.gamcare.org.uk" target="_blank" rel="noopener noreferrer">gamcare.org.uk</a> - 0808 8020 133</li>
+        <li><strong>BeGambleAware</strong> - information and resources for responsible gambling - <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer">begambleaware.org</a></li>
+        <li><strong>GamStop</strong> - free self-exclusion scheme for online gambling in Great Britain - <a href="https://www.gamstop.co.uk" target="_blank" rel="noopener noreferrer">gamstop.co.uk</a></li>
+        <li><strong>Gambling Commission (UKGC)</strong> - the UK regulatory body for gambling - <a href="https://www.gamblingcommission.gov.uk" target="_blank" rel="noopener noreferrer">gamblingcommission.gov.uk</a></li>
+        <li><strong>National Gambling Helpline</strong> - free, confidential support and counselling - 0808 8020 133</li>
       </ul>
 
       <h3>Helpful Tips</h3>
