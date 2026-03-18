@@ -7,6 +7,14 @@ $page_description = SITE_NAME . ' Casino UK offers 7,000+ games from 100+ provid
 $current_page = 'home';
 $lang_prefix = '/uk';
 
+// Override stats for GBP
+$STATS = [
+    ['value' => '7,000+', 'label' => 'Games'],
+    ['value' => '100+',   'label' => 'Providers'],
+    ['value' => '&pound;850', 'label' => 'Welcome Bonus'],
+    ['value' => '24/7',   'label' => 'Live Support'],
+];
+
 require_once __DIR__ . '/../../includes/header.php';
 ?>
 
@@ -50,8 +58,8 @@ require_once __DIR__ . '/../../includes/header.php';
   <!-- About -->
   <section class="content-section" id="about">
     <div class="container">
-      <h2>Welcome to <?php echo SITE_NAME; ?> Casino</h2>
-      <p><?php echo SITE_NAME; ?> is an online casino and sportsbook launched in 2026. The platform brings together more than 7,000 games from 100+ providers, covering slots, live dealer lobbies, table games, crash games, jackpot titles, and game shows. On top of the casino, we offer a full sportsbook with pre-match and live betting, virtual sports, and horse racing. New players can claim a three-deposit welcome package worth up to &pound;1,700 plus 150 free spins.</p>
+      <h2>Welcome to <?php echo SITE_NAME; ?> Casino UK</h2>
+      <p><?php echo SITE_NAME; ?> is an online casino and sportsbook built for UK players, launched in 2026. The platform brings together more than 7,000 games from 100+ providers, covering slots, live dealer lobbies, table games, crash games, jackpot titles, and game shows. Alongside the casino, we run a full sportsbook covering Premier League football, horse racing at Cheltenham and Ascot, live in-play markets, and virtual sports. New UK players can claim a three-deposit welcome package worth up to &pound;1,700 plus 150 free spins, all in GBP with no currency conversion.</p>
 
       <!-- Quick info table -->
       <table class="quick-table">
@@ -66,11 +74,11 @@ require_once __DIR__ . '/../../includes/header.php';
         <tr><th>Mobile</th><td>Fully responsive, no app required</td></tr>
       </table>
 
-      <h3>Why Players Choose <?php echo SITE_NAME; ?></h3>
+      <h3>Why UK Players Choose <?php echo SITE_NAME; ?></h3>
       <ul class="check-list">
-        <li>Over 7,000 games from 100+ licensed providers</li>
+        <li>Over 7,000 games from 100+ licensed providers, all playable in GBP</li>
         <li>Three-deposit welcome package up to &pound;1,700 + 150 free spins</li>
-        <li>Full sportsbook with live betting, virtual sports, and horse racing</li>
+        <li>Sportsbook with Premier League, FA Cup, Cheltenham, Grand National, and live in-play markets</li>
         <li>Live casino with roulette, blackjack, baccarat, dice, and poker</li>
         <li>Daily cashback up to 15% with just 1x wagering requirement</li>
         <li>5-level VIP programme with personal manager and higher limits</li>
@@ -92,7 +100,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <div class="info-card">
           <div class="info-card__icon">&#9917;</div>
           <h4>Sportsbook</h4>
-          <p>Full sports betting platform with pre-match and live in-play markets. Virtual sports and horse racing round out the offering for sports fans.</p>
+          <p>Bet on Premier League, FA Cup, Championship, and dozens of other football leagues. Horse racing covers Cheltenham, Royal Ascot, and the Grand National. Virtual sports and live in-play markets round out the offering.</p>
         </div>
       </div>
     </div>
@@ -116,8 +124,8 @@ require_once __DIR__ . '/../../includes/header.php';
   <!-- Game Grid -->
   <section class="content-section content-section--alt" id="games">
     <div class="container">
-      <h2>Popular Games at <?php echo SITE_NAME; ?></h2>
-      <p>Browse some of the most-played titles across the casino. From high-volatility slots to classic table games, live dealer rooms, and sports markets, there is something for every type of player.</p>
+      <h2>Popular Games at <?php echo SITE_NAME; ?> UK</h2>
+      <p>Browse some of the most-played titles among UK players. From high-volatility slots to classic table games, live dealer rooms with British croupiers, and sports markets covering English football and horse racing, there is something for every type of player.</p>
 
       <div class="game-tabs">
         <button class="game-tab active">All Games</button>
@@ -154,8 +162,8 @@ require_once __DIR__ . '/../../includes/header.php';
   <!-- Payments Overview -->
   <section class="content-section" id="payments">
     <div class="container">
-      <h2>Payment Methods</h2>
-      <p><?php echo SITE_NAME; ?> supports a range of payment methods including credit cards, prepaid cards, e-wallets, and cryptocurrencies. Deposits start from &pound;8, and all deposits and withdrawals are fee-free.</p>
+      <h2>Payment Methods for UK Players</h2>
+      <p><?php echo SITE_NAME; ?> supports a range of payment methods popular with UK players, including debit cards, prepaid cards, e-wallets, and cryptocurrencies. All transactions are in GBP with no conversion fees. Deposits start from &pound;8, and all deposits and withdrawals are fee-free.</p>
 
       <table class="quick-table">
         <tr><th>Deposit Methods</th><td><?php echo implode(', ', $PAYMENT_METHODS); ?></td></tr>
@@ -176,7 +184,7 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Mobile Casino</h2>
       <div class="two-col" style="align-items:center">
         <div>
-          <p><?php echo SITE_NAME; ?> does not have a dedicated mobile app, but the website is fully compatible with all smartphones and tablets. The browser-based platform delivers the same features, games, and account management tools you would find on the desktop version. No downloads required -- just open your mobile browser, log in, and play.</p>
+          <p><?php echo SITE_NAME; ?> does not have a dedicated mobile app, but the website runs smoothly on any UK mobile network. The browser-based platform delivers the same features, games, and account management tools you would find on the desktop version. No downloads required -- open Safari, Chrome, or any mobile browser, log in, and play.</p>
         </div>
         <div style="text-align:center">
           <img src="/assets/img/westace-mobile.png" alt="<?php echo SITE_NAME; ?> Casino mobile lobby with welcome bonus and game navigation" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
@@ -198,16 +206,16 @@ require_once __DIR__ . '/../../includes/header.php';
       <h2>Frequently Asked Questions</h2>
 
       <details class="faq-item">
-        <summary>What kind of games can I play at <?php echo SITE_NAME; ?> Casino?</summary>
+        <summary>What games can UK players access at <?php echo SITE_NAME; ?>?</summary>
         <div class="faq-answer">
-          <p><?php echo SITE_NAME; ?> works with 100+ providers including Pragmatic Play, Playtech, Novomatic, Red Tiger, Yggdrasil, BGaming, Hacksaw Gaming, and Quickspin. You can play video slots, jackpot slots, blackjack, roulette, baccarat, poker, crash games, game shows, and live dealer titles. There is also a full sportsbook with live betting, virtual sports, and horse racing.</p>
+          <p><?php echo SITE_NAME; ?> works with 100+ providers including Pragmatic Play, Playtech, Novomatic, Red Tiger, Yggdrasil, BGaming, Hacksaw Gaming, and Quickspin. UK players can access video slots, jackpot slots, blackjack, roulette, baccarat, poker, crash games, game shows, and live dealer tables. The sportsbook covers Premier League football, horse racing, live betting, and virtual sports.</p>
         </div>
       </details>
 
       <details class="faq-item">
-        <summary>What is the welcome bonus at <?php echo SITE_NAME; ?> Casino?</summary>
+        <summary>What is the welcome bonus for UK players?</summary>
         <div class="faq-answer">
-          <p>New players receive a three-deposit welcome package: 100% up to &pound;850 + 50 free spins on the first deposit, 100% up to &pound;425 + 50 free spins on the second, and 100% up to &pound;425 + 50 free spins on the third. Total value: up to &pound;1,700 + 150 free spins. Minimum deposit is &pound;17 per tier. Wagering is 35x (bonus + deposit).</p>
+          <p>New UK players receive a three-deposit welcome package in GBP: 100% up to &pound;850 + 50 free spins on the first deposit, 100% up to &pound;425 + 50 free spins on the second, and 100% up to &pound;425 + 50 free spins on the third. Total value: up to &pound;1,700 + 150 free spins. Minimum deposit is &pound;17 per tier. Wagering is 35x (bonus + deposit).</p>
         </div>
       </details>
 
@@ -226,16 +234,16 @@ require_once __DIR__ . '/../../includes/header.php';
       </details>
 
       <details class="faq-item">
-        <summary>Can I play on my phone?</summary>
+        <summary>Can I play on my phone in the UK?</summary>
         <div class="faq-answer">
-          <p><?php echo SITE_NAME; ?> does not have a mobile app, but the website is fully mobile-friendly. You can access all games, the sportsbook, and account features through any modern smartphone or tablet browser.</p>
+          <p><?php echo SITE_NAME; ?> does not have a mobile app, but the website works on any UK mobile browser. You can access all games, the sportsbook, and account features through Safari on iPhone, Chrome on Android, or any other modern browser. No downloads, no VPN required.</p>
         </div>
       </details>
 
       <details class="faq-item">
         <summary>How do I reach customer support?</summary>
         <div class="faq-answer">
-          <p>You can reach the support team via 24/7 live chat directly on the website, or by email at support@westace.com. For more details, visit the <a href="<?php echo $lang_prefix; ?>/support">Support page</a>.</p>
+          <p>You can reach the support team via 24/7 live chat directly on the website, or by email at support@westace.com. If you need help with responsible gambling, you can also contact GamCare on 0808 8020 133 or visit <a href="https://www.begambleaware.org" target="_blank" rel="nofollow noopener">BeGambleAware.org</a>. For more details, visit the <a href="<?php echo $lang_prefix; ?>/support">Support page</a>.</p>
         </div>
       </details>
     </div>

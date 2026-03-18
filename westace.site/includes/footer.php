@@ -78,12 +78,19 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
 </div>
 
 <script>
+<?php
+// Currency config per language
+$currency_map = [
+    'uk' => ['symbol' => '\u00A3', 'suffix' => '', 'multiplier' => 0.85, 'locale' => 'en-GB', 'jackpotBase' => 2419282],
+];
+$cur = isset($currency_map[$CURRENT_LANG]) ? $currency_map[$CURRENT_LANG] : ['symbol' => '\u20AC', 'suffix' => '', 'multiplier' => 1, 'locale' => 'de-DE', 'jackpotBase' => 2847391];
+?>
 window.CASINO_CURRENCY = {
-  symbol: '\u20AC',
-  suffix: '',
-  multiplier: 1,
-  locale: 'de-DE',
-  jackpotBase: 2847391
+  symbol: '<?php echo $cur['symbol']; ?>',
+  suffix: '<?php echo $cur['suffix']; ?>',
+  multiplier: <?php echo $cur['multiplier']; ?>,
+  locale: '<?php echo $cur['locale']; ?>',
+  jackpotBase: <?php echo $cur['jackpotBase']; ?>
 };
 </script>
 <script src="/assets/js/app.js?v=20260318b"></script>
