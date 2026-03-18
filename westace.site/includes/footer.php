@@ -82,6 +82,7 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
 // Currency config per language
 $currency_map = [
     'uk' => ['symbol' => '\u00A3', 'suffix' => '', 'multiplier' => 0.85, 'locale' => 'en-GB', 'jackpotBase' => 2419282],
+    'pl' => ['symbol' => '', 'suffix' => ' z\u0142', 'multiplier' => 4.3, 'locale' => 'pl-PL', 'jackpotBase' => 12243781],
 ];
 $cur = isset($currency_map[$CURRENT_LANG]) ? $currency_map[$CURRENT_LANG] : ['symbol' => '\u20AC', 'suffix' => '', 'multiplier' => 1, 'locale' => 'de-DE', 'jackpotBase' => 2847391];
 ?>
