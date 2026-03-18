@@ -6,3 +6,4 @@ Sitemap: https://westace.site/sitemap-pages-nl.xml
 Sitemap: https://westace.site/sitemap-pages-fr.xml
 Sitemap: https://westace.site/sitemap-pages-it.xml
 Sitemap: https://westace.site/sitemap-pages-uk.xml
+Sitemap: https://westace.site/sitemap-pages-el.xml
