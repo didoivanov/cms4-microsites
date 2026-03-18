@@ -53,12 +53,12 @@ $THEME = [
 ];
 
 // ─── Languages ───────────────────────────────────────────────────
-// Single language: English (international)
 $LANGUAGES = [
-    'en' => ['English', 'English', true, "\xF0\x9F\x87\xAC\xF0\x9F\x87\xA7"],
+    'en' => ['English',    'English',    true,  "\xF0\x9F\x87\xAC\xF0\x9F\x87\xA7"],
+    'nl' => ['Nederlands', 'Nederlands', true,  "\xF0\x9F\x87\xB3\xF0\x9F\x87\xB1"],
 ];
 
-// Current language (always English for this site)
+// Current language (set by router)
 $CURRENT_LANG = 'en';
 
 // ─── Navigation ──────────────────────────────────────────────────

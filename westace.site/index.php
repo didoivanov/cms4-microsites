@@ -1,7 +1,7 @@
 <?php
 /**
  * Main Router
- * Handles clean URLs and routes to the correct page template.
+ * Handles clean URLs, language prefix detection, and routes to the correct page template.
  */
 
 // Serve static root files directly (Google verification, robots, sitemap)
@@ -35,9 +35,32 @@ define('REPO_SRC', '/home/cms4netp/simplemicrosites/westace.site');
 // Determine which page to load
 $page = isset($_GET['page']) ? trim($_GET['page'], '/') : 'home';
 
-// No language prefix detection needed (single-language site)
+// Detect language prefix (e.g., /nl/bonuses -> lang=nl, page=bonuses)
 $CURRENT_LANG = 'en';
 $lang_prefix = '';
+
+foreach (array_keys($LANGUAGES) as $code) {
+    if ($code === 'en') continue; // English has no prefix
+    if ($page === $code) {
+        // Exact match: /nl -> Dutch homepage
+        $CURRENT_LANG = $code;
+        $lang_prefix = '/' . $code;
+        $page = 'home';
+        break;
+    } elseif (strpos($page, $code . '/') === 0) {
+        // Prefix match: /nl/bonuses -> Dutch bonuses page
+        $CURRENT_LANG = $code;
+        $lang_prefix = '/' . $code;
+        $page = substr($page, strlen($code) + 1);
+        break;
+    }
+}
+
+// Override from query param (legacy support)
+if (isset($_GET['lang']) && array_key_exists($_GET['lang'], $LANGUAGES)) {
+    $CURRENT_LANG = $_GET['lang'];
+    $lang_prefix = ($CURRENT_LANG === 'en') ? '' : '/' . $CURRENT_LANG;
+}
 
 // Map of valid pages
 $pages = [
@@ -59,15 +82,25 @@ if (!array_key_exists($page, $pages)) {
     $page = 'home';
 }
 
+// Check for localized page version
+if ($CURRENT_LANG !== 'en') {
+    $localized_rel = 'pages/' . $CURRENT_LANG . '/' . basename($pages[$page]);
+    if (file_exists(__DIR__ . '/' . $localized_rel)) {
+        $pages[$page] = $localized_rel;
+    } elseif (defined('REPO_SRC') && file_exists(REPO_SRC . '/' . $localized_rel)) {
+        $pages[$page] = $localized_rel;
+    }
+}
+
 // Load language strings (check local then repo source)
-$lang_file = __DIR__ . '/lang/en.php';
-$lang_file_repo = defined('REPO_SRC') ? REPO_SRC . '/lang/en.php' : '';
+$lang_file = __DIR__ . '/lang/' . $CURRENT_LANG . '.php';
+$lang_file_repo = defined('REPO_SRC') ? REPO_SRC . '/lang/' . $CURRENT_LANG . '.php' : '';
 if (file_exists($lang_file)) {
     $LANG = require $lang_file;
 } elseif ($lang_file_repo && file_exists($lang_file_repo)) {
     $LANG = require $lang_file_repo;
 } else {
-    $LANG = [];
+    $LANG = require __DIR__ . '/lang/en.php';
 }
 
 // Helper function for translations
@@ -78,10 +111,10 @@ function __($key, $default = '') {
 
 // Update nav items with translations
 $NAV_ITEMS = [
-    ['url' => '/bonuses',    'label' => __('nav_bonuses', 'Bonuses'),       'page' => 'bonuses'],
-    ['url' => '/withdrawal', 'label' => __('nav_withdrawal', 'Withdrawal'), 'page' => 'withdrawal'],
-    ['url' => '/sports',     'label' => __('nav_sports', 'Sports'),         'page' => 'sports'],
-    ['url' => '/support',    'label' => __('nav_support', 'Support'),       'page' => 'support'],
+    ['url' => $lang_prefix . '/bonuses',    'label' => __('nav_bonuses', 'Bonuses'),       'page' => 'bonuses'],
+    ['url' => $lang_prefix . '/withdrawal', 'label' => __('nav_withdrawal', 'Withdrawal'), 'page' => 'withdrawal'],
+    ['url' => $lang_prefix . '/sports',     'label' => __('nav_sports', 'Sports'),         'page' => 'sports'],
+    ['url' => $lang_prefix . '/support',    'label' => __('nav_support', 'Support'),       'page' => 'support'],
 ];
 
 $current_page = $page;

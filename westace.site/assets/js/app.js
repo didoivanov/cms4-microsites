@@ -37,6 +37,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // Language selector toggle
+  var langBtns = document.querySelectorAll('.lang-selector__toggle');
+  langBtns.forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      btn.closest('.lang-selector').classList.toggle('open');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.lang-selector').forEach(function(el) {
+      el.classList.remove('open');
+    });
+  });
+
   // Sticky CTA on scroll
   var stickyCta = document.getElementById('stickyCta');
   if (stickyCta) {

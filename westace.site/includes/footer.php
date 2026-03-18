@@ -20,7 +20,7 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/" class="site-logo"><?php echo SITE_NAME; ?></a>
+        <a href="<?php echo $lang_prefix; ?>/" class="site-logo"><?php echo SITE_NAME; ?></a>
         <p><?php echo __('footer_brand_desc', 'Over 7,000 games, 100+ providers, full sportsbook, and 24/7 live support. Play casino games, bet on sports, and enjoy generous bonus offers.'); ?></p>
         <div class="footer-badges">
           <span class="footer-badge">&#128274; SSL</span>
@@ -30,26 +30,26 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
       <div class="footer-col">
         <h5>Casino</h5>
         <ul>
-          <li><a href="/bonuses"><?php echo __('nav_bonuses', 'Bonuses'); ?></a></li>
-          <li><a href="/#games"><?php echo __('games', 'Games'); ?></a></li>
-          <li><a href="/sports"><?php echo __('nav_sports', 'Sports'); ?></a></li>
-          <li><a href="/#payments"><?php echo __('footer_payments', 'Payments'); ?></a></li>
+          <li><a href="<?php echo $lang_prefix; ?>/bonuses"><?php echo __('nav_bonuses', 'Bonuses'); ?></a></li>
+          <li><a href="<?php echo $lang_prefix; ?>/#games"><?php echo __('games', 'Games'); ?></a></li>
+          <li><a href="<?php echo $lang_prefix; ?>/sports"><?php echo __('nav_sports', 'Sports'); ?></a></li>
+          <li><a href="<?php echo $lang_prefix; ?>/#payments"><?php echo __('footer_payments', 'Payments'); ?></a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5><?php echo __('footer_help', 'Help'); ?></h5>
         <ul>
-          <li><a href="/login"><?php echo __('nav_login', 'Log In'); ?></a></li>
-          <li><a href="/support"><?php echo __('footer_contact_support', 'Contact Support'); ?></a></li>
-          <li><a href="/withdrawal"><?php echo __('nav_withdrawal', 'Withdrawal'); ?></a></li>
+          <li><a href="<?php echo $lang_prefix; ?>/login"><?php echo __('nav_login', 'Log In'); ?></a></li>
+          <li><a href="<?php echo $lang_prefix; ?>/support"><?php echo __('footer_contact_support', 'Contact Support'); ?></a></li>
+          <li><a href="<?php echo $lang_prefix; ?>/withdrawal"><?php echo __('nav_withdrawal', 'Withdrawal'); ?></a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5><?php echo __('footer_legal', 'Legal'); ?></h5>
         <ul>
-          <li><a href="/privacy"><?php echo __('footer_privacy', 'Privacy Policy'); ?></a></li>
-          <li><a href="/terms"><?php echo __('footer_terms', 'Terms & Conditions'); ?></a></li>
-          <li><a href="/responsible-gambling"><?php echo __('footer_responsible', 'Responsible Gambling'); ?></a></li>
+          <li><a href="<?php echo $lang_prefix; ?>/privacy"><?php echo __('footer_privacy', 'Privacy Policy'); ?></a></li>
+          <li><a href="<?php echo $lang_prefix; ?>/terms"><?php echo __('footer_terms', 'Terms & Conditions'); ?></a></li>
+          <li><a href="<?php echo $lang_prefix; ?>/responsible-gambling"><?php echo __('footer_responsible', 'Responsible Gambling'); ?></a></li>
         </ul>
       </div>
     </div>
@@ -57,9 +57,9 @@ if (!defined('SITE_NAME')) { require_once __DIR__ . '/../config.php'; }
       <div class="footer-bottom__inner">
         <p class="footer-disclaimer"><?php echo sprintf(__('footer_disclaimer', 'This website is an independent affiliate site and is not operated by %s Casino. All casino games are provided by %s. We may receive a commission for referrals. Gambling can be addictive -- play responsibly. You must be 18 years or older to participate. Bonus terms, wagering requirements, and withdrawal conditions apply. Please verify the availability of services in your jurisdiction before registering.'), SITE_NAME, SITE_NAME); ?></p>
         <div class="footer-legal-links">
-          <a href="/privacy"><?php echo __('footer_privacy_short', 'Privacy'); ?></a>
-          <a href="/terms"><?php echo __('footer_terms_short', 'Terms'); ?></a>
-          <a href="/cookies">Cookies</a>
+          <a href="<?php echo $lang_prefix; ?>/privacy"><?php echo __('footer_privacy_short', 'Privacy'); ?></a>
+          <a href="<?php echo $lang_prefix; ?>/terms"><?php echo __('footer_terms_short', 'Terms'); ?></a>
+          <a href="<?php echo $lang_prefix; ?>/cookies">Cookies</a>
         </div>
       </div>
     </div>
@@ -86,6 +86,6 @@ window.CASINO_CURRENCY = {
   jackpotBase: 2847391
 };
 </script>
-<script src="/assets/js/app.js?v=20260318"></script>
+<script src="/assets/js/app.js?v=20260318b"></script>
 </body>
 </html>
