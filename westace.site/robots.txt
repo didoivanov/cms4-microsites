@@ -3,3 +3,4 @@ Allow: /
 
 Sitemap: https://westace.site/sitemap.xml
 Sitemap: https://westace.site/sitemap-pages-nl.xml
+Sitemap: https://westace.site/sitemap-pages-fr.xml
