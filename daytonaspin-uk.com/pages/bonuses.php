@@ -19,7 +19,14 @@ require_once __DIR__ . '/../includes/page-hero.php';
   <section class="content-section" id="welcome">
     <div class="container">
       <h2>Welcome Package for New Players</h2>
-      <p>New players at <?php echo SITE_NAME; ?> can claim a three-deposit welcome package with a combined value of up to &pound;2,000 + 100 free spins. The package covers 225% in bonus funds spread across your first three deposits. No promo code is needed -- simply visit the cashier, select the offer, and make your qualifying deposit.</p>
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin-bottom:var(--space-6)">
+        <div>
+          <p>New players at <?php echo SITE_NAME; ?> can claim a three-deposit welcome package with a combined value of up to &pound;2,000 + 100 free spins. The package covers 225% in bonus funds spread across your first three deposits. No promo code is needed -- simply visit the cashier, select the offer, and make your qualifying deposit.</p>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/daytonaspin-bonuses-screen.png" alt="<?php echo SITE_NAME; ?> Casino promotions page showing welcome bonus tiers and free money section" style="max-width:280px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
+        </div>
+      </div>
 
       <!-- Casino Welcome - Deposit 1 -->
       <div class="bonus-card">
@@ -263,7 +270,14 @@ require_once __DIR__ . '/../includes/page-hero.php';
   <section class="content-section content-section--alt" id="vip">
     <div class="container">
       <h2>VIP Programme</h2>
-      <p>The <?php echo SITE_NAME; ?> VIP Programme rewards loyal players through four levels: Bronze, Silver, Gold, and Platinum. As you climb the tiers, you unlock better cashback and rakeback rates, higher withdrawal limits, priority processing, a personal VIP manager, and level-up rewards. The programme is open to all registered players with a verified account.</p>
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin-bottom:var(--space-6)">
+        <div>
+          <p>The <?php echo SITE_NAME; ?> VIP Programme rewards loyal players through four levels: Bronze, Silver, Gold, and Platinum. As you climb the tiers, you unlock better cashback and rakeback rates, higher withdrawal limits, priority processing, a personal VIP manager, and level-up rewards. The programme is open to all registered players with a verified account.</p>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/daytonaspin-vip-screen.png" alt="<?php echo SITE_NAME; ?> Casino VIP programme showing Gold and Silver tiers with level-up rewards and rakeback details" style="max-width:280px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
+        </div>
+      </div>
 
       <h3>How to Earn Points</h3>
       <p>Points are earned through two activities:</p>

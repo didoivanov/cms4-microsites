@@ -45,7 +45,14 @@ require_once __DIR__ . '/../includes/page-hero.php';
   <section class="content-section content-section--alt" id="methods">
     <div class="container">
       <h2>Payment Methods</h2>
-      <p>The methods available for deposit and withdrawal depend on your region. <?php echo SITE_NAME; ?> processes payouts to the original deposit method when possible.</p>
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin-bottom:var(--space-6)">
+        <div>
+          <p>The methods available for deposit and withdrawal depend on your region. <?php echo SITE_NAME; ?> processes payouts to the original deposit method when possible.</p>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/daytonaspin-payments-screen.png" alt="<?php echo SITE_NAME; ?> Casino payment methods including Visa, Mastercard, Skrill, Apple Pay, Google Pay, Revolut, and cryptocurrencies" style="max-width:280px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
+        </div>
+      </div>
 
       <table class="data-table">
         <thead>
