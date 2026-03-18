@@ -19,8 +19,15 @@ require_once __DIR__ . '/../includes/page-hero.php';
   <section class="content-section" id="overview">
     <div class="container">
       <h2>Sportsbook Overview</h2>
-      <p><?php echo SITE_NAME; ?> is more than just a casino. We offer a full sportsbook covering pre-match betting, live in-play markets, virtual sports, and horse racing. Whether you follow the Premier League, the NBA, or Grand Slam tennis, you will find competitive odds and a wide range of markets on every major event.</p>
-      <p>Our sportsbook runs alongside the casino, so you can switch between slots, live dealer tables, and sports betting from a single account with a single balance. No need for separate wallets or transfers.</p>
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin-bottom:var(--space-6)">
+        <div>
+          <p><?php echo SITE_NAME; ?> is more than just a casino. We offer a full sportsbook covering pre-match betting, live in-play markets, virtual sports, and horse racing. Whether you follow the Premier League, the NBA, or Grand Slam tennis, you will find competitive odds and a wide range of markets on every major event.</p>
+          <p>Our sportsbook runs alongside the casino, so you can switch between slots, live dealer tables, and sports betting from a single account with a single balance. No need for separate wallets or transfers.</p>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/westace-sports-screen.png" alt="<?php echo SITE_NAME; ?> sportsbook showing live Champions League betting odds and football markets" style="max-width:280px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
+        </div>
+      </div>
 
       <div class="info-grid">
         <div class="info-card">

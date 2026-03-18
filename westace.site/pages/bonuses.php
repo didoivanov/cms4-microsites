@@ -19,7 +19,14 @@ require_once __DIR__ . '/../includes/page-hero.php';
   <section class="content-section" id="welcome">
     <div class="container">
       <h2>Welcome Package for New Players</h2>
-      <p>New players at <?php echo SITE_NAME; ?> can claim a three-deposit welcome package with a combined value of up to &euro;2,000 + 150 free spins. Each deposit comes with a 100% match bonus and 50 free spins. The minimum qualifying deposit is &euro;20 per tier. No promo code is needed -- simply visit the cashier, select the offer, and make your qualifying deposit.</p>
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin-bottom:var(--space-6)">
+        <div>
+          <p>New players at <?php echo SITE_NAME; ?> can claim a three-deposit welcome package with a combined value of up to &euro;2,000 + 150 free spins. Each deposit comes with a 100% match bonus and 50 free spins. The minimum qualifying deposit is &euro;20 per tier. No promo code is needed -- simply visit the cashier, select the offer, and make your qualifying deposit.</p>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/westace-bonuses-screen.png" alt="<?php echo SITE_NAME; ?> Casino promotions page showing welcome bonus and active promotions" style="max-width:280px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
+        </div>
+      </div>
 
       <!-- Casino Welcome - Deposit 1 -->
       <div class="bonus-card">

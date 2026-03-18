@@ -19,13 +19,18 @@ require_once __DIR__ . '/../includes/page-hero.php';
   <section class="content-section content-section--alt" id="login-help">
     <div class="container container--narrow">
       <h2>How to Log In to <?php echo SITE_NAME; ?> Casino</h2>
-      <p>Signing in to your <?php echo SITE_NAME; ?> account takes just a few seconds. Use the email and password you created during registration.</p>
-
-      <h3>Desktop Login</h3>
-      <p>Visit the <?php echo SITE_NAME; ?> website and click the "Log In" button in the top right corner of the page. Enter your email address and password, then click "Log In" to access your account. If you have forgotten your password, click the reset link below the login form.</p>
-
-      <h3>Mobile Login</h3>
-      <p>On your phone or tablet, open the <?php echo SITE_NAME; ?> website in your mobile browser. Tap the "Log In" button, enter your email and password, and tap "Log In." The mobile version offers the same features as the desktop site -- no app download needed.</p>
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin-bottom:var(--space-6)">
+        <div>
+          <p>Signing in to your <?php echo SITE_NAME; ?> account takes just a few seconds. Use the email and password you created during registration.</p>
+          <h3>Desktop Login</h3>
+          <p>Visit the <?php echo SITE_NAME; ?> website and click the "Log In" button in the top right corner of the page. Enter your email address and password, then click "Log In" to access your account. If you have forgotten your password, click the reset link below the login form.</p>
+          <h3>Mobile Login</h3>
+          <p>On your phone or tablet, open the <?php echo SITE_NAME; ?> website in your mobile browser. Tap the "Log In" button, enter your email and password, and tap "Log In." The mobile version offers the same features as the desktop site -- no app download needed.</p>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/westace-login-screen.png" alt="<?php echo SITE_NAME; ?> Casino login form with email and password fields" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
+        </div>
+      </div>
 
       <div style="text-align:center;margin:var(--space-8) 0">
         <a href="/play" class="btn btn--primary btn--lg" rel="nofollow">Log In to <?php echo SITE_NAME; ?></a>
@@ -48,7 +53,14 @@ require_once __DIR__ . '/../includes/page-hero.php';
   <section class="content-section" id="register">
     <div class="container container--narrow">
       <h2>Creating a New Account</h2>
-      <p>If you do not have a <?php echo SITE_NAME; ?> account yet, registration is quick and takes about two minutes. Here is an overview of the process:</p>
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin-bottom:var(--space-6)">
+        <div>
+          <p>If you do not have a <?php echo SITE_NAME; ?> account yet, registration is quick and takes about two minutes. Enter your email, create a password, choose your preferred currency, and you are ready to play. The welcome bonus is displayed at the top of the sign-up form so you know exactly what you are getting.</p>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/westace-signup-screen.png" alt="<?php echo SITE_NAME; ?> Casino sign up form showing welcome package and registration fields" style="max-width:260px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
+        </div>
+      </div>
 
       <ol class="steps-list">
         <li>

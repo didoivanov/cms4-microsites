@@ -45,7 +45,14 @@ require_once __DIR__ . '/../includes/page-hero.php';
   <section class="content-section content-section--alt" id="methods">
     <div class="container">
       <h2>Payment Methods</h2>
-      <p>The table below shows all deposit and withdrawal options at <?php echo SITE_NAME; ?>. We process payouts to the original deposit method when possible. All deposits and withdrawals are fee-free on our end.</p>
+      <div class="two-col" style="align-items:center;gap:var(--space-8);margin-bottom:var(--space-6)">
+        <div>
+          <p>The table below shows all deposit and withdrawal options at <?php echo SITE_NAME; ?>. We process payouts to the original deposit method when possible. All deposits and withdrawals are fee-free on our end.</p>
+        </div>
+        <div style="text-align:center;flex-shrink:0">
+          <img src="/assets/img/westace-payments-screen.png" alt="<?php echo SITE_NAME; ?> Casino deposit and withdrawal methods including Visa, Mastercard, Revolut, Skrill and crypto" style="max-width:280px;width:100%;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.3)">
+        </div>
+      </div>
 
       <div class="data-table-wrap">
         <table class="data-table">
