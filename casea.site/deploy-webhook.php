@@ -2,7 +2,7 @@
 /**
  * GitHub Webhook Deploy Script - Casea.site
  * Pulls from the shared repo, then copies site files to their web roots.
- * Handles: casea.site, vipluck.onl, daytonaspin-uk.com
+ * Handles: casea.site, vipluck.onl, daytonaspin-uk.com, westace.site
  */
 
 $secret = 'cms4-microsites-deploy-2026';
@@ -99,13 +99,18 @@ $vipluck = deploy_site($repo_path . '/vipluck-casino.com', '/home/cms4netp/viplu
 // Deploy daytonaspin-uk.com
 $daytona = deploy_site($repo_path . '/daytonaspin-uk.com', '/home/cms4netp/daytonaspin-uk.com', $root_files);
 
+// Deploy westace.site
+$westace = deploy_site($repo_path . '/westace.site', '/home/cms4netp/westace.site', $root_files);
+
 $log_entry = "[$timestamp] Multi-site deploy\n";
 $log_entry .= "Pull: exit=$pull_code\n";
 $log_entry .= "Casea: {$casea['count']} files\n";
 $log_entry .= "VipLuck: {$vipluck['count']} files\n";
 $log_entry .= "DaytonaSpin: {$daytona['count']} files\n";
+$log_entry .= "WestAce: {$westace['count']} files\n";
 if (!empty($vipluck['errors'])) $log_entry .= "VipLuck errors: " . implode(', ', $vipluck['errors']) . "\n";
 if (!empty($daytona['errors'])) $log_entry .= "DaytonaSpin errors: " . implode(', ', $daytona['errors']) . "\n";
+if (!empty($westace['errors'])) $log_entry .= "WestAce errors: " . implode(', ', $westace['errors']) . "\n";
 $log_entry .= "Pull output: " . implode(" | ", $output) . "\n";
 $log_entry .= str_repeat('-', 60) . "\n";
 @file_put_contents($log_file, $log_entry, FILE_APPEND | LOCK_EX);
@@ -117,6 +122,6 @@ echo json_encode([
     'casea_files' => $casea['count'],
     'vipluck_files' => $vipluck['count'],
     'daytona_files' => $daytona['count'],
-    'daytona_errors' => $daytona['errors'],
+    'westace_files' => $westace['count'],
     'timestamp' => $timestamp,
 ]);

@@ -60,3 +60,21 @@ deployment:
     - /bin/mkdir -p $DEPLOYPATH/assets/js && /bin/cp daytonaspin-uk.com/assets/js/*.js $DEPLOYPATH/assets/js/
     - /bin/mkdir -p $DEPLOYPATH/assets/img && /bin/cp -r daytonaspin-uk.com/assets/img/. $DEPLOYPATH/assets/img/ 2>/dev/null || true
     - /bin/mkdir -p $DEPLOYPATH/lang && /bin/cp daytonaspin-uk.com/lang/*.php $DEPLOYPATH/lang/
+    # ─── WestAce.site ─────────────────────────────────────────────
+    - export DEPLOYPATH=/home/cms4netp/westace.site
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp westace.site/.htaccess $DEPLOYPATH/
+    - /bin/cp westace.site/config.php $DEPLOYPATH/
+    - /bin/cp westace.site/index.php $DEPLOYPATH/
+    - /bin/cp westace.site/deploy-webhook.php $DEPLOYPATH/
+    - /bin/cp westace.site/google9bd8dc12ea09b94c.html $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/cp westace.site/robots.txt $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/cp westace.site/sitemap.xml $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/cp westace.site/sitemap-pages.xml $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/cp westace.site/favicon.ico $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/mkdir -p $DEPLOYPATH/includes && /bin/cp westace.site/includes/*.php $DEPLOYPATH/includes/
+    - /bin/mkdir -p $DEPLOYPATH/pages && /bin/cp westace.site/pages/*.php $DEPLOYPATH/pages/
+    - /bin/mkdir -p $DEPLOYPATH/assets/css && /bin/cp westace.site/assets/css/*.css $DEPLOYPATH/assets/css/
+    - /bin/mkdir -p $DEPLOYPATH/assets/js && /bin/cp westace.site/assets/js/*.js $DEPLOYPATH/assets/js/
+    - /bin/mkdir -p $DEPLOYPATH/assets/img && /bin/cp -r westace.site/assets/img/. $DEPLOYPATH/assets/img/ 2>/dev/null || true
+    - /bin/mkdir -p $DEPLOYPATH/lang && /bin/cp westace.site/lang/*.php $DEPLOYPATH/lang/
