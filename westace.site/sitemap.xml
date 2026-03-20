@@ -28,4 +28,12 @@
     <loc>https://westace.site/sitemap-pages-pl.xml</loc>
     <lastmod>2026-03-18</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>https://westace.site/sitemap-pages-de.xml</loc>
+    <lastmod>2026-03-20</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://westace.site/sitemap-pages-pt.xml</loc>
+    <lastmod>2026-03-20</lastmod>
+  </sitemap>
 </sitemapindex>
