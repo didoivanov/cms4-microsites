@@ -4,6 +4,15 @@
  * Handles clean URLs, language prefix detection, and routes to the correct page template.
  */
 
+// ─── Geo-block restricted countries ──────────────────────────────
+$blocked_countries = ['CY', 'AE', 'RO', 'UA', 'BY', 'RU'];
+$visitor_country = isset($_SERVER['HTTP_CF_IPCOUNTRY']) ? strtoupper($_SERVER['HTTP_CF_IPCOUNTRY']) : '';
+if (in_array($visitor_country, $blocked_countries)) {
+    http_response_code(403);
+    require_once __DIR__ . '/blocked.php';
+    exit;
+}
+
 // Serve static root files directly (Google verification, robots, sitemap)
 $_requested = isset($_GET['page']) ? trim($_GET['page'], '/') : '';
 if (preg_match('/^[\w.-]+\.(html|txt|xml)$/', $_requested)) {
