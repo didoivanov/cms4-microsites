@@ -67,6 +67,8 @@ $LANGUAGES = [
     'de' => ['Deutsch',       'Deutsch',       true,  "\xF0\x9F\x87\xA9\xF0\x9F\x87\xAA", 'de'],
     'pt' => ['Português',     'Português',     true,  "\xF0\x9F\x87\xB5\xF0\x9F\x87\xB9", 'pt'],
     'es' => ['Español',       'Español',       true,  "\xF0\x9F\x87\xAA\xF0\x9F\x87\xB8", 'es'],
+    'hu' => ['Magyar',        'Magyar',        true,  "\xF0\x9F\x87\xAD\xF0\x9F\x87\xBA", 'hu'],
+    'cs' => ['Čeština',      'Čeština',      true,  "\xF0\x9F\x87\xA8\xF0\x9F\x87\xBF", 'cs'],
 ];
 
 // Current language (set by router)

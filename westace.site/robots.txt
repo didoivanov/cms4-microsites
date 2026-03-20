@@ -11,3 +11,5 @@ Sitemap: https://westace.site/sitemap-pages-pl.xml
 Sitemap: https://westace.site/sitemap-pages-de.xml
 Sitemap: https://westace.site/sitemap-pages-pt.xml
 Sitemap: https://westace.site/sitemap-pages-es.xml
+Sitemap: https://westace.site/sitemap-pages-hu.xml
+Sitemap: https://westace.site/sitemap-pages-cs.xml
