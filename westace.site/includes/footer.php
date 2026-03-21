@@ -85,6 +85,8 @@ $currency_map = [
     'pl' => ['symbol' => '', 'suffix' => ' z\u0142', 'multiplier' => 4.3, 'locale' => 'pl-PL', 'jackpotBase' => 12243781],
     'hu' => ['symbol' => '', 'suffix' => ' Ft', 'multiplier' => 410, 'locale' => 'hu-HU', 'jackpotBase' => 1167431310],
     'cs' => ['symbol' => '', 'suffix' => ' K\u010D', 'multiplier' => 25, 'locale' => 'cs-CZ', 'jackpotBase' => 71184775],
+    'au' => ['symbol' => 'A$', 'suffix' => '', 'multiplier' => 1.65, 'locale' => 'en-AU', 'jackpotBase' => 4698195],
+    'ca' => ['symbol' => 'C$', 'suffix' => '', 'multiplier' => 1.5, 'locale' => 'en-CA', 'jackpotBase' => 4271087],
 ];
 $cur = isset($currency_map[$CURRENT_LANG]) ? $currency_map[$CURRENT_LANG] : ['symbol' => '\u20AC', 'suffix' => '', 'multiplier' => 1, 'locale' => 'de-DE', 'jackpotBase' => 2847391];
 ?>

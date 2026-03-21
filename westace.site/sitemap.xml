@@ -48,4 +48,12 @@
     <loc>https://westace.site/sitemap-pages-cs.xml</loc>
     <lastmod>2026-03-20</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>https://westace.site/sitemap-pages-au.xml</loc>
+    <lastmod>2026-03-21</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://westace.site/sitemap-pages-ca.xml</loc>
+    <lastmod>2026-03-21</lastmod>
+  </sitemap>
 </sitemapindex>
